@@ -42,15 +42,15 @@ const Contact = () => {
     <section
       id="contact"
       className="flex h-screen w-auto snap-center flex-col items-center justify-center text-white">
-      <h1 className={`${space_grotesk.className} font-extrabold text-4xl`}>
+      <h1 className={`${space_grotesk.className} font-extrabold text-4xl mb-5`}>
         Contact Us
       </h1>
       <div
-        className={`flex h-auto w-[1000px] flex-col md:mx-16 md:my-12  md:flex-row ${space_grotesk.className}`}>
-        <div className="bg-black rounded-s-3xl text-white flex flex-col gap-5 items-start p-10 w-2/4">
+        className={`flex flex-col md:flex-row ${space_grotesk.className} max-w-[1000px]`}>
+        <div className="bg-black rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl text-white flex flex-col gap-5 items-start p-6 md:p-10 w-full md:w-1/2">
           <div>
-            <h1 className="text-3xl font-bold">Have A Question?</h1>
-            <h1 className="text-3xl font-bold">Get In Touch!</h1>
+            <h2 className="text-3xl font-bold">Have A Question?</h2>
+            <h2 className="text-3xl font-bold">Get In Touch!</h2>
           </div>
           <p className="text-md font-light">
             Thank you for visiting our website! If you have any questions or
@@ -59,7 +59,7 @@ const Contact = () => {
           </p>
           <div>
             <ul className="list-none flex flex-col gap-3">
-              <li className="flex gap-5 items-center-center justify-start">
+              <li className="flex gap-5 items-center justify-start">
                 <Phone className="mt-3"></Phone>
                 <div>
                   <p>+91 9341405360</p>
@@ -77,7 +77,7 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col bg-white rounded-e-3xl p-10 w-3/4">
+        <div className="flex flex-col bg-white rounded-b-3xl md:rounded-bl-none md:rounded-e-3xl p-6 md:p-10 w-full md:w-3/4 md:mt-0">
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(handleSubmit)}
