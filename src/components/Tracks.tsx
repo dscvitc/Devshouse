@@ -27,7 +27,7 @@ const Tracks = () => {
     </div>,
     <div key="3" className={descStyle}>
       Build tools and applications to{" "}
-      <span className={custEmphasis}>enhance developers' efficiency,</span>
+      <span className={custEmphasis}>enhance developers&apos; efficiency,</span>
       collaboration, and overall workflow.
     </div>,
     <div key="4" className={descStyle}>
