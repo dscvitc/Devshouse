@@ -7,8 +7,8 @@ const Tracks = () => {
   const buttonStyle =
     "relative flex items-center justify-center w-[199px] h-[67px] bg-[#161616] rounded-[10px] border-2 border-white text-lg text-center text-white mx-3  hover:border-black hover:text-black hover:bg-white tracking-wide px-3 ";
   const descStyle =
-    "h-auto md:h-[100px] mx-auto mt-6 text-center px-4 md:px-[10vw] font-spaceGrotesk text-white text-xl md:text-3xl font-thin tracking-wide";
-  const custEmphasis = "text-white max-md:text-base font-bold";
+    "h-auto md:h-[100px] mx-auto mt-6 text-center px-4 md:px-[10vw] font-spaceGrotesk text-white text-xl md:text-3xl font-thin tracking-wide pb-6";
+  const custEmphasis = "text-white font-bold";
   const deptDesc = [
     <div key="1" className={descStyle}>
       Embark on a journey where the{" "}
