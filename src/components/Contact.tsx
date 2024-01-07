@@ -42,17 +42,17 @@ const Contact = () => {
     <section
       id="contact"
       className="flex h-screen w-auto snap-center flex-col items-center justify-center text-white">
-      <h1 className={`${space_grotesk.className} font-extrabold text-4xl mb-5`}>
+      <h1 className={`${space_grotesk.className} font-extrabold text-5xl mb-5`}>
         Contact Us
       </h1>
       <div
-        className={`flex flex-col md:flex-row ${space_grotesk.className} max-w-[1000px]`}>
+        className={`flex flex-col md:flex-row ${space_grotesk.className} min-h-[500px] max-w-[1000px]`}>
         <div className="bg-black rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl text-white flex flex-col gap-5 items-start p-6 md:p-10 w-full md:w-1/2">
           <div>
             <h2 className="text-3xl font-bold">Have A Question?</h2>
             <h2 className="text-3xl font-bold">Get In Touch!</h2>
           </div>
-          <p className="text-md font-light">
+          <p className="text-lg font-light">
             Thank you for visiting our website! If you have any questions or
             queries, drop us a message, and we{`'`}ll get back to you promptly.
             Your time is valuable to us!
@@ -60,18 +60,18 @@ const Contact = () => {
           <div>
             <ul className="list-none flex flex-col gap-3">
               <li className="flex gap-5 items-center justify-start">
-                <Phone className="mt-3"></Phone>
+                <Phone size={32}></Phone>
                 <div>
                   <p>+91 9341405360</p>
                   <p>+91 9003065894</p>
                 </div>
               </li>
               <li className="flex gap-5 items-center justify-start">
-                <Mail></Mail>
+                <Mail size={32}></Mail>
                 <p>devshouse.tech@gmail.com</p>
               </li>
               <li className="flex gap-5 items-center justify-start">
-                <MapPin></MapPin>
+                <MapPin size={32}></MapPin>
                 <p>VIT, Chennai</p>
               </li>
             </ul>
