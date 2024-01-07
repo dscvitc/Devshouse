@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Space+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../../public/bgback.png), url(../../../public/bgfront.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-color: #1e1e1e;
+
+}
+
+.pageWrapper {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+
+.pagetitle {
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+.A {
+    font-family: "Space Grotesk";
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 165px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.bout {
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 15px;
+
+}
+
+
+
+.about_vitc {
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.about_gdsc {
+    margin-left: 0%;
+    margin-right: 10%;
+}
+
+.about_vitc>h2,
+.about_gdsc>h2 {
+    font-family: Space Grotesk;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -5px;
+
+}
+
+.about_vitc>h3,
+.about_gdsc>h3 {
+
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.about_vitc>p,
+.about_gdsc>p {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    margin-top: 25px;
+    text-align: left;
+    color: #787878;
+
+}
+
+
+.image1 {
+    height: 180%;
+    margin-left: -12%;
+    margin-top: -22%;
+}
+
+.image2 {
+    height: 105%;
+    margin-left: -4%;
+    margin-top: -5%;
+}
