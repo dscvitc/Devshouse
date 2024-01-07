@@ -13,7 +13,7 @@ const space = Space_Grotesk({weight:"300", subsets: ["latin"]})
 export function HeroBullets() {
   return (
     <Container size="xl">
-      <div className={classes.inner}>
+      <div className={`${classes.inner} flex flex-col-reverse md:flex-row gap-14}`}>
         <div className={classes.content}>
           <Title className={`${classes.title} ${museo.className}`}>
             DEVSHOUSE ’24

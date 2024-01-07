@@ -37,7 +37,7 @@
     height: rem(580px);
   
     @media (max-width: $mantine-breakpoint-md) {
-      display: none;
+
     }
   }
   
