@@ -21,23 +21,53 @@ const space_grotesk = Space_Grotesk({
 });
 
 const formSchema = z.object({
-  name: z.string().min(2, {
+  Name: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  email: z.string().email(),
-  subject: z.string(),
-  message: z.string(),
+  Email: z.string().email(),
+  Subject: z.string(),
+  Message: z.string(),
 });
 
 const Contact = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
-      email: "",
+      Name: "",
+      Email: "",
+      Subject: "",
+      Message: "",
     },
   });
-  const handleSubmit = () => {};
+  const handleSubmit = (values: z.infer<typeof formSchema>) => {
+    const formData = {
+      Name: values.Name,
+      Email: values.Email,
+      Subject: values.Subject,
+      Message: values.Message,
+    };
+    const formElement: HTMLElement | null =
+      document.getElementById("contact-form");
+    if (formElement instanceof HTMLFormElement) {
+      const formDatab = new FormData(formElement);
+      fetch(
+        "https://script.google.com/macros/s/AKfycbx9qVzDChRhB0gsHWhTQi-_7GkBeN6Lk2P4lmluM8WY3oSQ3nWzvVq2rpHQ6CPMAcyT/exec",
+        {
+          method: "POST",
+          body: formDatab,
+        }
+      )
+        .then((res) => console.log(res))
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      console.error("Form element not found or is not of type HTMLFormElement");
+    }
+  };
   return (
     <section
       id="contact"
@@ -80,16 +110,18 @@ const Contact = () => {
         <div className="flex flex-col bg-white rounded-b-3xl md:rounded-bl-none md:rounded-e-3xl p-6 md:p-10 w-full md:w-3/4 md:mt-0">
           <Form {...form}>
             <form
+              id="contact-form"
               onSubmit={form.handleSubmit(handleSubmit)}
               className="flex flex-col gap-5">
               <FormField
                 control={form.control}
-                name="name"
+                name="Name"
                 render={({ field }) => {
                   return (
                     <FormItem>
                       <FormControl>
                         <Input
+                          className="text-black"
                           placeholder="Your Name"
                           type="name"
                           {...field}></Input>
@@ -100,12 +132,13 @@ const Contact = () => {
                 }}></FormField>
               <FormField
                 control={form.control}
-                name="email"
+                name="Email"
                 render={({ field }) => {
                   return (
                     <FormItem>
                       <FormControl>
                         <Input
+                          className="text-black"
                           placeholder="Your Email"
                           type="email"
                           {...field}></Input>
@@ -116,12 +149,13 @@ const Contact = () => {
                 }}></FormField>
               <FormField
                 control={form.control}
-                name="subject"
+                name="Subject"
                 render={({ field }) => {
                   return (
                     <FormItem>
                       <FormControl>
                         <Input
+                          className="text-black"
                           placeholder="Subject"
                           type="subject"
                           {...field}></Input>
@@ -132,13 +166,13 @@ const Contact = () => {
                 }}></FormField>
               <FormField
                 control={form.control}
-                name="message"
+                name="Message"
                 render={({ field }) => {
                   return (
                     <FormItem>
                       <FormControl>
                         <Textarea
-                          className="resize"
+                          className="text-black resize"
                           placeholder="Message"
                           {...field}></Textarea>
                       </FormControl>
@@ -146,7 +180,7 @@ const Contact = () => {
                     </FormItem>
                   );
                 }}></FormField>
-              <Button variant="default">
+              <Button type="submit" variant="default">
                 <span className={`${space_grotesk.className}`}>Send</span>
               </Button>
             </form>
