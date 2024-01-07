@@ -40,23 +40,15 @@ const Contact = () => {
     },
   });
   const handleSubmit = (values: z.infer<typeof formSchema>) => {
-    const formData = {
-      Name: values.Name,
-      Email: values.Email,
-      Subject: values.Subject,
-      Message: values.Message,
-    };
+    const URL_ENDPOINT = process.env.SCRIPT_ENDPOINT;
     const formElement: HTMLElement | null =
       document.getElementById("contact-form");
-    if (formElement instanceof HTMLFormElement) {
+    if (formElement instanceof HTMLFormElement && URL_ENDPOINT) {
       const formDatab = new FormData(formElement);
-      fetch(
-        "https://script.google.com/macros/s/AKfycbx9qVzDChRhB0gsHWhTQi-_7GkBeN6Lk2P4lmluM8WY3oSQ3nWzvVq2rpHQ6CPMAcyT/exec",
-        {
-          method: "POST",
-          body: formDatab,
-        }
-      )
+      fetch(URL_ENDPOINT, {
+        method: "POST",
+        body: formDatab,
+      })
         .then((res) => console.log(res))
         .then((data) => {
           console.log(data);
@@ -92,17 +84,37 @@ const Contact = () => {
               <li className="flex gap-5 items-center justify-start">
                 <Phone size={32}></Phone>
                 <div>
-                  <p>+91 9341405360</p>
-                  <p>+91 9003065894</p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="tel:+91 9341405360">
+                    +91 9341405360
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="tel:+91 9003065894">
+                    +91 9003065894
+                  </a>
                 </div>
               </li>
               <li className="flex gap-5 items-center justify-start">
                 <Mail size={32}></Mail>
-                <p>devshouse.tech@gmail.com</p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:devshouse.tech@gmail.com">
+                  devshouse.tech@gmail.com
+                </a>
               </li>
               <li className="flex gap-5 items-center justify-start">
                 <MapPin size={32}></MapPin>
-                <p>VIT, Chennai</p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.google.com/maps/place/Vellore+Institute+of+Technology+Chennai+Campus+(VIT+Chennai)/@12.840641,80.1508534,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5259af8e491f67:0x944b42131b757d2d!8m2!3d12.840641!4d80.1534283!16s%2Fg%2F11gdxsbhgz?entry=tts">
+                  VIT, Chennai
+                </a>
               </li>
             </ul>
           </div>
