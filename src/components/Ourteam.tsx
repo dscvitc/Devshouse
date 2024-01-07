@@ -23,7 +23,7 @@ const Card=({name,role,img,linkedin}:Props)=>{
              `}>
                 
                 
-                <Image src={img} alt='boardmembers' height={220} width={220} className='rounded-[45px]'/>
+                <Image src={img} alt='boardmembers' height={210} width={210} className='rounded-[45px]'/>
 
                 <Link href={linkedin} target='_blank'>
                 <Image src='/Pasted Graphic 3.png' alt='linkedin' width={60} height={60} className='absolute right-0 bottom-0 ml-10'/>
