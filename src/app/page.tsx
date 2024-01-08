@@ -6,5 +6,3 @@ export default function Home() {
       <Contact />
     </>
 }
-
-export default Home;

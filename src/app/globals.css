@@ -5,8 +5,7 @@
  
 body{
   background-image: url("/bg.svg");
-  background-color: rgba(0, 0, 0, 0.85
-  );
+  background-color: rgba(0, 0, 0, 1.2);
   background-blend-mode: lighten;
   background-position: center;
   background-size: cover;
