@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Tracks = () => {
   const [hoverItem, sethoverItem] = useState(0);
@@ -46,6 +46,17 @@ const Tracks = () => {
       transparent and collaborative development within the tech community.
     </div>,
   ];
+
+  useEffect(() => {
+    const preloadImages = () => {
+      for (let i = 0; i <= 6; i++) {
+        const img = new Image();
+        img.src = `/assets/images/blend(${i}).png`;
+      }
+    };
+
+    preloadImages();
+  }, []);
 
   return (
     <div
