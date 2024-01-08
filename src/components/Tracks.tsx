@@ -1,7 +1,12 @@
 "use client";
 
+<<<<<<< HEAD
 import { useState } from "react";
 import Mycomponent from "@/components/nav";
+=======
+import { useEffect, useState } from "react";
+
+>>>>>>> 7d832c98a58eca5d6f4c18faf2fe1ecaa3783c8c
 const Tracks = () => {
   const [hoverItem, sethoverItem] = useState(0);
   const buttonStyle =
@@ -46,6 +51,17 @@ const Tracks = () => {
       transparent and collaborative development within the tech community.
     </div>,
   ];
+
+  useEffect(() => {
+    const preloadImages = () => {
+      for (let i = 0; i <= 6; i++) {
+        const img = new Image();
+        img.src = `/assets/images/blend(${i}).png`;
+      }
+    };
+
+    preloadImages();
+  }, []);
 
   return (
     <div
