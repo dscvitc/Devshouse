@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Poor+Story&family=Roboto+Mono:ital@1&family=Space+Grotesk&display=swap');
+</style>
+
 
 const inter = Inter({ subsets: ["latin"] });
 const space_Grotesk = Space_Grotesk({

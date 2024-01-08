@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import Mycomponent from "@/components/nav";
 const Tracks = () => {
   const [hoverItem, sethoverItem] = useState(0);
   const buttonStyle =
@@ -53,8 +53,10 @@ const Tracks = () => {
       className=" w-full flex flex-col h-[100vh]"
       style={{
         backgroundImage: `url('/assets/images/trackbg.png')`,
+        overflow:"hidden",
       }}
     >
+      <nav/><Mycomponent />
       <div
         style={{
           backgroundImage: `url('/assets/images/blend(${hoverItem}).png')`,

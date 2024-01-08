@@ -1,0 +1,38 @@
+.nav{
+    overflow: hidden;
+}
+
+body{
+  overflow: hidden;
+}
+
+.image-container {
+  background-color: transparent;
+  position: absolute;
+  top: 37px;
+  left:40px;
+}
+
+.vit{
+  position: relative;
+  top:21px;
+  left:60px;
+  height: max-content;
+}
+
+ul{
+  padding-top: 1px;
+}
+
+
+
+li{
+  transition: none;
+  transition: text-decoration 0.5s ease-out;
+}
+
+li:hover{
+  text-decoration: underline;
+  color: #ff3c78;
+  cursor: pointer;
+}
