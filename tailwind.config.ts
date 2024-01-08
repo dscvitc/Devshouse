@@ -71,8 +71,8 @@ const config: Config = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.4s ease-out",
+        "accordion-up": "accordion-up 0.4s ease-out",
           'printedGraphic':"url('/Pasted Graphic.png')",
           'PastedGraphics':"url('/Pasted Graphic 2.png')"
       },
