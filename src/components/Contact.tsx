@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { Form, FormControl, FormItem, FormField, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import { useToast } from "./ui/use-toast";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -39,27 +40,41 @@ const Contact = () => {
       Message: "",
     },
   });
+
+  const { toast } = useToast();
+
+  const URL_ENDPOINT = process.env.SCRIPT_ENDPOINT;
+
   const handleSubmit = (values: z.infer<typeof formSchema>) => {
-    const URL_ENDPOINT = process.env.SCRIPT_ENDPOINT;
     const formElement: HTMLElement | null =
       document.getElementById("contact-form");
+    console.log(formElement);
     if (formElement instanceof HTMLFormElement && URL_ENDPOINT) {
       const formDatab = new FormData(formElement);
       fetch(URL_ENDPOINT, {
         method: "POST",
         body: formDatab,
       })
-        .then((res) => console.log(res))
-        .then((data) => {
-          console.log(data);
+        .then((res) => {
+          console.log(res);
+          toast({
+            title: "Success",
+            description: "Your message has been sent.",
+          });
         })
+        .then((data) => {})
         .catch((error) => {
-          console.log(error);
+          console.error(error);
+          toast({
+            title: "Failed",
+            description: "Could not send the message! Retry...",
+          });
         });
     } else {
       console.error("Form element not found or is not of type HTMLFormElement");
     }
   };
+
   return (
     <section
       id="contact"
@@ -84,18 +99,22 @@ const Contact = () => {
               <li className="flex gap-5 items-center justify-start">
                 <Phone size={32}></Phone>
                 <div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="tel:+91 9341405360">
-                    +91 9341405360
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="tel:+91 9003065894">
-                    +91 9003065894
-                  </a>
+                  <p>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="tel:+91 9341405360">
+                      +91 9341405360
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="tel:+91 9003065894">
+                      +91 9003065894
+                    </a>
+                  </p>
                 </div>
               </li>
               <li className="flex gap-5 items-center justify-start">
