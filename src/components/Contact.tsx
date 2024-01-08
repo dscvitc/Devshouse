@@ -43,17 +43,17 @@ const Contact = () => {
 
   const { toast } = useToast();
 
-  const URL_ENDPOINT = process.env.SCRIPT_ENDPOINT;
-
   const handleSubmit = (values: z.infer<typeof formSchema>) => {
     const formElement: HTMLElement | null =
       document.getElementById("contact-form");
     console.log(formElement);
-    if (formElement instanceof HTMLFormElement && URL_ENDPOINT) {
+    if (formElement instanceof HTMLFormElement) {
       const formDatab = new FormData(formElement);
-      fetch(URL_ENDPOINT, {
+      console.log(formDatab);
+      console.log(values);
+      fetch("/api/contact/post", {
         method: "POST",
-        body: formDatab,
+        body: JSON.stringify(values),
       })
         .then((res) => {
           console.log(res);
@@ -62,7 +62,6 @@ const Contact = () => {
             description: "Your message has been sent.",
           });
         })
-        .then((data) => {})
         .catch((error) => {
           console.error(error);
           toast({
