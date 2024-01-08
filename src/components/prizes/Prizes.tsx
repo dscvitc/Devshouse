@@ -74,14 +74,14 @@ export default function Prizes() {
             <div className="flex flex-row justify-center">
                 {
                     PrizeInfo.map((info) =>
-                        <MainPrize src={info.src} width={info.width} height={info.height} price={info.price} alt={info.alt} />
+                        <MainPrize key={info.price} src={info.src} width={info.width} height={info.height} price={info.price} alt={info.alt} />
                     )
                 }
             </div>
             <Divider heading='Special Track Prizes' mt="70px" mb="70px" />
             <div className="grid grid-cols-1 grid-rows-6 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
                 {
-                    tracks.map((track) => <SpecialPrize trackName={track.trackName} trackLogo={track.trackLogo} trackText={track.trackText} color={track.color} />)
+                    tracks.map((track) => <SpecialPrize key={track.trackName} trackName={track.trackName} trackLogo={track.trackLogo} trackText={track.trackText} color={track.color} />)
                 }
             </div>
         </section>
