@@ -1,15 +1,12 @@
-import Ourteam from '@/components/Ourteam'
-import Image from 'next/image'
+import Contact from "@/components/Contact"; 
+import Ourteam from '@/components/Ourteam';
+import Tracks from "@/components/Tracks";
+import "./globals.css";
 
-
-import "./globals.css"
-
-export default function Home() {
-  return (
-    
-    <>
-    
-    <Ourteam/>
+  export default function Home() {
+    return <>
+      <Tracks />
+      <Ourteam/>
+      <Contact />
     </>
-  )
 }
