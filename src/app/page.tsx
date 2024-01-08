@@ -3,8 +3,11 @@ import Tracks from "@/components/Tracks";
 import { HeroBullets } from '@/components/Hero/HeroBullets'
 export default function Home() {
   return (
-   <HeroBullets></HeroBullets>
+    <>
+    <HeroBullets></HeroBullets>
     <Tracks />
+    </>
+   
   )
 }
 
