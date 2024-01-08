@@ -22,11 +22,11 @@ export default function RootLayout({
 }) {
   return (
 
-    <html lang="en" className={`${space_Grotesk.variable}`}>
+    <html lang="en" className={`${space_Grotesk.variable} overflow-x-hidden`}>
       <body className={inter.className}>
         {children}
         <Toaster />
-      </body>    
+      </body>
     </html>
   );
 }
