@@ -9,7 +9,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-    background: rgba(0, 0, 0, 1);
+  background-image: url("/bg.svg");
+  color: #fff;
+  background-color: rgba(0, 0, 0, 1.2);
+  background-blend-mode: lighten;
+  background-position: center;
+  background-size: cover;
+  background-repeat: round;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -90,7 +96,7 @@ body {
   .button-50 {
     
   }
-
+}
 
 @property --gradient-angle {
   syntax: "<angle>";
