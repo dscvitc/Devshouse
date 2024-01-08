@@ -1,11 +1,8 @@
 import Tracks from "@/components/Tracks";
-
-const Home: React.FC = () => {
-  return (
-    <>
+import Contact from "@/components/Contact";
+export default function Home() {
+  return <>
       <Tracks />
+      <Contact />
     </>
-  );
-};
-
-export default Home;
+}
