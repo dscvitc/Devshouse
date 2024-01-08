@@ -17,13 +17,13 @@ interface Props{
 
 const Card=({name,role,img,linkedin}:Props)=>{
     return(
-        <div className='w-[220px] h-[500px] m-2 ' >
+        <div className='w-[220px] h-[500px] m-10 md:m-2 ' >
                <div className='  flex flex-col items-center justify-center gap-12  '>
              <div className={`card flex   items-center justify-center relative
              `}>
                 
                 
-                <Image src={img} alt='boardmembers' height={210} width={210} className='rounded-[45px]'/>
+                <Image src={img} alt='boardmembers' height={210} width={210} className='rounded-[45px] h-full w-full'/>
 
                 <Link href={linkedin} target='_blank'>
                 <Image src='/Pasted Graphic 3.png' alt='linkedin' width={60} height={60} className='absolute right-0 bottom-0 ml-10'/>
@@ -55,7 +55,7 @@ const Ourteam = () => {
         
           <div className= 'w-full h-auto bg-printedGraphic  '   >
             <h1 className='text-white text-center text-5xl font-bold p-10 '>Our Team</h1>
-            <div className='flex flex-wrap gap-10 items-center justify-center me-12 my-15 pb-12 ml-10 '>
+            <div className='flex md:flex-wrap gap-10  md:items-center md:justify-center me-12 my-15 pb-12 ml-10 overflow-x-auto md:overflow-x-hidden  '>
           
             {
                 boardMembers.map((e)=>(
