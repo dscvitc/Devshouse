@@ -45,7 +45,7 @@ const FAQ = () => {
   return (
     <div id="faqs" className="flex justify-center items-center bg-bg-black pt-10">
       <div className="bg-bg-black w-[80%] h-auto">
-      <h1 className={`text-5xl ${Space.className} text-white text-center mb-10`}>FAQs</h1>
+      <h1 className={`text-5xl ${Space.className} text-white text-center mb-14`}>FAQs</h1>
           <Accordion type="single" className="space-y-4">
             {items}
           </Accordion>
