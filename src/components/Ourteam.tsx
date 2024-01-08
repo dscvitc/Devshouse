@@ -3,6 +3,9 @@ import Image from 'next/image'
 import React from 'react'
 import { StaticImageData } from 'next/image'
 import Link from 'next/link'
+import { Space_Grotesk } from 'next/font/google'
+
+const Space_grotesk = Space_Grotesk({ subsets: ['latin'] })
 
 
 import boardMembers from '@/data/BoardMembres'
@@ -32,7 +35,7 @@ const Card=({name,role,img,linkedin}:Props)=>{
             
             
             </div>
-            <div className='flex flex-col items-center justify-center  mt-5 gap-3 px-1 '>
+            <div className='flex flex-col items-center justify-center  mt-5 gap-3 px-1 font-Space_grotesk'>
             <h1 className='text-white  text-2xl tracking-wide text-center  '>{name}</h1>
             <p className='text-white  text-xl font-light tracking-wide text-center'>{role}</p>
             
