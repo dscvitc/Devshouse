@@ -16,6 +16,9 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+        spaceGrotesk: ["var(--font-spaceGrotesk)"],
+      },
     extend: {
       colors: {
         border: "hsl(var(--border))",

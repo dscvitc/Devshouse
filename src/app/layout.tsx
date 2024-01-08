@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
+const space_Grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-spaceGrotesk",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,11 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+
+    <html lang="en" className={`${space_Grotesk.variable}`}>
       <body className={inter.className}>
         {children}
         <Toaster />
-      </body>
+      </body>    
     </html>
   );
 }

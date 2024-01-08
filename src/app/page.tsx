@@ -1,4 +1,10 @@
+import Tracks from "@/components/Tracks";
 import Contact from "@/components/Contact";
 export default function Home() {
-  return <Contact />;
+  return <>
+      <Tracks />
+      <Contact />
+    </>
 }
+
+export default Home;
