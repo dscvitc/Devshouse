@@ -23,7 +23,7 @@ export default function SpecialPrizeCard({ trackName, trackLogo, trackText, colo
                 </div>
                 <div className="w-full max-h-[75.26px] mt-3 text-center text-black text-[16px] font-bold font-['Product Sans'] xl:text-[21px]">{trackText}</div>
             </div>
-            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[12px]" />
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
         </div>
     );
 }
