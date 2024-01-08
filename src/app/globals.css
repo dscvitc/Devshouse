@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
@@ -8,6 +9,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+    background: rgba(0, 0, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,8 +22,12 @@
 
 
 body {
-  background-color: black;
+  background-image: url("/bg.svg");
   color: #fff;
+  background-color: rgba(0, 0, 0, 1.2);
+  background-blend-mode: lighten;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-gradient-pattern {
@@ -84,4 +90,76 @@ body {
   .button-50 {
     
   }
+
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+
+}
+
+
+.card {
+  height: 30vh;
+  aspect-ratio: 1 / 1;
+  
+  border-radius: 3.5rem;
+  background: #fff;
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    rgba(79, 117, 255, 1),
+    rgba(229, 36, 59, 1),
+    rgba(252, 195, 11, 1),
+    rgba(76, 159, 56, 1)
+  );
+  border-radius: inherit;
+  animation: rotation 5s linear infinite;
+}
+
+/* .card::after {
+  filter: blur(1.0rem);
+} */
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+
+.contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box{
+  position: relative;
+  width: 500px;height: 500px;
+  margin: 40px;
+}
+
+.contain .box img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background:#fff; */
+  mix-blend-mode: screen;
 }

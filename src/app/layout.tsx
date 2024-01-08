@@ -2,8 +2,14 @@
 import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import type { Metadata } from "next";
+
 import { Inter, Space_Grotesk } from "next/font/google";
+
 import './globals.css'
+import { Toaster } from "@/components/ui/toaster";
+
+
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,12 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+
     <html lang="en" className={`${space_Grotesk.variable}`}>
       <head>
         <ColorSchemeScript />
       </head>
       <body className={inter.className}>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>{children}<Toaster /></MantineProvider>
       </body>
     </html>
   );
