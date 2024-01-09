@@ -1,11 +1,12 @@
 "use client";
 
-import { Image, Container, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
+import {  Container, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 import image from 'image.svg';
 import classes from './Hero.module.css';
 import { MuseoModerno } from 'next/font/google';
 import { Space_Grotesk } from 'next/font/google';
+import Image from 'next/image';
 
 const museo = MuseoModerno({ weight: "700", subsets: ["latin"] })
 const space = Space_Grotesk({ weight: "300", subsets: ["latin"] })
@@ -46,7 +47,7 @@ export function HeroBullets() {
               </Button>
             </Group>
           </div>
-          {<img src={"image.svg"} className={`md:w-1/2  md:-mt-48  lg:-mt-20   `} />}
+          {<Image alt='hero' src={"image.svg"} className={`md:w-1/2  md:-mt-48  lg:-mt-20   `} width={500} height={500} />}
         </div>
       </div>
     </Container>

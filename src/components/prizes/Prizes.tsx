@@ -1,7 +1,6 @@
-import Image from 'next/image'
+import Divider from './Divider';
 import MainPrize from './MainPrizeCard';
 import SpecialPrize from './SpecialPrizeCard';
-import Divider from './Divider';
 export default function Prizes() {
     const PrizeInfo = [//Gold, silver and bronze images
         {
