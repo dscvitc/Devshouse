@@ -1,14 +1,23 @@
+
+import '@mantine/core/styles.css';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import type { Metadata } from "next";
 
 import { Inter, Space_Grotesk } from "next/font/google";
-import "./globals.css";
+
+import './globals.css'
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+
+
+const inter = Inter({ subsets: ['latin'] })
 const space_Grotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-spaceGrotesk",
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,9 +32,11 @@ export default function RootLayout({
   return (
 
     <html lang="en" className={`${space_Grotesk.variable} overflow-x-hidden`}>
+      <head>
+        <ColorSchemeScript />
+      </head>
       <body className={inter.className}>
-        {children}
-        <Toaster />
+        <MantineProvider>{children}<Toaster /></MantineProvider>
       </body>
     </html>
   );
