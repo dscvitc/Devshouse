@@ -26,7 +26,7 @@ const Card=({name,role,img,linkedin}:Props)=>{
              `}>
                 
                 
-                <Image src={img} alt='boardmembers' height={210} width={210} className='rounded-[45px] h-full w-full'/>
+                <Image src={img} alt='boardmembers' height={210} width={210} className='rounded-[45px] h-full w-full object-cover'/>
 
                 <Link href={linkedin} target='_blank'>
                 <Image src='/Pasted Graphic 3.png' alt='linkedin' width={60} height={60} className='absolute right-0 bottom-0 ml-10'/>
@@ -62,7 +62,7 @@ const Ourteam = () => {
           
             {
                 boardMembers.map((e)=>(
-                    <Card name={e.name} role={e.role} img={e.image} key={e.name} linkedin={e.linkedIn}/>
+                    <Card name={e.name} role={e.role} img={e?.image} key={e.name} linkedin={e?.linkedIn}/>
                 ))
             }
 
