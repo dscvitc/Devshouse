@@ -3,6 +3,7 @@
 import React, {useState, useRef, useEffect} from "react";
 import { Space_Grotesk } from "next/font/google";
 import { gsap } from 'gsap';
+import Image from "next/image";
 
 
 
@@ -82,21 +83,22 @@ const Timeline = () => {
             </div>
         </div>
         <button onClick={handleLeftClick} className="absolute left-5 mt-[28%] sm:mt-[20%]">
-            <img src="/assets/images/arrow2.svg" className="w-[3.7rem] sm:w-[7.2rem]"/>
+            <Image src="/assets/images/arrow2.svg" alt="day1" className="w-[3.7rem] sm:w-[7.2rem]" width={500} height={500}/>
         </button>
         <button onClick={handleRightClick} className="absolute right-5 mt-[28%] sm:mt-[19%]">
-            <img src="/assets/images/arrow1.svg" className="w-[3.5rem] sm:w-[6.8rem]"/>
+            <Image src="/assets/images/arrow1.svg" alt="day2" className="w-[3.5rem] sm:w-[6.8rem]" width={500} height={500}/>
         </button>
         <div className="relative overflow-hidden mx-20 sm:mx-36">
           <div
             ref={containerRef}
             className="flex overflow-hidden  mt-20 w-[300vw]"
           >
-            <img
+            <Image
               ref={imageRef}
               src="/assets/images/timeline.svg"
               alt="timeline"
               className="w-[160vw] object-cover object-left"
+              width={500} height={500}
             />
           </div>
         </div>
