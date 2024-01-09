@@ -2,7 +2,7 @@
 
 import { Image, Container, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
-// import image from 'image.svg';
+import image from 'image.svg';
 import classes from './Hero.module.css';
 import { MuseoModerno } from 'next/font/google';
 import { Space_Grotesk } from 'next/font/google';
@@ -12,7 +12,8 @@ const space = Space_Grotesk({weight:"300", subsets: ["latin"]})
 
 export function HeroBullets() {
   return (
-    <Container size="xl">
+    <Container size={"xl"}>
+    <div  className="overflow-hidden">
       <div className={`${classes.inner} flex flex-col-reverse md:flex-row gap-14}`}>
         <div className={classes.content}>
           <Title className={`${classes.title} ${museo.className}`}>
@@ -20,12 +21,12 @@ export function HeroBullets() {
            <hr className="border-none dashed-line"></hr>
           </Title>
 
-          <Text className={`${space.className} text-2xl md:text-justify mt-10`} mt="xl">
+          <Text className={`${space.className} text-base md:text-lg lg:text-2xl sm:text-base md:text-justify mt-10`} mt="xl">
             A 36-hour <span className='text-[#FBBC04]'> national level technical hackathon </span>that
-            <br className='hidden md:block' /> offers students from across India the <br className='hidden md:block' />opportunity to
-            <span className='text-[#4285F4]'> solve real-world challenges</span> of <br className='hidden md:block' />
-            society and showcase their <span className='text-[#0F9D58]'>innovative solutions.</span>
-            <br className='hidden md:block' /> Join us for a thrilling event, where learning meets <br className='hidden md:block' />excitement and
+             offers students from across India the opportunity to
+            <span className='text-[#4285F4]'> solve real-world challenges</span> of 
+            society and showcase their <span className='text-[#0F9D58]'>innovative solutions.</span> 
+            {' '} Join us for a thrilling event, where learning meets excitement and
             <span className='text-[#EA4335]'> amazing prizes</span> await!
           </Text>
 
@@ -43,8 +44,9 @@ export function HeroBullets() {
             </Button>
           </Group>
         </div>
-        { <Image src={"image.svg"} className={`${classes.image} -mt-20`} /> }
+        { <img src={"image.svg"} className={`md:w-1/2  md:-mt-48  lg:-mt-20   `} /> }
       </div>
+    </div>
     </Container>
   );
 }
