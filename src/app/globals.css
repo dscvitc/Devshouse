@@ -48,7 +48,7 @@
 }
 
 .card {
-  height: 30vh;
+  height: 210px;
   aspect-ratio: 1 / 1;
 
   border-radius: 3.5rem;
@@ -97,7 +97,7 @@ body {
 
 .contain {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   flex-wrap: wrap;
 }
@@ -211,4 +211,5 @@ body {
   box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   transform: translate(2px, 2px);
 }
+
 

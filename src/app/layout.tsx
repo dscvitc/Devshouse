@@ -1,16 +1,12 @@
 
-import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import '@mantine/core/styles.css';
 import type { Metadata } from "next";
 
 import { Inter, Space_Grotesk } from "next/font/google";
 
-import './globals.css'
 import { Toaster } from "@/components/ui/toaster";
-
-
-
-
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] })
 const space_Grotesk = Space_Grotesk({

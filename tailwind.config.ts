@@ -79,8 +79,6 @@ const config: Config = {
         space:["Space Grotesk"]
       },
     },
-    fontFamily: {
-      museo: ['MuseoModerno', "sans-serif"]		},
   },
   plugins: [require("tailwindcss-animate")],
 };
