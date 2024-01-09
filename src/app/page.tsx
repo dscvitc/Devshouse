@@ -9,16 +9,21 @@ import Timeline from "@/components/Timeline";
 import Image from 'next/image';
 
 
+import "./globals.css"
+ 
+
 export default function Home() {
   return (
     <>
       <HeroBullets />
        <Tracks />
-      <Prizes />
+      <Prizes /> 
       <Timeline />
       <Ourteam />
       <FAQ />
       <Contact /> 
+    
+    <Ourteam/>
   
     </>
   )

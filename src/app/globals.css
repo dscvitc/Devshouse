@@ -96,7 +96,7 @@ body {
 
 
 .contain {
-  display: flex;
+  display: flex; 
   justify-content: center; 
   align-items: center;
   flex-wrap: wrap;
@@ -211,5 +211,6 @@ body {
   box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   transform: translate(2px, 2px);
 }
+
 
 

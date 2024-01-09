@@ -1,3 +1,5 @@
+import Logesh from "public/Leads/Dr. Logesh R.jpg";
+import GDSCLead from "/public/Leads/aditi.jpeg";
 import Logesh from "/public/Leads/Dr. Logesh R.jpg";
 import GDSCLead from "/public/Leads/aditi.jpeg";
 import AppDevelopment_Lead from "/public/Leads/AppDevelopment.jpg";
@@ -14,10 +16,10 @@ import SocialMedia_Lead1 from "/public/Leads/SocialMedia1.jpg";
 import UI_UX_Lead from "/public/Leads/UI_UX.png";
 import WebDevelopment_Lead1 from "/public/Leads/WebDevelopment1.jpg";
 import WebDevelopment_Lead2 from "/public/Leads/WebDevelopment2.png";
-import Coreteam1 from "/public/Leads/amritansh.jpeg";
-import Coreteam2 from "/public/Leads/Shaan.jpg";
-import Coreteam3 from "/public/Leads/surith.jpeg";
-import Coreteam4 from "/public/Leads/shrouya.jpeg";
+import Coreteam1 from "public/Leads/amritansh.jpeg";
+import Coreteam2 from "public/Leads/Shaan.jpg";
+import Coreteam3 from "public/Leads/surith.jpeg";
+import Coreteam4 from "public/Leads/shrouya.jpeg";
 
 const boardMembers = [
   {
