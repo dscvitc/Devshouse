@@ -88,7 +88,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-image: url("/bg.svg");
-  background-color: rgba(0, 0, 0,y 1.2);
+  background-color: rgba(0, 0, 0, y 1.2);
   background-blend-mode: lighten;
   background-position: center;
   background-size: cover;
@@ -96,8 +96,8 @@ body {
 
 
 .contain {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -127,15 +127,18 @@ body {
 }
 
 @layer utilities {
-    /* Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
 
-    .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -148,12 +151,9 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .bg-gradient-pattern {
@@ -162,7 +162,8 @@ body {
 }
 
 .dashed-line {
-  height: 3px; /* Adjust the height as needed */
+  height: 3px;
+  /* Adjust the height as needed */
   background: repeating-linear-gradient(90deg, white, white 20px, transparent 20px, transparent 50px);
 }
 
@@ -173,12 +174,12 @@ body {
   background-image: none;
   border: 1px solid #fff;
   border-radius: 4px;
-  box-shadow: #000 4px 4px 0 0,#fff 4px 4px 0 1px;
+  box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
   box-sizing: border-box;
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -211,6 +212,3 @@ body {
   box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   transform: translate(2px, 2px);
 }
-
-
-
