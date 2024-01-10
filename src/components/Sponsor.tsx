@@ -13,7 +13,7 @@ import SponsorCard from './SponsorCard'
 
 const Sponsor = () => {
     return (
-        <div className=' flex justify-center items-center flex-col gap-8 '>
+        <div className=' flex justify-center items-center flex-col gap-8 mt-20 '>
             <span className='text-[#fff] font-bold text-[50px] font-spaceGrotesk max-xl:text-[3rem] max-lg:text-[3rem] max-mg:text-[3rem] max-sm:text-[3rem]'>Sponsors</span>
 
             {/* RUBY SECTION */}
@@ -31,7 +31,7 @@ const Sponsor = () => {
                 </div>
 
                 <div className='mt-20 flex gap-60'>
-                    <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                    <div className="flex flex-row justify-center justify-self-center text-center items-center ">
                         <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
                             <div className="flex flex-row justify-center items-center">
                                 <Image
@@ -66,7 +66,7 @@ const Sponsor = () => {
                         <path fillRule="evenodd" clipRule="evenodd" d="M12.3333 5.78467H0V0.784668H12.3333V5.78467ZM61.6667 5.78467H37V0.784668H61.6667V5.78467ZM111 5.78467H86.3333V0.784668H111V5.78467ZM160.333 5.78467H135.667V0.784668H160.333V5.78467ZM209.667 5.78467H185V0.784668H209.667V5.78467ZM259 5.78467H234.333V0.784668H259V5.78467ZM308.333 5.78467H283.667V0.784668H308.333V5.78467ZM357.667 5.78467H333V0.784668H357.667V5.78467ZM407 5.78467H382.333V0.784668H407V5.78467ZM456.333 5.78467H431.667V0.784668H456.333V5.78467ZM505.667 5.78467H481V0.784668H505.667V5.78467ZM555 5.78467H530.333V0.784668H555V5.78467ZM592 5.78467H579.667V0.784668H592V5.78467Z" fill="white" />
                     </svg>
                 </div>
-                <div className='flex justify-center items-center gap-60 mt-20 w-full m-20 '>
+                <div className='flex justify-center items-center gap-60 mt-20 w-full m-20 max-lg:flex-col max-lg:gap-20'>
                     <div className="flex flex-row justify-center justify-self-center text-center items-center ">
                         <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
                             <div className="flex flex-row justify-center items-center">
@@ -119,7 +119,7 @@ const Sponsor = () => {
                 </div>
                 {/* COMPANY SECTION */}
                 <div className='flex flex-col gap-12 mt-20 justify-center items-center'>
-                    <div className='flex gap-60'>
+                    <div className='flex gap-60 max-lg:flex-col max-lg:gap-20'>
                         <div className="flex flex-row justify-center justify-self-center text-center items-center">
                             <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
                                 <div className="flex flex-row justify-center items-center">
@@ -182,66 +182,35 @@ const Sponsor = () => {
                     </div>
                     {/* company section */}
                     <div className='flex flex-col gap-12 mt-20 justify-center items-center'>
-                    <div className='flex gap-60'>
-                        <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
-                                <div className="flex flex-row justify-center items-center">
-                                    <Image
-                                        src={phCubeTopaz}
-                                        alt={``}
-                                        width={47}
-                                        height={47}
-                                    />
-                                    <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company D</div>
+                        <div className='flex gap-60 max-lg:flex-col max-lg:gap-20'>
+                            <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
+                                    <div className="flex flex-row justify-center items-center">
+                                        <Image
+                                            src={phCubeTopaz}
+                                            alt={``}
+                                            width={47}
+                                            height={47}
+                                        />
+                                        <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company D</div>
+                                    </div>
                                 </div>
+                                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                             </div>
-                            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-                        </div>
-                        <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
-                                <div className="flex flex-row justify-center items-center">
-                                    <Image
-                                        src={phCubeTopaz}
-                                        alt={``}
-                                        width={47}
-                                        height={47}
-                                    />
-                                    <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company E</div>
+                            <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
+                                    <div className="flex flex-row justify-center items-center">
+                                        <Image
+                                            src={phCubeTopaz}
+                                            alt={``}
+                                            width={47}
+                                            height={47}
+                                        />
+                                        <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company E</div>
+                                    </div>
                                 </div>
+                                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                             </div>
-                            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-                        </div>
-                    </div>
-                    <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                        <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
-                            <div className="flex flex-row justify-center items-center">
-                                <Image
-                                    src={phCubeTopaz}
-                                    alt={``}
-                                    width={47}
-                                    height={47}
-                                />
-                                <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company F</div>
-                            </div>
-                        </div>
-                        <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-                    </div>
-
-                </div>
-                    {/* <div className='flex mx-20 gap-20 mt-20 max-xl:gap-16 max-xl:mt-16 max-lg:gap-12 max-lg:mt-12 max-mg:gap-10 max-mg:mt-10 max-sm:gap-8 max-sm:mt-8'>
-                        <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
-                                <div className="flex flex-row justify-center items-center">
-                                    <Image
-                                        src={phCubeTopaz}
-                                        alt={``}
-                                        width={47}
-                                        height={47}
-                                    />
-                                    <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company G</div>
-                                </div>
-                            </div>
-                            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                         </div>
                         <div className="flex flex-row justify-center justify-self-center text-center items-center">
                             <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
@@ -252,27 +221,13 @@ const Sponsor = () => {
                                         width={47}
                                         height={47}
                                     />
-                                    <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company H</div>
-                                </div>
-                            </div>
-                            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-                        </div>
-                        <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]" >
-                                <div className="flex flex-row justify-center items-center">
-                                    <Image
-                                        src={phCubeTopaz}
-                                        alt={``}
-                                        width={47}
-                                        height={47}
-                                    />
-                                    <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company I</div>
+                                    <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: "#FCCF4B" }}>Company F</div>
                                 </div>
                             </div>
                             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                         </div>
 
-                    </div> */}
+                    </div>
 
                 </div>
                 {/* COM PARTNERS SECTION */}
@@ -292,7 +247,7 @@ const Sponsor = () => {
                         </svg>
                     </div>
                     {/* company section */}
-                    <div className='flex gap-60 mt-20'>
+                    <div className='flex gap-60 my-20 max-lg:flex-col max-lg:gap-20'>
                         <SponsorCard
                             cardWidth={'261.473px'}
                             cardHeight={'124.878px'}
