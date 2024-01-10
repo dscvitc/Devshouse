@@ -22,9 +22,6 @@ export default function Home() {
       <Ourteam />
       <FAQ />
       <Contact /> 
-    
-    <Ourteam/>
-  
     </>
   )
 }
