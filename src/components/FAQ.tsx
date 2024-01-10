@@ -26,7 +26,7 @@ const FAQ = () => {
     <Accordion type='single' collapsible key={props.key}>
       <AccordionItem className="rounded-xl border-bottom bg-[#18191b]" value={props.question}>
         <AccordionTrigger className={`text-white text-left hover:bg-inherit`}>
-          <div className={`flex gap-2 ${Space.className} md:text-2xl text-[0.8rem] items-center`}>
+          <div className={`flex  ${Space.className} md:text-2xl text-[0.8rem] items-center`}>
           <Image
             src={imageClasses[props.color as keyof typeof imageClasses]}
             alt="bubbles"
@@ -36,7 +36,7 @@ const FAQ = () => {
             </div>
         </AccordionTrigger>
         <AccordionContent className={`${colorClasses[props.color as keyof typeof colorClasses]} rounded-xl p-5`}>
-          <p className={`${Space.className} pl-2 md:text-lg text-sm text-black`}>{props.answer}</p>
+          <p className={`${Space.className} pl-2 md:text-lg text-[0.8rem] text-black`}>{props.answer}</p>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
@@ -44,7 +44,7 @@ const FAQ = () => {
 
   return (
     <div id="faqs" className="flex justify-center items-center bg-bg-black pt-10">
-      <div className="bg-black w-auto h-auto">
+      <div className="bg-black md:w-[80%] h-auto">
       <h1 className={`text-5xl ${Space.className} text-white text-center mb-14`}>FAQs</h1>
           <Accordion type="single" className="space-y-4">
             {items}
