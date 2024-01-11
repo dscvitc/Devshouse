@@ -55,9 +55,9 @@ const FAQ = () => {
           </Accordion>
         </div>
       </div>
-      <div className={`bg-[url('../../public/bg-Sponsor-Us.svg')] p-14 pl-32 space-y-8 text-white text-left ${Space.className}`} id='sponsor-us'>
+      <div className={`bg-[url('../../public/bg-sponsor-us.svg')] p-14 pl-32 space-y-8 text-white text-left ${Space.className}`} id='sponsor-us'>
         <div className="flex">
-        <h1 className="text-5xl" >Let's Host Together</h1>
+        <h1 className="text-5xl">Let&apos;s Host Together</h1>
         <Image
         src={SponsorDecor}
         alt="Sponsor Heading Decoration"
