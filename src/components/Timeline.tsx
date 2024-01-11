@@ -21,7 +21,7 @@ const Timeline = () => {
     const calculateMovementAmount = () => {
         if (imageRef.current) {
           const rect = imageRef.current.getBoundingClientRect();
-          return rect.width/3;
+          return rect.width/2.9;
         }
         return 0;
     };
@@ -82,13 +82,13 @@ const Timeline = () => {
                 <div className="bg-black border-[#fff] border-2 -mt-[2rem] ml-3 rounded-xl h-[2.5rem] w-full"></div>
             </div>
         </div>
-        <button onClick={handleLeftClick} className="absolute left-5 mt-[28%] sm:mt-[20%]">
-            <Image src="/assets/images/arrow2.svg" alt="day1" className="w-[3.7rem] sm:w-[7.2rem]" width={500} height={500}/>
+        <button onClick={handleLeftClick} className="absolute left-5 mt-[38%] sm:mt-[20%]">
+            <Image src="/assets/images/arrow2.svg" alt="day1" className="w-[2rem] sm:w-[7.2rem]" width={500} height={500}/>
         </button>
-        <button onClick={handleRightClick} className="absolute right-5 mt-[28%] sm:mt-[19%]">
-            <Image src="/assets/images/arrow1.svg" alt="day2" className="w-[3.5rem] sm:w-[6.8rem]" width={500} height={500}/>
+        <button onClick={handleRightClick} className="absolute right-5 mt-[37%] sm:mt-[19%]">
+            <Image src="/assets/images/arrow1.svg" alt="day2" className="w-[2rem] sm:w-[6.8rem]" width={500} height={500}/>
         </button>
-        <div className="relative overflow-hidden mx-20 sm:mx-36">
+        <div className="relative overflow-hidden  mx-14 sm:mx-36">
           <div
             ref={containerRef}
             className="flex overflow-hidden  mt-20 w-[300vw]"
@@ -97,7 +97,7 @@ const Timeline = () => {
               ref={imageRef}
               src="/assets/images/timeline.svg"
               alt="timeline"
-              className="w-[160vw] object-cover object-left"
+              className="w-[260vw] sm:w-[160vw] object-cover object-left"
               width={500} height={500}
             />
           </div>
