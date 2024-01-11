@@ -55,16 +55,16 @@ const FAQ = () => {
           </Accordion>
         </div>
       </div>
-      <div className={`bg-[url('../../public/bg-sponsor-us.svg')] p-14 pl-32 space-y-8 text-white text-left ${Space.className}`} id='sponsor-us'>
+      <div className={`bg-[url('../../public/bg-sponsor-us.svg')] md:p-14 p-8 md:pl-32 space-y-8 text-white text-left ${Space.className}`} id='sponsor-us'>
         <div className="flex">
-        <h1 className="text-5xl">Let&apos;s Host Together</h1>
+        <h1 className="md:text-5xl text-2xl">Let&apos;s Host Together</h1>
         <Image
         src={SponsorDecor}
         alt="Sponsor Heading Decoration"
-        className="-translate-y-7"
+        className="-translate-y-7 md:scale-100 scale-75"
         />
         </div>
-        <div className={`flex text-3xl gap-12 ${Space400.className}`}>
+        <div className={`flex md:text-3xl  gap-12 ${Space400.className}`}>
           <div className="pr-6">
           <p>Elevate your brand, be part of the tech revolution!</p>
           <p>Write to <b>collaborate</b> with us at: sponsorship@devshouse.tech</p>
