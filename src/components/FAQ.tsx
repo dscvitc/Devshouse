@@ -39,7 +39,7 @@ const FAQ = () => {
           </div>
         </AccordionTrigger>
         <AccordionContent className={`${colorClasses[props.color as keyof typeof colorClasses]} rounded-xl p-5`}>
-          <p className={`${Space.className} pl-2 md:text-lg text-[0.8rem] text-black`}>{props.answer}</p>
+          <p className={`${Space.className} pl-2 md:md:text-lg text-[0.8rem] text-black text-[0.8rem] text-black`}>{props.answer}</p>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
@@ -53,8 +53,8 @@ const FAQ = () => {
           <Accordion type="single" className="space-y-4">
             {items}
           </Accordion>
+          </div>
         </div>
-      </div>
       <div className={`bg-[url('../../public/bg-sponsor-us.svg')] container p-14  space-y-8 text-white ${Space.className}`} id='sponsor-us'>
         <div className="flex flex-col md:flex-row justify-center">
           <h1 className="text-5xl mb-4 md:mb-0 md:pr-6">Let&apos;s Host Together</h1>
@@ -74,7 +74,6 @@ const FAQ = () => {
           </Button>
         </div>
       </div>
-
     </>
   );
 };
