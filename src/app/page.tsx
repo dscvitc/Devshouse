@@ -23,7 +23,7 @@ export default function Home() {
       <Ourteam />
       <Sponsor />
       <FAQ />
-      <Contact />
+      <Contact /> 
     </>
   );
 }
