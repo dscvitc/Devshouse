@@ -55,8 +55,8 @@ const FAQ = () => {
           </Accordion>
         </div>
       </div>
-      <div className={`bg-[url('../../public/bg-sponsor-us.svg')] md:p-14 p-8 md:pl-32 space-y-8 text-white text-left ${Space.className}`} id='sponsor-us'>
-        <div className="flex">
+      <div className={` flex flex-col items-center justify-center bg-[url('../../public/bg-sponsor-us.svg')] md:p-14 p-8 md:pl-32 space-y-8 text-white text-left ${Space.className}`} id='sponsor-us'>
+        <div className="flex mr-auto">
         <h1 className="md:text-5xl text-2xl">Let&apos;s Host Together</h1>
         <Image
         src={SponsorDecor}
