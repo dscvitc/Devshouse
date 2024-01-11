@@ -64,7 +64,7 @@ const FAQ = () => {
         className="-translate-y-7 md:scale-100 scale-75"
         />
         </div>
-        <div className={`flex md:text-3xl  gap-12 ${Space400.className}`}>
+        <div className={`flex flex-col md:flex-row md:text-3xl gap-12 ${Space400.className}`}>
           <div className="pr-6">
           <p>Elevate your brand, be part of the tech revolution!</p>
           <p>Write to <b>collaborate</b> with us at: sponsorship@devshouse.tech</p>
