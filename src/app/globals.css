@@ -193,7 +193,6 @@ body {
   vertical-align: middle;
   white-space: nowrap;
 }
-
 .button-50:focus {
   text-decoration: none;
 }
@@ -210,6 +209,37 @@ body {
 .button-50:not([disabled]):active {
   box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   transform: translate(2px, 2px);
+}
+.button-Sponsor {
+  appearance: button;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 8px;
+  box-shadow: #000 6px 6px 0 0,#fff 6px 6px 0 1px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 20px;
+  overflow: visible;
+  text-align: left;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: left;
+}
+
+.button-Sponsor:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-Sponsor:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(3px, 3px);
 }
 
 
