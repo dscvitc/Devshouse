@@ -10,6 +10,7 @@ import Image from "next/image";
 
 import "./globals.css";
 import MarqueeLogo from "@/components/MarqueeLogo";
+import Speakers from "@/components/Speakers";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Tracks />
       <Prizes />
       <Timeline />
+      <Speakers/>
       <Ourteam />
       <FAQ />
       <Contact />
