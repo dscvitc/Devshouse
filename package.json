@@ -26,6 +26,7 @@
     "lucide-react": "^0.306.0",
     "next": "14.0.4",
     "postcss-preset-mantine": "^1.12.3",
+    "radium": "^0.26.2",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.2",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/radium": "^0.24.8",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",

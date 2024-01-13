@@ -1,3 +1,4 @@
+"use client"
 import { HeroBullets } from "@/components/Hero/HeroBullets";
 import Contact from "@/components/Contact";
 import Ourteam from "@/components/Ourteam";
@@ -8,7 +9,7 @@ import "./globals.css";
 import Timeline from "@/components/Timeline";
 import AboutPage from '@/components/About';
 import Image from "next/image";
-
+import Radium from 'radium'
 import MarqueeLogo from "@/components/MarqueeLogo";
 import Sponsor from "@/components/Sponsor";
 import Speakers from "@/components/Speakers";
@@ -17,17 +18,20 @@ export default function Home() {
   return (
     <>
       <HeroBullets />
-      <AboutPage />
+      <Radium.StyleRoot>
+        <AboutPage />
+      </Radium.StyleRoot>
       <MarqueeLogo />
+
       <Tracks />
       <Prizes />
       <Timeline />
-      <Speakers/>
+      <Speakers />
       <Ourteam />
       <Sponsor />
       <FAQ />
-      <Contact /> 
-  
+      <Contact />
+
     </>
   );
 }
