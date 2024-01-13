@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 import Prizes from "@/components/prizes/Prizes";
 import "./globals.css";
 import Timeline from "@/components/Timeline";
-import AboutPage from '@/components/About';
+import AboutPage from "@/components/About";
 import Image from "next/image";
 
 import MarqueeLogo from "@/components/MarqueeLogo";
@@ -17,17 +17,16 @@ export default function Home() {
   return (
     <>
       <HeroBullets />
-      <AboutPage />
       <MarqueeLogo />
+      <AboutPage />
       <Tracks />
       <Prizes />
       <Timeline />
-      <Speakers/>
+      <Speakers />
       <Ourteam />
       <Sponsor />
       <FAQ />
-      <Contact /> 
-  
+      <Contact />
     </>
   );
 }
