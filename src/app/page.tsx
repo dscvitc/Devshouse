@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <>
       <HeroBullets />
+      <MarqueeLogo />
       <Radium.StyleRoot>
         <AboutPage />
       </Radium.StyleRoot>
-      <MarqueeLogo />
 
       <Tracks />
       <Prizes />
