@@ -12,10 +12,13 @@ import Image from "next/image";
 import MarqueeLogo from "@/components/MarqueeLogo";
 import Sponsor from "@/components/Sponsor";
 import Speakers from "@/components/Speakers";
+import Navbar from "@/components/NavBar";
+import background from "../../public/images/bgLayer.png";
 
 export default function Home() {
   return (
-    <>
+    <div className={`flex flex-col bg-[${background}]`}>
+      <Navbar />
       <HeroBullets />
       <MarqueeLogo />
       <AboutPage />
@@ -27,6 +30,6 @@ export default function Home() {
       <Sponsor />
       <FAQ />
       <Contact />
-    </>
+    </div>
   );
 }

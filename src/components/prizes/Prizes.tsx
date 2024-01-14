@@ -68,14 +68,14 @@ export default function Prizes() {
   ];
   return (
     <section
-      className="w-screen flex flex-col justify-center items-center overflow-hidden mb-8"
+      className="w-full flex flex-col justify-center items-center overflow-hidden mb-8"
       style={{ backgroundImage: `url('/images/bgLayer.png')` }}
     >
       <h1 className="text-white text-[35px] font-bold font-['Space Grotesk'] mt-6 sm:text-[40px] md:txt[45px] lg:[54px]">
         Prizes
       </h1>
       <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-row justify-center px-12">
         {PrizeInfo.map((info) => (
           <MainPrize
             key={info.price}
@@ -88,7 +88,7 @@ export default function Prizes() {
         ))}
       </div>
       <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
-      <div className="grid grid-cols-1 grid-rows-6 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
+      <div className="w-screen px-12 md:w-3/4 grid grid-cols-1 grid-rows-6 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
         {tracks.map((track) => (
           <SpecialPrize
             key={track.trackName}
