@@ -1,4 +1,4 @@
-import Logesh from "/public/Leads/Dr. Logesh R.jpg";
+import Logesh from "/public/Leads/DrLogeshR.jpg";
 import GDSCLead from "/public/Leads/aditi.jpeg";
 import AppDevelopment_Lead from "/public/Leads/AppDevelopment.jpg";
 import Blockchain_Lead2 from "/public/Leads/Blockchain2.png";
