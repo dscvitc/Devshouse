@@ -9,6 +9,7 @@ import { Space_Grotesk } from "next/font/google";
 const Space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 import boardMembers from "@/data/BoardMembres";
+import linkedinlogo from "/Pasted Graphic 3.png";
 
 interface Props {
   name: String;
@@ -35,7 +36,7 @@ const Card = ({ name, role, img, linkedin }: Props) => {
 
           <Link href={linkedin} target="_blank">
             <Image
-              src="/Pasted Graphic 3.png"
+              src={linkedinlogo}
               alt="linkedin"
               width={60}
               height={60}
