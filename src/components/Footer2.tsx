@@ -7,9 +7,9 @@ import { IconBrandGithubFilled } from "@tabler/icons-react";
 
 export default function Footer2() {
   return (
-    <div className="w-full flex flex-row p-12 font-spaceGrotesk gap-12">
-      <Image src={devshouseTicket} alt="Devshouse Ticket" className="flex flex-1"></Image>
-      <div className="flex flex-col flex-1 gap-4 justify-start">
+    <div className="w-full p-12 font-spaceGrotesk grid grid-cols-1 md:grid-cols-3 gap-12">
+      <Image src={devshouseTicket} alt="Devshouse Ticket" className="self-center"></Image>
+      <div className="flex flex-col gap-4 justify-start">
         <div>
           <p className="text-2xl font-bold">QuickLinks</p>
         </div>
@@ -37,7 +37,7 @@ export default function Footer2() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col flex-1 gap-4 justify-start">
+      <div className="flex flex-col gap-4 justify-start">
         <div>
           <p className="text-2xl font-bold">Join us</p>
         </div>

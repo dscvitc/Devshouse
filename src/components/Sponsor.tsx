@@ -64,7 +64,7 @@ const Sponsor = () => {
           </svg>
         </div>
 
-        <div className="mt-20 flex gap-60">
+        <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
               <div className="flex flex-row justify-center items-center">
@@ -120,7 +120,7 @@ const Sponsor = () => {
             />
           </svg>
         </div>
-        <div className="mt-20 flex gap-60">
+        <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
               <div className="flex flex-row justify-center items-center p-18">
