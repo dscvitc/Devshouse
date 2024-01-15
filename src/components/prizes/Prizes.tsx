@@ -5,24 +5,24 @@ export default function Prizes() {
   const PrizeInfo = [
     //Gold, silver and bronze images
     {
-      src: "/images/prizes/silver.png",
-      width: 329,
-      height: 329,
-      price: "To be announced...",
-      alt: "2nd",
-    },
-    {
       src: "/images/prizes/gold.png",
       width: 485,
       height: 485,
-      price: "To be announced...",
+      price: "To be announced",
       alt: "1st",
+    },
+    {
+      src: "/images/prizes/silver.png",
+      width: 329,
+      height: 329,
+      price: "To be announced",
+      alt: "2nd",
     },
     {
       src: "/images/prizes/bronze.png",
       width: 312,
       height: 312,
-      price: "To be announced...",
+      price: "To be announced",
       alt: "3rd",
     },
   ];
@@ -68,34 +68,51 @@ export default function Prizes() {
   ];
   return (
     <section className="w-full flex flex-col justify-center items-center overflow-hidden mb-8">
-      <h1 className="text-white text-[35px] font-bold font-['Space Grotesk'] mt-6 sm:text-[40px] md:txt[45px] lg:[54px]">
-        Prizes
-      </h1>
-      <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
-      <div className="flex flex-row justify-center px-12">
-        {PrizeInfo.map((info) => (
-          <MainPrize
-            key={info.price}
-            src={info.src}
-            width={info.width}
-            height={info.height}
-            price={info.price}
-            alt={info.alt}
-          />
-        ))}
+    <h1 className="text-white text-[35px] font-bold font-['Space Grotesk'] mt-6 sm:text-[40px] md:txt[45px] lg:[54px]">
+      Prizes
+    </h1>
+    <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
+    <div className="flex flex-row justify-center items-end md:px-12 md:gap-4">
+      <div className="w-[35%]">
+        <MainPrize
+          src={PrizeInfo[1].src} // Gold prize
+          width={PrizeInfo[1].width}
+          height={PrizeInfo[1].height}
+          price={PrizeInfo[1].price}
+          alt={PrizeInfo[1].alt}
+        />
       </div>
-      <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
-      <div className="w-screen px-12 grid grid-cols-1 grid-rows-6 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
-        {tracks.map((track) => (
-          <SpecialPrize
-            key={track.trackName}
-            trackName={track.trackName}
-            trackLogo={track.trackLogo}
-            trackText={track.trackText}
-            color={track.color}
-          />
-        ))}
+      <div className="w-[40%]">
+        <MainPrize
+          src={PrizeInfo[0].src} // Silver prize
+          width={PrizeInfo[0].width}
+          height={PrizeInfo[0].height}
+          price={PrizeInfo[0].price}
+          alt={PrizeInfo[0].alt}
+        />
       </div>
-    </section>
+      <div className="w-[30%]">
+        <MainPrize
+          src={PrizeInfo[2].src} // Bronze prize
+          width={PrizeInfo[2].width}
+          height={PrizeInfo[2].height}
+          price={PrizeInfo[2].price}
+          alt={PrizeInfo[2].alt}
+        />
+      </div>
+    </div>
+    <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
+    <div className="w-full px-12 grid grid-cols-1 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
+      {tracks.map((track) => (
+        <SpecialPrize
+          key={track.trackName}
+          trackName={track.trackName}
+          trackLogo={track.trackLogo}
+          trackText={track.trackText}
+          color={track.color}
+        />
+      ))}
+    </div>
+  </section>
   );
 }
