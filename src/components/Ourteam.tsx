@@ -23,7 +23,7 @@ const Card = ({ name, role, img, linkedin }: Props) => {
     <div className="w-[220px] h-[500px] m-10 md:m-2 ">
       <div className="  flex flex-col items-center justify-center gap-12  ">
         <div
-          className={`card flex   items-center justify-center relative
+          className={`card flex items-center justify-center relative
              `}
         >
           <Image

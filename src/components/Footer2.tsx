@@ -14,13 +14,27 @@ export default function Footer2() {
           <p className="text-2xl font-bold">QuickLinks</p>
         </div>
         <div className="flex flex-col">
-          <a className="text-lg">About</a>
-          <a className="text-lg">Theme</a>
-          <a className="text-lg">Timeline</a>
-          <a className="text-lg">Team</a>
-          <a className="text-lg">Sponsors</a>
-          <a className="text-lg">FAQs</a>
-          <a className="text-lg">Contact Us</a>
+          <a className="text-lg" href="#about">
+            About
+          </a>
+          <a className="text-lg" href="#tracks">
+            Theme
+          </a>
+          <a className="text-lg" href="#timeline">
+            Timeline
+          </a>
+          <a className="text-lg" href="#team">
+            Team
+          </a>
+          <a className="text-lg" href="#sponsors">
+            Sponsors
+          </a>
+          <a className="text-lg" href="#faqs">
+            FAQs
+          </a>
+          <a className="text-lg" href="#contact">
+            Contact Us
+          </a>
         </div>
       </div>
       <div className="flex flex-col flex-1 gap-4 justify-start">
