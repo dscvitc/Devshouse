@@ -15,7 +15,7 @@ import Speakers from "@/components/Speakers";
 import Navbar from "@/components/NavBar";
 import background from "../../public/images/bgLayer.png";
 import About2 from "@/components/About2";
-
+import Footer2 from "@/components/Footer2";
 export default function Home() {
   return (
     <div
@@ -29,13 +29,14 @@ export default function Home() {
       <About2 />
       <Tracks />
       <Prizes />
-      <Timeline />
+      {/* <Timeline /> */}
       {/*Hide until confirmed*/}
       {/* <Speakers /> */}
       <Ourteam />
       <Sponsor />
       <FAQ />
       <Contact />
+      <Footer2 />
     </div>
   );
 }

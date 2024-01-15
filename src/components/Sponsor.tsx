@@ -8,6 +8,15 @@ import comPart1 from "../../public/assets/images/comPart1.png";
 import comPart2 from "../../public/assets/images/comPart2.png";
 import build from "next/dist/build";
 
+import polygonLogo from "../../public/sponsors/polygon.png";
+import replitLogo from "../../public/sponsors/replit.png";
+import skynyxLogo from "../../public/sponsors/Skynyx logo.jpg";
+import ZSecuritylogo from "../../public/sponsors/ZSecurity.png";
+import wolframLogo from "../../public/sponsors/wolfram.png";
+import esalesLogo from "../../public/sponsors/esales.png";
+import IBLogo from "../../public/sponsors/IBLogo.png";
+import devfolioLogo from "../../public/sponsors/devfolio.png";
+
 import "../app/globals.css";
 import SponsorCard from "./SponsorCard";
 
@@ -36,7 +45,7 @@ const Sponsor = () => {
               fill="white"
             />
           </svg>
-          <span className="text-[#FF5A4C] text-[25px] leading-normal font-bold px-1 font-spaceGrotesk max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+          <span className="text-[#FF5A4C] mx-4 text-[25px] leading-normal font-bold px-1 font-spaceGrotesk max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
             Ruby
           </span>
           <svg
@@ -59,13 +68,15 @@ const Sponsor = () => {
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
               <div className="flex flex-row justify-center items-center">
-                <Image src={buildBox} alt={``} width={47} height={47} />
-                <div
-                  className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`}
-                  style={{ color: "#FF5A4C" }}
-                >
-                  Company A
-                </div>
+                <Image src={devfolioLogo} alt={"DEVFOLIO LOGO"} />
+              </div>
+            </div>
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+          </div>
+          <div className="flex flex-row justify-center justify-self-center text-center items-center ">
+            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+              <div className="flex flex-row justify-center items-center">
+                <Image src={polygonLogo} alt={"POLYGON LOGO"} />
               </div>
             </div>
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
@@ -91,7 +102,7 @@ const Sponsor = () => {
               fill="white"
             />
           </svg>
-          <span className="text-[#5293FF] text-[25px] leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+          <span className="text-[#5293FF] mx-4 text-[25px] leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
             Sapphire
           </span>
           <svg
@@ -109,32 +120,19 @@ const Sponsor = () => {
             />
           </svg>
         </div>
-        <div className="flex justify-center items-center gap-60 mt-20 w-full m-20 max-lg:flex-col max-lg:gap-20">
+        <div className="mt-20 flex gap-60">
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-              <div className="flex flex-row justify-center items-center">
-                <Image src={phCube} alt={``} width={47} height={47} />
-
-                <div
-                  className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`}
-                  style={{ color: "#5293FF" }}
-                >
-                  Company B
-                </div>
+              <div className="flex flex-row justify-center items-center p-18">
+                <Image src={replitLogo} alt={"REPLIT LOGO"} width={350} />
               </div>
             </div>
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
-          <div className="flex flex-row justify-center justify-self-center text-center items-center">
+          <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-              <div className="flex flex-row justify-center items-center">
-                <Image src={phCube} alt={``} width={47} height={47} />
-                <div
-                  className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`}
-                  style={{ color: "#5293FF" }}
-                >
-                  Company C
-                </div>
+              <div className="flex flex-row justify-center items-center p-18">
+                <Image src={skynyxLogo} alt={"SKYNYX LOGO"} height={175} />
               </div>
             </div>
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
@@ -144,8 +142,8 @@ const Sponsor = () => {
 
       {/* EMERALD SECTION */}
 
-      <div className="flex flex-col items-center justify-center mt-20 w-full">
-        <div className="flex justify-center items-center w-full">
+      <div className="flex flex-col items-center justify-center w-full">
+        {/* <div className="flex justify-center items-center w-full">
           <svg
             className="flex justify-end "
             height="5"
@@ -160,7 +158,7 @@ const Sponsor = () => {
               fill="white"
             />
           </svg>
-          <span className="text-[#44A777] text-[25px] leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+          <span className="text-[#44A777] mx-4 text-[25px] leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
             Emerald
           </span>
           <svg
@@ -177,9 +175,8 @@ const Sponsor = () => {
               fill="white"
             />
           </svg>
-        </div>
-        {/* COMPANY SECTION */}
-        <div className="flex flex-col gap-12 mt-20 justify-center items-center">
+        </div> */}
+        {/* <div className="flex flex-col gap-12 mt-20 justify-center items-center">
           <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
             <div className="flex flex-row justify-center justify-self-center text-center items-center">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
@@ -224,7 +221,7 @@ const Sponsor = () => {
             </div>
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
-        </div>
+        </div> */}
 
         {/* TOPAZ SECTION */}
         <div className="flex flex-col items-center justify-center mt-20 w-full">
@@ -243,7 +240,7 @@ const Sponsor = () => {
                 fill="white"
               />
             </svg>
-            <span className="text-[#FCCF4B] text-[25px] leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+            <span className="text-[#FCCF4B] mx-4 text-[25px] leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
               Topaz
             </span>
             <svg
@@ -267,13 +264,7 @@ const Sponsor = () => {
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                   <div className="flex flex-row justify-center items-center">
-                    <Image src={phCubeTopaz} alt={``} width={47} height={47} />
-                    <div
-                      className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`}
-                      style={{ color: "#FCCF4B" }}
-                    >
-                      Company D
-                    </div>
+                    <Image src={ZSecuritylogo} alt="ZSECURITY LOGO" width={300} />
                   </div>
                 </div>
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
@@ -281,31 +272,29 @@ const Sponsor = () => {
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                   <div className="flex flex-row justify-center items-center">
-                    <Image src={phCubeTopaz} alt={``} width={47} height={47} />
-                    <div
-                      className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`}
-                      style={{ color: "#FCCF4B" }}
-                    >
-                      Company E
-                    </div>
+                    <Image src={wolframLogo} alt={``} width={350} />
                   </div>
                 </div>
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
-            <div className="flex flex-row justify-center justify-self-center text-center items-center">
-              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                <div className="flex flex-row justify-center items-center">
-                  <Image src={phCubeTopaz} alt={``} width={47} height={47} />
-                  <div
-                    className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`}
-                    style={{ color: "#FCCF4B" }}
-                  >
-                    Company F
+            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                  <div className="flex flex-row justify-center items-center">
+                    <Image src={esalesLogo} alt={"ESALES LOGO"} width={150} />
                   </div>
                 </div>
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
-              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                  <div className="flex flex-row justify-center items-center">
+                    <Image src={IBLogo} alt={"IB LOGO"} width={350} />
+                  </div>
+                </div>
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
             </div>
           </div>
         </div>
@@ -327,7 +316,7 @@ const Sponsor = () => {
                 fill="white"
               />
             </svg>
-            <span className="text-[#EB81C1] text-[25px] leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+            <span className="text-[#EB81C1] text-[25px] mx-4 leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
               Community Partners
             </span>
             <svg
@@ -347,16 +336,18 @@ const Sponsor = () => {
           </div>
           {/* company section */}
           <div className="flex gap-60 my-20 max-lg:flex-col max-lg:gap-20">
-            <SponsorCard
-              cardWidth={"261.473px"}
-              cardHeight={"124.878px"}
-              img={comPart1}
-              imgWidth={250}
-              imgAlt={"company1"}
-              color={"#FCCF4B"}
-              backgroundMt={"-7.5rem"}
-              backgroundMl={"0.2rem"}
-            />
+            <a href="">
+              <SponsorCard
+                cardWidth={"261.473px"}
+                cardHeight={"124.878px"}
+                img={comPart1}
+                imgWidth={250}
+                imgAlt={"company1"}
+                color={"#FCCF4B"}
+                backgroundMt={"-7.5rem"}
+                backgroundMl={"0.2rem"}
+              />
+            </a>
             <SponsorCard
               cardWidth={"261.473px"}
               cardHeight={"124.878px"}

@@ -21,7 +21,7 @@ const MarqueeLogo = () => {
   }, [windowDimensions]);
 
   return (
-    <div className="h-[50px] sm:h-[200px] sm:mt-[100px]">
+    <div className="h-[50px] sm:h-[200px] sm:mt-[50px]">
       <div className="transform rotate-[5deg] absolute w-screen">
         <Marquee direction="right" className="bg-white p-2 border-black border-y-[8px]">
           <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>

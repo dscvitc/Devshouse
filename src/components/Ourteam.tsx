@@ -53,7 +53,7 @@ const Card = ({ name, role, img, linkedin }: Props) => {
 
 const Ourteam = () => {
   return (
-    <div id="team" className="w-full h-auto bg-printedGraphic pt-12">
+    <div id="team" className="w-full h-auto bg-printedGraphic">
       <h1 className="text-white text-center text-5xl font-bold p-10">Our Team</h1>
       <div className="">
         <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 p-10 justify-items-center ">

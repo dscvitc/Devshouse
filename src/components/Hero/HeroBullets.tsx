@@ -3,6 +3,7 @@
 import { Container, Title, Button, Group, Text, List, ThemeIcon, rem } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
 import image from "image.svg";
+import { useEffect } from "react";
 import classes from "./Hero.module.css";
 import { MuseoModerno } from "next/font/google";
 import { Space_Grotesk } from "next/font/google";
@@ -12,6 +13,17 @@ const museo = MuseoModerno({ weight: "700", subsets: ["latin"] });
 const space = Space_Grotesk({ weight: "300", subsets: ["latin"] });
 
 export function HeroBullets() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <Container size={"xl"}>
       <div className="overflow-hidden">
@@ -52,17 +64,12 @@ export function HeroBullets() {
                 Join Us
               </Button>
               <Button radius="xl" size="md" className={`button-50`}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="26" viewBox="0 0 37 40" fill="none">
-                  <path
-                    d="M36.1799 21.8394C36.1799 31.1994 29.1599 38.8194 20.2799 39.5994C20.2799 39.5994 8.81986 39.8994 5.03986 39.5394C3.59986 39.3594 2.39986 38.4594 1.85986 37.1394C2.39986 37.3794 2.93986 37.5594 3.53986 37.6194C4.79986 37.7394 6.89986 37.7994 9.83986 37.7994C14.1599 37.7994 18.8999 37.6794 18.8999 37.6794H18.9599C23.6999 37.2594 28.0799 35.0994 31.1999 31.5594C33.8999 28.5594 35.6399 24.7794 36.1199 20.8194C36.1799 21.1194 36.1799 21.4794 36.1799 21.8394Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M34.8 17.9994C34.8 27.3594 27.78 34.9794 18.84 35.6994C18.84 35.6994 7.38 35.9994 3.6 35.6394C1.56 35.4594 0.06 33.5394 0 31.3794L0.06 4.37938C0.12 2.21938 1.68 0.299377 3.72 0.119377C7.5 -0.180623 18.96 0.179377 18.96 0.179377C27.84 0.959377 34.8 8.63937 34.8 17.9994Z"
-                    fill="black"
-                  />
-                </svg>{" "}
-                Apply with Devfolio
+                <div
+                  className="apply-button"
+                  data-hackathon-slug="devshouse-1"
+                  data-button-theme="dark-inverted"
+                  style={{ height: "44px", width: "312px" }}
+                ></div>
               </Button>
             </Group>
           </div>
