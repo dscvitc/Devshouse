@@ -13,6 +13,29 @@ import Link from "next/link";
 const museo = MuseoModerno({ weight: "700", subsets: ["latin"] });
 const space = Space_Grotesk({ weight: "300", subsets: ["latin"] });
 
+function ServerSideRendering() {
+  return (
+    <>
+      <Title className={`${classes.title} ${museo.className}`}>
+        <p className="mb-10">DEVSHOUSE ’24</p>
+        <hr className="border-none dashed-line "></hr>
+      </Title>
+
+      <Text
+        className={`${space.className} text-base md:text-xl lg:text-2xl sm:text-2xl md:text-justify mt-10`}
+        mt="xl"
+      >
+        A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
+        from across India the opportunity to
+        <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
+        <span className="text-[#0F9D58]">innovative solutions.</span> Join us for a thrilling event, where
+        learning meets excitement and
+        <span className="text-[#EA4335]"> amazing prizes</span> await!
+      </Text>
+    </>
+  )
+}
+
 export function HeroBullets() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -30,23 +53,8 @@ export function HeroBullets() {
       <div className="overflow-hidden">
         <div className={`${classes.inner} flex flex-col-reverse md:flex-row  items-center`}>
           <div className={classes.content}>
-            <Title className={`${classes.title} ${museo.className}`}>
-              <p className="mb-10">DEVSHOUSE ’24</p>
-              <hr className="border-none dashed-line "></hr>
-            </Title>
 
-            <Text
-              className={`${space.className} text-base md:text-xl lg:text-2xl sm:text-2xl md:text-justify mt-10`}
-              mt="xl"
-            >
-              A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
-              from across India the opportunity to
-              <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
-              <span className="text-[#0F9D58]">innovative solutions.</span> Join us for a thrilling event, where
-              learning meets excitement and
-              <span className="text-[#EA4335]"> amazing prizes</span> await!
-            </Text>
-
+            <ServerSideRendering />
             <Group mt={30}>
               <Link href={'https://discord.gg/UFfPjTtzh7'} target="_blank">
 

@@ -49,37 +49,37 @@ const Navbar = () => {
         
       >
         <li className="mx-4 mb-6 md:my-0">
-          <a href="#about" className="text-white">
+          <a href="#about" className="text-white hover-underline-animation">
             About
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#tracks" className="text-white">
+          <a href="#tracks" className="text-white hover-underline-animation">
             Tracks
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#timeline" className="text-white">
+          <a href="#timeline" className="text-white hover-underline-animation">
             Timeline
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#team" className="text-white">
+          <a href="#team" className="text-white hover-underline-animation">
             Team
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#sponsor" className="text-white">
+          <a href="#sponsor" className="text-white hover-underline-animation">
             Sponsors
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#faqs" className="text-white">
+          <a href="#faqs" className="text-white hover-underline-animation">
             FAQs
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#contact" className="text-white">
+          <a href="#contact" className="text-white hover-underline-animation">
             Contact
           </a>
         </li>
