@@ -13,7 +13,7 @@ export default function About2() {
           <p className="text-2xl md:text-4xl">Community</p>
         </div>
       </div>
-      <div className="flex flex-row w-full flex-wrap items-center gap-12 px-24 m-12">
+      <div className="flex flex-row w-full flex-wrap items-center gap-12 px-8 md:px-24 m-12">
         <div className="flex flex-col flex-1">
           <p className="text-3xl font-bold">About</p>
           <p className="text-4xl font-bold mb-8">VIT Chennai</p>
@@ -25,7 +25,7 @@ export default function About2() {
         </div>
         <Image src={vitimage} alt={"VIT IMAGE"} className="flex flex-1"></Image>
       </div>
-      <div className="flex flex-row w-full flex-wrap-reverse items-center gap-12 px-24 m-12">
+      <div className="flex flex-row w-full flex-wrap-reverse items-center gap-12 px-8 md:px-24 m-12">
         <Image src={gdscimage} alt={"GDSC IMAGE"} className="flex flex-1"></Image>
         <div className="flex flex-col flex-1">
           <p className="text-3xl font-bold">About</p>

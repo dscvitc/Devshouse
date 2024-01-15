@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full px-5 gap-3 h-20 shadow fixed z-[100] flex items-center justify-between  md:flex md:justify-between md:items-center"
+      className="w-full px-5 gap-3 h-20 shadow fixed z-[100] flex items-center justify-between  md:flex md:justify-between md:items-center backdrop-blur-sm"
       data-aos="fade-up"
       data-aos-anchor-placement="center-center"
     >
@@ -37,9 +37,9 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`md:flex md:items-center -z-50 bg-black  md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  mt-0 transition-all ease-in duration-500 ${
-          !navbar && "opacity-0 top-[-400px]"
-        } ${navbar && "opacity-100 top-20"}`}
+        className={`md:flex md:items-center -z-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  mt-0 transition-all ease-in duration-500 ${
+          !navbar && "opacity-0 top-[-400px] "
+        } ${navbar && "opacity-100 top-20 bg-black"}`}
       >
         <li className="mx-4 mb-6 md:my-0">
           <a href="#about" className="text-white">
