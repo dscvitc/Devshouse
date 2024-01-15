@@ -42,13 +42,13 @@ const Navbar = () => {
         } ${navbar && "opacity-100 top-20"}`}
       >
         <li className="mx-4 mb-6 md:my-0">
-          <a href="#" className="text-white">
+          <a href="#about" className="text-white">
             About
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#themes" className="text-white">
-            Themes
+          <a href="#tracks" className="text-white">
+            Tracks
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
@@ -67,7 +67,7 @@ const Navbar = () => {
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
-          <a href="#faq" className="text-white">
+          <a href="#faqs" className="text-white">
             FAQs
           </a>
         </li>

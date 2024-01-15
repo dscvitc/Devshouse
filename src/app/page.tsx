@@ -14,14 +14,19 @@ import Sponsor from "@/components/Sponsor";
 import Speakers from "@/components/Speakers";
 import Navbar from "@/components/NavBar";
 import background from "../../public/images/bgLayer.png";
+import About2 from "@/components/About2";
 
 export default function Home() {
   return (
-    <div className={`flex flex-col bg-[${background}]`}>
+    <div
+      className={`flex flex-col`}
+      style={{ backgroundImage: `url('/images/bgLayer.png')`, backgroundRepeat: "repeat-y" }}
+    >
       <Navbar />
       <HeroBullets />
       <MarqueeLogo />
-      <AboutPage />
+      {/* <AboutPage /> */}
+      <About2 />
       <Tracks />
       <Prizes />
       <Timeline />

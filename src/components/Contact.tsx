@@ -44,8 +44,7 @@ const Contact = () => {
   const { toast } = useToast();
 
   const handleSubmit = (values: z.infer<typeof formSchema>) => {
-    const formElement: HTMLElement | null =
-      document.getElementById("contact-form");
+    const formElement: HTMLElement | null = document.getElementById("contact-form");
     console.log(formElement);
     if (formElement instanceof HTMLFormElement) {
       const formDatab = new FormData(formElement);
@@ -77,21 +76,18 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex h-screen w-auto snap-center flex-col items-center justify-center text-white">
-      <h1 className={`${space_grotesk.className} font-extrabold text-5xl mb-5`}>
-        Contact Us
-      </h1>
-      <div
-        className={`flex flex-col md:flex-row ${space_grotesk.className} min-h-[500px] max-w-[1000px]`}>
+      className="flex py-24 px-12 w-auto snap-center flex-col items-center justify-center text-white"
+    >
+      <h1 className={`${space_grotesk.className} font-extrabold text-5xl mb-5`}>Contact Us</h1>
+      <div className={`flex flex-col md:flex-row ${space_grotesk.className} min-h-[500px] max-w-[1000px]`}>
         <div className="bg-black rounded-t-3xl md:rounded-tr-none md:rounded-s-3xl text-white flex flex-col gap-5 items-start p-6 md:p-10 w-full md:w-1/2">
           <div>
             <h2 className="text-3xl font-bold">Have A Question?</h2>
             <h2 className="text-3xl font-bold">Get In Touch!</h2>
           </div>
           <p className="text-lg font-light">
-            Thank you for visiting our website! If you have any questions or
-            queries, drop us a message, and we{`'`}ll get back to you promptly.
-            Your time is valuable to us!
+            Thank you for visiting our website! If you have any questions or queries, drop us a message, and we{`'`}ll
+            get back to you promptly. Your time is valuable to us!
           </p>
           <div>
             <ul className="list-none flex flex-col gap-3">
@@ -99,18 +95,12 @@ const Contact = () => {
                 <Phone size={32}></Phone>
                 <div>
                   <p>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="tel:+91 9341405360">
+                    <a target="_blank" rel="noopener noreferrer" href="tel:+91 9341405360">
                       +91 9341405360
                     </a>
                   </p>
                   <p>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="tel:+91 9003065894">
+                    <a target="_blank" rel="noopener noreferrer" href="tel:+91 9003065894">
                       +91 9003065894
                     </a>
                   </p>
@@ -118,10 +108,7 @@ const Contact = () => {
               </li>
               <li className="flex gap-5 items-center justify-start">
                 <Mail size={32}></Mail>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="mailto:devshouse.tech@gmail.com">
+                <a target="_blank" rel="noopener noreferrer" href="mailto:devshouse.tech@gmail.com">
                   devshouse.tech@gmail.com
                 </a>
               </li>
@@ -130,7 +117,8 @@ const Contact = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.google.com/maps/place/Vellore+Institute+of+Technology+Chennai+Campus+(VIT+Chennai)/@12.840641,80.1508534,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5259af8e491f67:0x944b42131b757d2d!8m2!3d12.840641!4d80.1534283!16s%2Fg%2F11gdxsbhgz?entry=tts">
+                  href="https://www.google.com/maps/place/Vellore+Institute+of+Technology+Chennai+Campus+(VIT+Chennai)/@12.840641,80.1508534,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5259af8e491f67:0x944b42131b757d2d!8m2!3d12.840641!4d80.1534283!16s%2Fg%2F11gdxsbhgz?entry=tts"
+                >
                   VIT, Chennai
                 </a>
               </li>
@@ -139,10 +127,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col bg-white rounded-b-3xl md:rounded-bl-none md:rounded-e-3xl p-6 md:p-10 w-full md:w-3/4 md:mt-0">
           <Form {...form}>
-            <form
-              id="contact-form"
-              onSubmit={form.handleSubmit(handleSubmit)}
-              className="flex flex-col gap-5">
+            <form id="contact-form" onSubmit={form.handleSubmit(handleSubmit)} className="flex flex-col gap-5">
               <FormField
                 control={form.control}
                 name="Name"
@@ -150,16 +135,13 @@ const Contact = () => {
                   return (
                     <FormItem>
                       <FormControl>
-                        <Input
-                          className="text-black"
-                          placeholder="Your Name"
-                          type="name"
-                          {...field}></Input>
+                        <Input className="text-black" placeholder="Your Name" type="name" {...field}></Input>
                       </FormControl>
                       <FormMessage></FormMessage>
                     </FormItem>
                   );
-                }}></FormField>
+                }}
+              ></FormField>
               <FormField
                 control={form.control}
                 name="Email"
@@ -167,16 +149,13 @@ const Contact = () => {
                   return (
                     <FormItem>
                       <FormControl>
-                        <Input
-                          className="text-black"
-                          placeholder="Your Email"
-                          type="email"
-                          {...field}></Input>
+                        <Input className="text-black" placeholder="Your Email" type="email" {...field}></Input>
                       </FormControl>
                       <FormMessage></FormMessage>
                     </FormItem>
                   );
-                }}></FormField>
+                }}
+              ></FormField>
               <FormField
                 control={form.control}
                 name="Subject"
@@ -184,16 +163,13 @@ const Contact = () => {
                   return (
                     <FormItem>
                       <FormControl>
-                        <Input
-                          className="text-black"
-                          placeholder="Subject"
-                          type="subject"
-                          {...field}></Input>
+                        <Input className="text-black" placeholder="Subject" type="subject" {...field}></Input>
                       </FormControl>
                       <FormMessage></FormMessage>
                     </FormItem>
                   );
-                }}></FormField>
+                }}
+              ></FormField>
               <FormField
                 control={form.control}
                 name="Message"
@@ -201,15 +177,13 @@ const Contact = () => {
                   return (
                     <FormItem>
                       <FormControl>
-                        <Textarea
-                          className="text-black resize"
-                          placeholder="Message"
-                          {...field}></Textarea>
+                        <Textarea className="text-black resize" placeholder="Message" {...field}></Textarea>
                       </FormControl>
                       <FormMessage></FormMessage>
                     </FormItem>
                   );
-                }}></FormField>
+                }}
+              ></FormField>
               <Button type="submit" variant="default">
                 <span className={`${space_grotesk.className}`}>Send</span>
               </Button>

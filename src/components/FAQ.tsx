@@ -49,10 +49,7 @@ const FAQ = () => {
 
   return (
     <>
-      <div
-        id="faqs"
-        className="flex justify-center bg-[url('../../public/bg-FAQ.svg')] items-center bg-bg-black pb-20 pt-10"
-      >
+      <div id="faqs" className="flex justify-center items-center bg-bg-black pb-20 pt-10">
         <div className="w-[90%] md:w-[80%] h-auto">
           <h1 className={`text-5xl ${Space.className} text-white text-center mb-14`}>FAQs</h1>
           <Accordion type="single" className="space-y-4">
@@ -60,10 +57,7 @@ const FAQ = () => {
           </Accordion>
         </div>
       </div>
-      <div
-        className={`bg-[url('../../public/bg-sponsor-us.svg')] flex flex-col gap-8 w-full p-14 text-white ${Space.className}`}
-        id="sponsor-us"
-      >
+      <div className={`flex flex-col gap-8 w-full p-14 text-white ${Space.className}`} id="sponsor-us">
         <div className="flex flex-col md:flex-row justify-center">
           <h1 className="text-5xl mb-4 md:mb-0 md:pr-6">Let&apos;s Host Together</h1>
           <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="-translate-y-7 md:translate-y-0" />
