@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import React from "react";
 import { StaticImageData } from "next/image";
@@ -20,10 +18,10 @@ interface Props {
 
 const Card = ({ name, role, img, linkedin }: Props) => {
   return (
-    <div className="w-[220px] h-[500px] m-10 md:m-2 ">
-      <div className="  flex flex-col items-center justify-center gap-12  ">
+    <div className="w-[220px] m-10 md:m-2 ">
+      <div className="flex flex-col items-center justify-center gap-12">
         <div
-          className={`card flex   items-center justify-center relative
+          className={`card flex items-center justify-center relative
              `}
         >
           <Image
@@ -44,9 +42,9 @@ const Card = ({ name, role, img, linkedin }: Props) => {
             />
           </Link>
         </div>
-        <div className="flex flex-col items-center justify-center  mt-5 gap-3 px-1 font-Space_grotesk">
-          <h1 className="text-white  text-2xl tracking-wide text-center  ">{name}</h1>
-          <p className="text-white  text-xl font-light tracking-wide text-center">{role}</p>
+        <div className="flex flex-col items-center justify-center mt-5 gap-3 px-1 font-Space_grotesk">
+          <h1 className="text-white text-2xl tracking-wide text-center whitespace-nowrap">{name}</h1>
+          <p className="text-white text-xl font-light tracking-wide text-center">{role}</p>
         </div>
       </div>
     </div>
@@ -56,11 +54,13 @@ const Card = ({ name, role, img, linkedin }: Props) => {
 const Ourteam = () => {
   return (
     <div id="team" className="w-full h-auto bg-printedGraphic pt-12">
-      <h1 className="text-white text-center text-5xl font-bold p-10 ">Our Team</h1>
-      <div className="flex md:flex-wrap gap-10 no-scrollbar md:items-center md:justify-center me-12 my-15 pb-12 ml-10 overflow-x-auto md:overflow-x-hidden  ">
-        {boardMembers.map((e) => (
-          <Card name={e.name} role={e.role} img={e?.image} key={e.name} linkedin={e?.linkedIn} />
-        ))}
+      <h1 className="text-white text-center text-5xl font-bold p-10">Our Team</h1>
+      <div className="">
+        <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 p-10 justify-items-center ">
+          {boardMembers.map((e) => (
+            <Card name={e.name} role={e.role} img={e?.image} key={e.name} linkedin={e?.linkedIn} />
+          ))}
+        </div>
       </div>
     </div>
   );

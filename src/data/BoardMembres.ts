@@ -76,7 +76,7 @@ const boardMembers = [
    
   },
   {
-    name: "JEmmanuel Allan",
+    name: "Emmanuel Allan",
     image:WebDevelopment_Lead2,
     role: "Web Dev Lead",
     description: "Placeholder",
