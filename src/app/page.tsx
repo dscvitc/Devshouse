@@ -15,6 +15,7 @@ import Speakers from "@/components/Speakers";
 import Navbar from "@/components/NavBar";
 import background from "../../public/images/bgLayer.png";
 import About2 from "@/components/About2";
+import Footer2 from "@/components/Footer2";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <Sponsor />
       <FAQ />
       <Contact />
+      <Footer2 />
     </div>
   );
 }
