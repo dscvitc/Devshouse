@@ -13,6 +13,10 @@ const space_Grotesk = Space_Grotesk({
   variable: "--font-spaceGrotesk",
 });
 
+export const metadata = {
+  metadataBase: new URL(process.env.SITE_URL || 'https://devshouse.tech'),
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -22,6 +26,15 @@ export default function RootLayout({
 
     <html lang="en" className={`${space_Grotesk.variable} overflow-x-hidden`}>
       <head>
+        <meta charSet="utf-8" />
+        <meta name="theme-color" content="#000000" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="DevsHouse" />
+        <meta property="og:description" content="A community of developers" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.devshouse.tech" />
+
         <ColorSchemeScript />
       </head>
       <body className={inter.className}>
