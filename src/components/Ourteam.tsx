@@ -9,7 +9,7 @@ import { Space_Grotesk } from "next/font/google";
 const Space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 import boardMembers from "@/data/BoardMembres";
-import linkedinlogo from "/Pasted Graphic 3.png";
+import linkedinlogo from "../../public/Pasted Graphic 3.png";
 
 interface Props {
   name: String;
