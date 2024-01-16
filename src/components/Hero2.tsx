@@ -5,6 +5,7 @@ import heroIllustration from "../../public/hero_illustration.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@mantine/core";
+import SponsorDecor from "../../public/Group 43.svg";
 
 const space = Space_Grotesk({ weight: "300", subsets: ["latin"] });
 const museo = MuseoModerno({ weight: "700", subsets: ["latin"] });
@@ -23,14 +24,18 @@ export default function Hero2() {
 
   return (
     <div className="h-full mt-[100px] mb-[20px] w-[100%] mx-auto flex flex-col-reverse items-center xl:flex-row">
-      <div className="flex flex-col flex-wrap pb-12 px-24 xl:px-none flex-1 self-center gap-12 justify-evenly h-full">
-        <div className="flex flex-row xl:justify-start justify-center">
-          <p className={`text-5xl w-full lg:text-7xl text-center xl:text-justify ${museo.className}`}>
+      <div className="flex flex-col flex-wrap px-8 xl:px-24 xl:px-none flex-1 self-center gap-20 justify-evenly h-full">
+        <div className="flex flex-row w-full justify-evenly xl:pr-32">
+          {/* <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className=" -rotate-180" /> */}
+          <p className={`${museo.className} text-4xl text-wrap xl:text-6xl text-center xl:text-justify`}>{"<"}</p>
+          <p className={`text-4xl text-wrap lg:text-6xl text-center xl:text-justify ${museo.className}`}>
             DEVSHOUSE &apos;24
           </p>
+          <p className={`${museo.className} text-4xl text-wrap xl:text-6xl text-center xl:text-justify`}> {">"}</p>
+          {/* <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="rotate-45" /> */}
         </div>
         {/* <hr className="border-none dashed-line pr-32 "></hr> */}
-        <p className={`${space.className} font-bold text-lg md:text-3xl text-justify xl:pr-32 `}>
+        <p className={`${space.className} text-white font-bold text-lg md:text-3xl text-justify pr-0 xl:pr-32 `}>
           A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
           from across India the opportunity to
           <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
