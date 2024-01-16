@@ -27,11 +27,11 @@ export default function Hero2() {
       <div className="flex flex-col flex-wrap px-8 xl:px-24 xl:px-none flex-1 self-center gap-20 justify-evenly h-full">
         <div className="flex flex-row w-full justify-evenly xl:pr-32">
           {/* <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className=" -rotate-180" /> */}
-          <p className={`${museo.className} text-2xl text-wrap xl:text-6xl text-center xl:text-justify`}>{"<"}</p>
-          <p className={`text-2xl text-wrap lg:text-6xl text-center xl:text-justify ${museo.className}`}>
+          <p className={`${museo.className} text-4xl text-wrap xl:text-6xl text-center xl:text-justify`}>{"<"}</p>
+          <p className={`text-4xl text-wrap lg:text-6xl text-center xl:text-justify ${museo.className}`}>
             DEVSHOUSE &apos;24
           </p>
-          <p className={`${museo.className} text-2xl text-wrap xl:text-6xl text-center xl:text-justify`}> {">"}</p>
+          <p className={`${museo.className} text-4xl text-wrap xl:text-6xl text-center xl:text-justify`}> {">"}</p>
           {/* <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="rotate-45" /> */}
         </div>
         {/* <hr className="border-none dashed-line pr-32 "></hr> */}
