@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Button } from "./ui/button";
+import { Button } from "@mantine/core";
 import { Form, FormControl, FormItem, FormField, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -184,7 +184,7 @@ const Contact = () => {
                   );
                 }}
               ></FormField>
-              <Button type="submit" variant="default">
+              <Button type="submit" radius="xl" size="md" className={`button-50`}>
                 <span className={`${space_grotesk.className}`}>Send</span>
               </Button>
             </form>
