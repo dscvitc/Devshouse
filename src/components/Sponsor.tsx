@@ -10,12 +10,13 @@ import build from "next/dist/build";
 
 import polygonLogo from "../../public/sponsors/polygon.png";
 import replitLogo from "../../public/sponsors/replit.png";
-import skynyxLogo from "../../public/sponsors/Skynyx.jpg";
+import skynyxLogo from "../../public/sponsors/skynyx.png";
 import ZSecuritylogo from "../../public/sponsors/ZSecurity.png";
 import wolframLogo from "../../public/sponsors/wolfram.png";
 import esalesLogo from "../../public/sponsors/esales.png";
-import IBLogo from "../../public/sponsors/IBLogo.jpg";
+import IBLogo from "../../public/sponsors/iblogotransparent.png";
 import devfolioLogo from "../../public/sponsors/devfolio.png";
+import nblogo from "../../public/sponsors/NB-2.0-logo-1.png";
 
 import "../app/globals.css";
 import SponsorCard from "./SponsorCard";
@@ -340,7 +341,7 @@ const Sponsor = () => {
               />
             </svg>
             <span className="text-[#EB81C1] text-[25px] mx-4 leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
-              Community Partners
+              Media Partner
             </span>
             <svg
               className="flex justify-start "
@@ -357,30 +358,19 @@ const Sponsor = () => {
               />
             </svg>
           </div>
-          {/* company section */}
           <div className="flex gap-60 my-20 max-lg:flex-col max-lg:gap-20">
-            <a href="">
+            <a href="https://noticebard.com/" target="_blank">
               <SponsorCard
-                cardWidth={"261.473px"}
+                cardWidth={"300px"}
                 cardHeight={"124.878px"}
-                img={comPart1}
+                img={nblogo}
                 imgWidth={250}
-                imgAlt={"company1"}
+                imgAlt={"noticebard"}
                 color={"#FCCF4B"}
                 backgroundMt={"-7.5rem"}
                 backgroundMl={"0.2rem"}
               />
             </a>
-            <SponsorCard
-              cardWidth={"261.473px"}
-              cardHeight={"124.878px"}
-              img={comPart2}
-              imgWidth={250}
-              imgAlt={"company2"}
-              color={"#FCCF4B"}
-              backgroundMt={"-7.5rem"}
-              backgroundMl={"0.2rem"}
-            />
           </div>
         </div>
       </div>

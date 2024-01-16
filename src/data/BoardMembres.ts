@@ -27,17 +27,14 @@ const boardMembers = [
     description: "Placeholder",
     github: "https://github.com/zahransajid",
     linkedIn: "",
-    
   },
   {
     name: "Aditi Jha",
     image: GDSCLead,
     role: "GDSC Lead",
-    description:
-      "It's not what happens to you, but how you react to it that matters",
+    description: "It's not what happens to you, but how you react to it that matters",
     github: "https://github.com/AchintyaSingh0220",
-    linkedIn: "",
-    
+    linkedIn: "https://www.linkedin.com/in/aditi-jha-914a9b214/",
   },
   {
     name: "Mihika Dhakray",
@@ -46,7 +43,6 @@ const boardMembers = [
     description: "Making problem solving fun",
     github: "https://github.com/castlercodes",
     linkedIn: "https://www.linkedin.com/in/mihikadhakray",
-    
   },
   {
     name: "Anurag Tamhankar",
@@ -55,7 +51,6 @@ const boardMembers = [
     description: "Doom Scrolling reels is my fav hobby",
     github: "https://github.com/codexx07",
     linkedIn: "https://www.linkedin.com/in/anurag-tamhankar-75a471220/",
-   
   },
   {
     name: "Syed Omar Albeez",
@@ -64,7 +59,6 @@ const boardMembers = [
     description: "One track mind, one track heart",
     github: "https://github.com/amarafray",
     linkedIn: "https://www.linkedin.com/in/syed-omar-albeez/",
-    
   },
   {
     name: "Jahanvi Chaurasia",
@@ -73,16 +67,14 @@ const boardMembers = [
     description: "One who juggles with deadlines and tasks like a pro",
     github: "https://github.com/syedomar1",
     linkedIn: "https://www.linkedin.com/in/janhavi-chaurasia-ab9169278",
-   
   },
   {
     name: "Emmanuel Allan",
-    image:WebDevelopment_Lead2,
+    image: WebDevelopment_Lead2,
     role: "Web Dev Lead",
     description: "Placeholder",
     github: "",
     linkedIn: "https://www.linkedin.com/in/emmanuel-allan/",
-    
   },
   {
     name: "Vaibhav T S",
@@ -91,7 +83,6 @@ const boardMembers = [
     description: "Turning caffeine and curiosity into coding masterpieces",
     github: "https://github.com/karanwxliaa",
     linkedIn: "https://www.linkedin.com/in/vaibhav-tekkalur/",
-    
   },
   {
     name: "Sparsh Chakraborty",
@@ -100,26 +91,22 @@ const boardMembers = [
     description: "Placeholder",
     github: "https://github.com/Kriticle",
     linkedIn: "https://www.linkedin.com/in/sparsh-chakraborty/",
-    
   },
   {
     name: "Naveen Choudhury",
     image: Marketing_Lead,
     role: "Marketing Lead",
-    description:
-      "You do not rise to the level of your goals. You fall to the level of your systems",
+    description: "You do not rise to the level of your goals. You fall to the level of your systems",
     github: "https://github.com/void-anurag",
     linkedIn: "www.linkedin.com/in/naveen-shankar-choudhury-481262238",
-    
   },
   {
     name: "Shubham Ghosh",
-    image:Outreach_Lead,
+    image: Outreach_Lead,
     role: "Outreach Lead",
     description: "Placeholder",
     github: "https://github.com/vaibhavTekk",
     linkedIn: "https://www.linkedin.com/in/subhamgcon/",
-    
   },
   {
     name: "Zahran Sajid",
@@ -128,7 +115,6 @@ const boardMembers = [
     description: "Versatile creator with a flair for innovation",
     github: "https://github.com/EmmanuelAllanMJ",
     linkedIn: "https://www.linkedin.com/in/zahran-sajid/",
-  
   },
   {
     name: "Cynthia Konar",
@@ -137,7 +123,6 @@ const boardMembers = [
     description: "Fly High",
     github: "https://github.com/naveenchoudhury",
     linkedIn: "https://www.linkedin.com/in/cynthia-konar-649b5721b/",
-   
   },
   {
     name: "Jeevan Alexan",
@@ -146,7 +131,6 @@ const boardMembers = [
     description: "Mastermind of app magic",
     github: "https://github.com/cynthiakonar",
     linkedIn: "https://www.linkedin.com/in/jeevan-alexen-kavalam-83098a215",
-    
   },
   {
     name: "Ameiy Acharya",
@@ -155,17 +139,14 @@ const boardMembers = [
     description: "Full of coffee, code and chaos",
     github: "https://github.com/Swastika-shukla",
     linkedIn: "https://www.linkedin.com/in/ameiy-acharya-3a3b7721b/",
-    
   },
   {
     name: "Kriti Agarwal",
-    image:DataScience_Lead2,
-    role: "BData Sciecne Lead",
-    description:
-      "Upcoming techie with keen interest in Blockchain and Data Science",
+    image: DataScience_Lead2,
+    role: "Data Science Lead",
+    description: "Upcoming techie with keen interest in Blockchain and Data Science",
     github: "https://github.com/AmeiyAcharya",
     linkedIn: "https://www.linkedin.com/in/kriti-agarwal-1369b7249/",
-   
   },
   {
     name: "Amritansh Sharma",
@@ -173,17 +154,15 @@ const boardMembers = [
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
-    
+    linkedIn: "https://www.linkedin.com/in/drowsy-coder/",
   },
   {
     name: "Shaan Mukherjee",
-    image:Coreteam2,
+    image: Coreteam2,
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
-    
+    linkedIn: "https://www.linkedin.com/in/shaan-mukherjee",
   },
   {
     name: "L.G.Surith",
@@ -191,8 +170,7 @@ const boardMembers = [
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
-    
+    linkedIn: "https://www.linkedin.com/in/surithlg/",
   },
   {
     name: "Shourya Pratap Singh",
@@ -200,8 +178,7 @@ const boardMembers = [
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
-    
+    linkedIn: "Linkedin.com/in/amspsingh04",
   },
 ];
 
