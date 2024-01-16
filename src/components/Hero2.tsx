@@ -22,11 +22,15 @@ export default function Hero2() {
   }, []);
 
   return (
-    <div className="h-full mt-[100px] mb-[20px] w-[100%] mx-auto flex flex-col-reverse lg:flex-row">
-      <div className="flex flex-col flex-wrap pb-12 px-24 flex-1 self-center gap-12 justify-evenly h-full">
-        <p className={`text-4xl w-full lg:text-7xl text-justify ${museo.className}`}>DEVSHOUSE &apos;24</p>
+    <div className="h-full mt-[100px] mb-[20px] w-[100%] mx-auto flex flex-col-reverse items-center xl:flex-row">
+      <div className="flex flex-col flex-wrap pb-12 px-24 xl:px-none flex-1 self-center gap-12 justify-evenly h-full">
+        <div className="flex flex-row xl:justify-start justify-center">
+          <p className={`text-5xl w-full lg:text-7xl text-center xl:text-justify ${museo.className}`}>
+            DEVSHOUSE &apos;24
+          </p>
+        </div>
         {/* <hr className="border-none dashed-line pr-32 "></hr> */}
-        <p className={`${space.className} font-bold text-lg md:text-3xl text-justify pr-8 md:pr-32 `}>
+        <p className={`${space.className} font-bold text-lg md:text-3xl text-justify xl:pr-32 `}>
           A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
           from across India the opportunity to
           <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
@@ -34,7 +38,7 @@ export default function Hero2() {
           meets excitement and
           <span className="text-[#EA4335]"> amazing prizes</span> await!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pr-8 md:pr-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:pr-32">
           <Link href={"https://discord.gg/UFfPjTtzh7"} target="_blank">
             <Button radius="xl" size="md" className={` w-full button-50`}>
               <svg
@@ -64,7 +68,7 @@ export default function Hero2() {
         </div>
       </div>
       <div className="flex flex-1">
-        <Image src={heroIllustration} alt="timeline" objectFit="fit" fill={false} className="px-8 md:px-0 md:pr-24" />
+        <Image src={heroIllustration} alt="timeline" objectFit="fit" fill={false} className="px-8 md:px-0 xl:pr-24" />
       </div>
     </div>
   );
