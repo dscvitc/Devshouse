@@ -10,11 +10,11 @@ import build from "next/dist/build";
 
 import polygonLogo from "../../public/sponsors/polygon.png";
 import replitLogo from "../../public/sponsors/replit.png";
-import skynyxLogo from "../../public/sponsors/Skynyx.jpg";
+import skynyxLogo from "../../public/sponsors/skynyx.png";
 import ZSecuritylogo from "../../public/sponsors/ZSecurity.png";
 import wolframLogo from "../../public/sponsors/wolfram.png";
 import esalesLogo from "../../public/sponsors/esales.png";
-import IBLogo from "../../public/sponsors/IBLogo.jpg";
+import IBLogo from "../../public/sponsors/iblogotransparent.png";
 import devfolioLogo from "../../public/sponsors/devfolio.png";
 
 import "../app/globals.css";
