@@ -17,8 +17,6 @@ export default function SpecialPrizeCard({ trackName, trackLogo, trackText, colo
                         width={47}
                         height={47}
                     />
-
-
                     <div className={`text-[30px] font-bold font-['Space Grotesk'] xl:text-[42px]`} style={{ color: color }}>{trackName}</div>
                 </div>
                 <div className="w-full max-h-[75.26px] mt-3 text-center text-black text-[16px] font-bold font-['Product Sans'] xl:text-[21px]">{trackText}</div>
