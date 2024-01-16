@@ -23,7 +23,7 @@ export default function useWindowDimensions() {
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
-  }, [hasWindow]);
+  }, [hasWindow, getWindowDimensions]); // Include getWindowDimensions in the dependency array
 
   return windowDimensions;
 }
