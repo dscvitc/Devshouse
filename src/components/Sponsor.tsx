@@ -14,7 +14,7 @@ import skynyxLogo from "../../public/sponsors/Skynyx.jpg";
 import ZSecuritylogo from "../../public/sponsors/ZSecurity.png";
 import wolframLogo from "../../public/sponsors/wolfram.png";
 import esalesLogo from "../../public/sponsors/esales.png";
-import IBLogo from "../../public/sponsors/IBLogo.png";
+import IBLogo from "../../public/sponsors/IBLogo.jpg";
 import devfolioLogo from "../../public/sponsors/devfolio.png";
 
 import "../app/globals.css";
