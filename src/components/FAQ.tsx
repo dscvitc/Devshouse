@@ -61,8 +61,8 @@ const FAQ = () => {
           id="sponsor-us"
         >
           <div className="flex flex-row justify-center md:justify-start">
-            <h1 className="text-5xl mb-4 md:mb-0 md:pr-6">Let&apos;s Host Together</h1>
-            <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="-translate-y-7 md:translate-y-0" />
+            <h1 className="text-5xl mb-4 w-auto">Let&apos;s Host Together</h1>
+            <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="-translate-y-16 -translate-x-16 md:translate-x-0 md:-translate-y-7 " />
           </div>
           <div
             className={`flex flex-col xl:flex-row gap-12 items-center md:items-start justify-between w-full ${Space400.className}`}
