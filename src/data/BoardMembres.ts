@@ -34,7 +34,7 @@ const boardMembers = [
     role: "GDSC Lead",
     description: "It's not what happens to you, but how you react to it that matters",
     github: "https://github.com/AchintyaSingh0220",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/aditi-jha-914a9b214/",
   },
   {
     name: "Mihika Dhakray",
@@ -162,7 +162,7 @@ const boardMembers = [
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/shaan-mukherjee",
   },
   {
     name: "L.G.Surith",
@@ -170,7 +170,7 @@ const boardMembers = [
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/surithlg/",
   },
   {
     name: "Shourya Pratap Singh",
@@ -178,7 +178,7 @@ const boardMembers = [
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
+    linkedIn: "Linkedin.com/in/amspsingh04",
   },
 ];
 
