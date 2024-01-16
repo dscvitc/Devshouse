@@ -26,7 +26,7 @@ export default function Hero2() {
       <div className="flex flex-col flex-wrap pb-12 px-24 flex-1 self-center gap-12 justify-evenly h-full">
         <p className={`text-4xl w-full lg:text-7xl text-justify ${museo.className}`}>DEVSHOUSE &apos;24</p>
         {/* <hr className="border-none dashed-line pr-32 "></hr> */}
-        <p className={`${space.className} font-bold text-3xl text-left pr-32 `}>
+        <p className={`${space.className} font-bold text-lg md:text-3xl text-left pr-32 `}>
           A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
           from across India the opportunity to
           <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
