@@ -72,8 +72,9 @@ const Sponsor = () => {
                   <Image src={devfolioLogo} alt={"DEVFOLIO LOGO"} />
                 </div>
               </div>
-              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
             </a>
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <a href="https://polygon.technology/" target="_blank">
@@ -82,8 +83,9 @@ const Sponsor = () => {
                   <Image src={polygonLogo} alt={"POLYGON LOGO"} />
                 </div>
               </div>
-              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
             </a>
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
         </div>
       </div>
@@ -132,8 +134,9 @@ const Sponsor = () => {
                   <Image src={replitLogo} alt={"REPLIT LOGO"} width={350} />
                 </div>
               </div>
-              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
             </a>
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <a href="https://skynyx.in/" target="_blank">
@@ -142,8 +145,8 @@ const Sponsor = () => {
                   <Image src={skynyxLogo} alt={"SKYNYX LOGO"} height={175} />
                 </div>
               </div>
-              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
             </a>
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
         </div>
       </div>
@@ -276,8 +279,9 @@ const Sponsor = () => {
                       <Image src={ZSecuritylogo} alt="ZSECURITY LOGO" width={300} />
                     </div>
                   </div>
-                  <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                 </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://wolfram.com/" target="_blank">
@@ -286,8 +290,9 @@ const Sponsor = () => {
                       <Image src={wolframLogo} alt={``} width={350} />
                     </div>
                   </div>
-                  <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                 </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
@@ -298,8 +303,9 @@ const Sponsor = () => {
                       <Image src={esalesLogo} alt={"ESALES LOGO"} width={150} />
                     </div>
                   </div>
-                  <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                 </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://interviewbuddy.net/" target="_blank">
