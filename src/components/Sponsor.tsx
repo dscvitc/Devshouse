@@ -314,8 +314,9 @@ const Sponsor = () => {
                       <Image src={IBLogo} alt={"IB LOGO"} width={350} />
                     </div>
                   </div>
-                  <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
                 </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
           </div>
