@@ -26,8 +26,12 @@ const formSchema = z.object({
     message: "Username must be at least 2 characters.",
   }),
   Email: z.string().email(),
-  Subject: z.string(),
-  Message: z.string(),
+  Subject: z.string().min(2, {
+    message: "Subject cannot be empty.",
+  }),
+  Message: z.string().min(2, {
+    message: "Message cannot be empty.",
+  }),
 });
 
 const Contact = () => {
@@ -77,7 +81,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex h-screen w-auto snap-center flex-col items-center justify-center text-white">
+      className="flex h-screen absolute mx-auto left-0 right-0 w-auto md:w-[1000px] snap-center flex-col items-center justify-center text-white">
       <h1 className={`${space_grotesk.className} font-extrabold text-5xl mb-5`}>
         Contact Us
       </h1>
@@ -136,6 +140,14 @@ const Contact = () => {
               </li>
             </ul>
           </div>
+          <span className="hidden md:block w-10 h-10 -rotate-90  absolute left-0 right-52 mx-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24">
+              <path d="M24 22h-24l12-20z" />
+            </svg>
+          </span>
         </div>
         <div className="flex flex-col bg-white rounded-b-3xl md:rounded-bl-none md:rounded-e-3xl p-6 md:p-10 w-full md:w-3/4 md:mt-0">
           <Form {...form}>
@@ -202,7 +214,7 @@ const Contact = () => {
                     <FormItem>
                       <FormControl>
                         <Textarea
-                          className="text-black resize"
+                          className="text-black resize min-h-36"
                           placeholder="Message"
                           {...field}></Textarea>
                       </FormControl>
