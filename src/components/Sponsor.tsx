@@ -10,7 +10,7 @@ import build from "next/dist/build";
 
 import polygonLogo from "../../public/sponsors/polygon.png";
 import replitLogo from "../../public/sponsors/replit.png";
-import skynyxLogo from "../../public/sponsors/Skynyx logo.jpg";
+import skynyxLogo from "../../public/sponsors/Skynyx.jpg";
 import ZSecuritylogo from "../../public/sponsors/ZSecurity.png";
 import wolframLogo from "../../public/sponsors/wolfram.png";
 import esalesLogo from "../../public/sponsors/esales.png";
@@ -66,19 +66,25 @@ const Sponsor = () => {
 
         <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
-            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-              <div className="flex flex-row justify-center items-center">
-                <Image src={devfolioLogo} alt={"DEVFOLIO LOGO"} />
+            <a href="https://devfolio.co/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center">
+                  <Image src={devfolioLogo} alt={"DEVFOLIO LOGO"} />
+                </div>
               </div>
-            </div>
+            </a>
+
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
-            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-              <div className="flex flex-row justify-center items-center">
-                <Image src={polygonLogo} alt={"POLYGON LOGO"} />
+            <a href="https://polygon.technology/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center">
+                  <Image src={polygonLogo} alt={"POLYGON LOGO"} />
+                </div>
               </div>
-            </div>
+            </a>
+
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
         </div>
@@ -122,19 +128,24 @@ const Sponsor = () => {
         </div>
         <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
-            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-              <div className="flex flex-row justify-center items-center p-18">
-                <Image src={replitLogo} alt={"REPLIT LOGO"} width={350} />
+            <a href="https://replit.com/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center p-18">
+                  <Image src={replitLogo} alt={"REPLIT LOGO"} width={350} />
+                </div>
               </div>
-            </div>
+            </a>
+
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
-            <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-              <div className="flex flex-row justify-center items-center p-18">
-                <Image src={skynyxLogo} alt={"SKYNYX LOGO"} height={175} />
+            <a href="https://skynyx.in/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center p-18">
+                  <Image src={skynyxLogo} alt={"SKYNYX LOGO"} height={175} />
+                </div>
               </div>
-            </div>
+            </a>
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
         </div>
@@ -262,37 +273,49 @@ const Sponsor = () => {
           <div className="flex flex-col gap-12 mt-20 justify-center items-center">
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                  <div className="flex flex-row justify-center items-center">
-                    <Image src={ZSecuritylogo} alt="ZSECURITY LOGO" width={300} />
+                <a href="https://zsecurity.org/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={ZSecuritylogo} alt="ZSECURITY LOGO" width={300} />
+                    </div>
                   </div>
-                </div>
+                </a>
+
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                  <div className="flex flex-row justify-center items-center">
-                    <Image src={wolframLogo} alt={``} width={350} />
+                <a href="https://wolfram.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={wolframLogo} alt={``} width={350} />
+                    </div>
                   </div>
-                </div>
+                </a>
+
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                  <div className="flex flex-row justify-center items-center">
-                    <Image src={esalesLogo} alt={"ESALES LOGO"} width={150} />
+                <a href="https://www.esales.in/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={esalesLogo} alt={"ESALES LOGO"} width={150} />
+                    </div>
                   </div>
-                </div>
+                </a>
+
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                  <div className="flex flex-row justify-center items-center">
-                    <Image src={IBLogo} alt={"IB LOGO"} width={350} />
+                <a href="https://interviewbuddy.net/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={IBLogo} alt={"IB LOGO"} width={350} />
+                    </div>
                   </div>
-                </div>
+                </a>
+
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
