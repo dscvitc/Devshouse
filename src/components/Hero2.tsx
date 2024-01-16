@@ -35,7 +35,7 @@ export default function Hero2() {
           {/* <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="rotate-45" /> */}
         </div>
         {/* <hr className="border-none dashed-line pr-32 "></hr> */}
-        <p className={`${space.className} font-bold text-lg md:text-3xl text-justify pr-0 xl:pr-32 `}>
+        <p className={`${space.className} text-white font-bold text-lg md:text-3xl text-justify pr-0 xl:pr-32 `}>
           A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
           from across India the opportunity to
           <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
