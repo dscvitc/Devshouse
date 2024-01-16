@@ -67,7 +67,7 @@ const FAQ = () => {
           <div
             className={`flex flex-col xl:flex-row gap-12 items-center md:items-start justify-between w-full ${Space400.className}`}
           >
-            <div className="pr-6 text-lg md:text-4xl">
+            <div className="pr-6 text-lg md:text-3xl">
               <p>Elevate your brand, be part of the tech revolution!</p>
               <p>
                 Write to <b>collaborate</b> with us at: sponsorship@devshouse.tech
