@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import col_img from "../../public/assets/images/col_img.svg";
-import gdsc_img from "../../public/assets/images/gdsc_img.svg";
+import gdsc_img from "../../public/assets/images/gdsc_img.png";
 import { Space_Grotesk } from "next/font/google";
 import { Work_Sans } from "next/font/google";
 

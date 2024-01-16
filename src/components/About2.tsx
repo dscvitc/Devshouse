@@ -1,6 +1,6 @@
 import React from "react";
-import vitimage from "../../public/assets/images/col_img.svg";
-import gdscimage from "../../public/assets/images/gdsc_img.svg";
+import vitimage from "../../public/assets/images/col_img.png";
+import gdscimage from "../../public/assets/images/gdsc_img.png";
 import Image from "next/image";
 
 export default function About2() {
