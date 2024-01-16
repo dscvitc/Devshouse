@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { Space_Grotesk, MuseoModerno } from "next/font/google";
-import heroIllustration from "../../public/hero illustration.png";
+import heroIllustration from "../../public/hero_illustration.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@mantine/core";
