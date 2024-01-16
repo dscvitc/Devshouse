@@ -24,7 +24,7 @@
     "googleapis": "^130.0.0",
     "gsap": "^3.12.4",
     "lucide-react": "^0.306.0",
-    "next": "14.0.3",
+    "next": "13.5.3",
     "postcss-preset-mantine": "^1.12.3",
     "react": "^18",
     "react-dom": "^18",
