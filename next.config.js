@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    env:{
-        SCRIPT_ENDPOINT: process.env.SCRIPT_ENDPOINT,
-    }
-}
+  env: {
+    SCRIPT_ENDPOINT: process.env.SCRIPT_ENDPOINT,
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
