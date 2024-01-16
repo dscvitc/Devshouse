@@ -1,6 +1,13 @@
 import Divider from "./Divider";
 import MainPrize from "./MainPrizeCard";
-import SpecialPrize from "./SpecialPrizeCard";
+import SpecialPrize from "./SpecialPrizeCardImage";
+
+import cybrance from "../../../public/sponsors/cybrance.png";
+import replit from "../../../public/sponsors/replit.png";
+import wolfram from "../../../public/sponsors/wolfram.png";
+import polygon from "../../../public/sponsors/polygon.png";
+import iblogo from "../../../public/sponsors/iblogotransparent.png";
+
 export default function Prizes() {
   const PrizeInfo = [
     //Gold, silver and bronze images
@@ -66,7 +73,51 @@ export default function Prizes() {
   //     color: "#07A158",
   //   },
   // ];
-  const tracks: any[] = [];
+  const tracks: any[] = [
+    {
+      trackName: "Cybrance",
+      trackLogo: cybrance,
+      trackText: "1 month free web hosting for all participants.",
+      color: "#07A158",
+    },
+    {
+      trackName: "Replit",
+      trackLogo: replit,
+      trackText: "Winning Project deployed on Replit: $50",
+    },
+    {
+      trackName: "Wolfram",
+      trackLogo: wolfram,
+      trackText: "Top 6 Teams - One year subscription of Wolfram Alpha Pro worth 375$",
+      color: "#07A158",
+    },
+    {
+      trackName: "Wolfram",
+      trackLogo: wolfram,
+      trackText: "1 Month Trial for Wolfram|One worth $25.00 for all participants",
+      color: "#07A158",
+    },
+    {
+      trackName: "Polygon",
+      trackLogo: polygon,
+      trackText: "Best hack built on Ethereum: $150",
+    },
+    {
+      trackName: "Polygon",
+      trackLogo: polygon,
+      trackText: "Best hack built on Ethereum + Polygon: $200",
+    },
+    {
+      trackName: "Interview Buddy",
+      trackLogo: iblogo,
+      trackText: "100% off Voucher for winners and runners-up",
+    },
+    {
+      trackName: "Interview Buddy",
+      trackLogo: iblogo,
+      trackText: "90% off Voucher to participants.",
+    },
+  ];
   return (
     <section id="prizes" className="w-full flex flex-col justify-center items-center overflow-hidden mb-8">
       <h1 className="text-white text-[35px] font-bold font-['Space Grotesk'] mt-6 sm:text-[40px] md:txt[45px] lg:[54px]">
