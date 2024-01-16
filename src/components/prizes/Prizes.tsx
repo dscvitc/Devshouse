@@ -68,7 +68,7 @@ export default function Prizes() {
   // ];
   const tracks: any[] = [];
   return (
-    <section className="w-full flex flex-col justify-center items-center overflow-hidden mb-8">
+    <section id="prizes" className="w-full flex flex-col justify-center items-center overflow-hidden mb-8">
       <h1 className="text-white text-[35px] font-bold font-['Space Grotesk'] mt-6 sm:text-[40px] md:txt[45px] lg:[54px]">
         Prizes
       </h1>

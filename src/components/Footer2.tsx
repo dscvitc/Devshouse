@@ -42,13 +42,16 @@ export default function Footer2() {
           <a className="text-lg" href="#tracks">
             Theme
           </a>
+          <a className="text-lg" href="#prizes">
+            Prizes
+          </a>
           <a className="text-lg" href="#timeline">
             Timeline
           </a>
           <a className="text-lg" href="#team">
             Team
           </a>
-          <a className="text-lg" href="#sponsors">
+          <a className="text-lg" href="#sponsor">
             Sponsors
           </a>
           <a className="text-lg" href="#faqs">
