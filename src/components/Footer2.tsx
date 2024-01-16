@@ -10,8 +10,8 @@ import { IconBrandX } from "@tabler/icons-react";
 
 export default function Footer2() {
   return (
-    <div className="w-full p-12 font-spaceGrotesk gap-4 grid grid-cols-1 md:grid-cols-4 justify-center  ">
-      <Image src={devshouseTicket} alt="Devshouse Ticket" className="self-center"></Image>
+    <div className="w-full p-12 font-spaceGrotesk gap-4 grid grid-cols-1 md:grid-cols-5 justify-center text-white  ">
+      <Image src={devshouseTicket} alt="Devshouse Ticket" className="self-center md:col-span-2"></Image>
       <div className="flex flex-col gap-4 justify-start px-12 m-2">
         <div>
           <p className="text-2xl font-bold">Quick Links</p>
@@ -57,7 +57,7 @@ export default function Footer2() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-4 justify-start px-12">
+      <div className="flex flex-col gap-4 justify-start px-12 m-2">
         <p className="text-2xl font-bold">Follow us</p>
         <p className="text-xl text-gray-500">Connect. Learn. Grow.</p>
         <span className="flex flex-row py-2 gap-4 m-2">

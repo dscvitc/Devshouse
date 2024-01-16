@@ -6,7 +6,7 @@
 }
 
 .content {
-  max-width: rem(800px)  ;
+  max-width: rem(800px);
   margin-right: calc(var(--mantine-spacing-xl) * 3);
   padding-right: 10px;
   @media (max-width: $mantine-breakpoint-md) {
@@ -17,7 +17,7 @@
 }
 
 .title {
-  font-family: 'MuseoModerno', sans-serif;
+  font-family: "MuseoModerno", sans-serif;
   font-size: rem(4vw);
   line-height: 1.2;
   font-weight: 900;
@@ -26,7 +26,7 @@
     font-size: rem(5vw);
   }
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: rem(10vw);
+    font-size: rem(8vw);
   }
 }
 
@@ -35,7 +35,7 @@
     flex: 1;
   }
 }
- 
+
 .highlight {
   position: relative;
   background-color: var(--mantine-color-blue-light);

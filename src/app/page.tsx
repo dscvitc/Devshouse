@@ -12,6 +12,7 @@ import MarqueeLogo from "@/components/MarqueeLogo";
 import Navbar from "@/components/NavBar";
 import Sponsor from "@/components/Sponsor";
 import TimelineOnline from "@/components/TimelineOnline";
+import Hero2 from "@/components/Hero2";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
       style={{ backgroundImage: `url('/images/bgLayer.png')`, backgroundRepeat: "repeat-y", backgroundSize: "contain" }}
     >
       <Navbar />
-      <HeroBullets />
+      {/* <HeroBullets /> */}
+      <Hero2 />
       <MarqueeLogo />
       {/* <AboutPage /> */}
       <About2 />
