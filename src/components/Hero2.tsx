@@ -22,11 +22,11 @@ export default function Hero2() {
   }, []);
 
   return (
-    <div className="h-full mt-[100px] mb-[20px] w-[100%] mx-auto justify-center items-center flex flex-col-reverse lg:flex-row">
-      <div className="py-12 pl-24 pr-40 h-full flex-1 justify-between">
-        <p className={`text-4xl lg:text-7xl mb-4 md:mb-10 ${museo.className}`}>DEVSHOUSE &apos;24</p>
-        <hr className="border-none dashed-line "></hr>
-        <p className={`${space.className} font-bold text-3xl text-left mt-4 md:mt-10`}>
+    <div className="h-full mt-[100px] mb-[20px] w-[100%] mx-auto flex flex-col-reverse lg:flex-row">
+      <div className="flex flex-col flex-wrap pb-12 px-24 flex-1 self-center gap-12 justify-evenly h-full">
+        <p className={`text-4xl w-full lg:text-7xl text-justify ${museo.className}`}>DEVSHOUSE &apos;24</p>
+        {/* <hr className="border-none dashed-line pr-32 "></hr> */}
+        <p className={`${space.className} font-bold text-3xl text-left pr-32 `}>
           A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
           from across India the opportunity to
           <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
@@ -34,7 +34,7 @@ export default function Hero2() {
           meets excitement and
           <span className="text-[#EA4335]"> amazing prizes</span> await!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link href={"https://discord.gg/UFfPjTtzh7"} target="_blank">
             <Button radius="xl" size="md" className={` w-full button-50`}>
               <svg
@@ -50,7 +50,7 @@ export default function Hero2() {
                   fill="black"
                 />
               </svg>{" "}
-              Join Us
+              <p className="font-spaceGrotesk text-lg font-bold mx-4">Join Us</p>
             </Button>
           </Link>
           <div
@@ -61,8 +61,8 @@ export default function Hero2() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-1 p-24 md:p-8 justify-center">
-        <Image src={heroIllustration} alt="timeline" objectFit="cover" fill={false} className="w-[90%]" />
+      <div className="flex flex-1">
+        <Image src={heroIllustration} alt="timeline" objectFit="fit" fill={false} className="px-8 md:px-0 md:pr-24" />
       </div>
     </div>
   );
