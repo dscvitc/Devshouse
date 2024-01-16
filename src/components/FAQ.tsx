@@ -71,9 +71,14 @@ const FAQ = () => {
                 Write to <b>collaborate</b> with us at: sponsorship@devshouse.tech
               </p>
             </div>
-            <Button size="xl" className="button-Sponsor">
-              Sponsor Us
-            </Button>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeYTeeWWnH_OV3X3vp__Sq6xLHw6eOpHPXQSj9aRhPrE4CH_g/viewform"
+              target="_blank"
+            >
+              <Button size="xl" className="button-Sponsor">
+                Sponsor Us
+              </Button>
+            </a>
           </div>
         </div>
       </div>

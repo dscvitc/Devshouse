@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -16,14 +16,14 @@ const Navbar = () => {
       className="w-full px-5 gap-3 h-20 shadow fixed z-[100] flex items-center justify-between md:flex md:justify-between md:items-center bg-black bg-opacity-90"
       data-aos="fade-up"
       data-aos-anchor-placement="center-center"
-      data-aos-duration="1000"      
+      data-aos-duration="1000"
       style={{
         backgroundImage: `url(${blurredBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         transition: "filter 0.5s ease-in",
       }}
-    > 
+    >
       <span className="cursor-pointer md:w-60 md-ml-5 m m-3 w-64 flex items-center">
         <Link href="/">
           <Image src={logo} alt="gdsc logo" />
@@ -46,7 +46,6 @@ const Navbar = () => {
         className={`md:flex md:items-center bg-black backdrop-blur-lg bg-opacity-90 -z-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 mt-0 transition-all ease-in duration-500 ${
           !navbar && "opacity-0 top-[-400px] "
         } ${navbar && "opacity-100 top-20 "}`}
-        
       >
         <li className="mx-4 mb-6 md:my-0">
           <a href="#about" className="text-white hover-underline-animation">
@@ -56,6 +55,11 @@ const Navbar = () => {
         <li className="mx-4 my-6 md:my-0">
           <a href="#tracks" className="text-white hover-underline-animation">
             Tracks
+          </a>
+        </li>
+        <li className="mx-4 my-6 md:my-0">
+          <a href="#prizes" className="text-white hover-underline-animation">
+            Prizes
           </a>
         </li>
         <li className="mx-4 my-6 md:my-0">
