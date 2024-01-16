@@ -154,7 +154,7 @@ const boardMembers = [
     role: "Core team",
     description: "Placeholder",
     github: "",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/drowsy-coder/",
   },
   {
     name: "Shaan Mukherjee",
