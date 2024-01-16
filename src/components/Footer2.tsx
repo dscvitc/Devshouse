@@ -1,20 +1,27 @@
 import React from "react";
 import Image from "next/image";
 import devshouseTicket from "../../public/assets/images/devshouseticket.svg";
-
-import { IconBrandDiscordFilled } from "@tabler/icons-react";
+import devshouseTicket1 from "../../public/assets/images/devshouseticket1.svg";
+import { IconBrandDiscordFilled, IconBrandInstagram, IconBrandLinkedin, IconBrandTwitterFilled } from "@tabler/icons-react";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
-import { IconBrandInstagram } from "@tabler/icons-react";
-import { IconBrandLinkedin } from "@tabler/icons-react";
-import { IconBrandX } from "@tabler/icons-react";
+import Link from "next/link";
 
 export default function Footer2() {
   return (
-    <div className="w-full p-12 font-spaceGrotesk gap-4 grid grid-cols-1 md:grid-cols-5 justify-center text-white  ">
-      <Image src={devshouseTicket} alt="Devshouse Ticket" className="self-center md:col-span-2"></Image>
-      <div className="flex flex-col gap-4 justify-start px-12 m-2">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 p-12 font-spaceGrotesk">
+      <div className="relative col-span-2">
+        <div className="relative">
+          <Link href="https://devshouse.dscvit.com/">
+
+            <Image src={devshouseTicket} alt="Devshouse Ticket" className="hover:opacity-0 absolute w-full h-full object-cover transition-opacity duration-500"></Image>
+            <Image src={devshouseTicket1} alt="Devshouse Ticket" className="w-full h-full object-cover transition-opacity duration-500"></Image>
+          </Link>
+
+        </div>
+      </div>
+      <div className="flex flex-col gap-4 justify-end">
         <div>
-          <p className="text-2xl font-bold">Quick Links</p>
+          <p className="text-2xl font-bold">QuickLinks</p>
         </div>
         <div className="flex flex-col">
           <a className="text-lg" href="#about">
@@ -40,38 +47,40 @@ export default function Footer2() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-4 justify-start px-12 m-2">
+      <div className="flex flex-col gap-4 justify-start">
         <div>
           <p className="text-2xl font-bold">Join us</p>
         </div>
-        <div className="flex flex-col gap-2">
-          <a href="https://github.com/dscvitc/dscvitchennai" target="_blank" className="text-xl">
+        <div className="flex flex-col">
+          <Link target="_blank" href="https://github.com/dscvitc/dscvitchennai" className="text-xl">
             <span className="flex flex-row px-2 gap-4">
               <IconBrandGithubFilled /> <p>Github</p>
             </span>
-          </a>
-          <a href="https://discord.com/invite/UFfPjTtzh7" target="_blank" className="text-xl">
+          </Link>
+          <Link target="_blank" href="https://discord.gg/UFfPjTtzh7" className="text-xl">
             <span className="flex flex-row px-2 gap-4">
               <IconBrandDiscordFilled /> <p>Discord</p>
             </span>
-          </a>
+          </Link>
+          <Link target="_blank" href="http://linkedin.com/company/devshouse" className="text-xl">
+            <span className="flex flex-row px-2 gap-4">
+              <IconBrandLinkedin /> <p>LinkedIn</p>
+            </span>
+          </Link>
+          <Link target="_blank" href="http://instagram.com/devshouse.tech" className="text-xl">
+            <span className="flex flex-row px-2 gap-4">
+              <IconBrandInstagram /> <p>Instagram</p>
+            </span>
+          </Link>
+          <Link target="_blank" href="http://x.com/devshouse_tech" className="text-xl">
+            <span className="flex flex-row px-2 gap-4">
+              <IconBrandTwitterFilled /> <p>Twitter</p>
+            </span>
+          </Link>
         </div>
-      </div>
-      <div className="flex flex-col gap-4 justify-start px-12 m-2">
-        <p className="text-2xl font-bold">Follow us</p>
-        <p className="text-xl text-gray-500">Connect. Learn. Grow.</p>
-        <span className="flex flex-row py-2 gap-4 m-2">
-          <a href="https://www.instagram.com/devshouse.tech" target="_blank" className="hover:scale-125">
-            <IconBrandInstagram />
-          </a>
-          <a href="https://www.linkedin.com/company/devshouse/" target="_blank" className="hover:scale-125">
-            <IconBrandLinkedin />
-          </a>
-          <a href="https://twitter.com/devshouse_tech" target="_blank" className="hover:scale-125">
-            <IconBrandX />
-          </a>
-        </span>
       </div>
     </div>
   );
 }
+
+
