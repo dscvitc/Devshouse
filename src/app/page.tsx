@@ -11,8 +11,7 @@ import Footer2 from "@/components/Footer2";
 import MarqueeLogo from "@/components/MarqueeLogo";
 import Navbar from "@/components/NavBar";
 import Sponsor from "@/components/Sponsor";
-
-
+import TimelineOnline from "@/components/TimelineOnline";
 
 export default function Home() {
   return (
@@ -27,6 +26,7 @@ export default function Home() {
       <About2 />
       <Tracks />
       <Prizes />
+      <TimelineOnline />
       {/* <Timeline /> */}
       {/*Hide until confirmed*/}
       {/* <Speakers /> */}

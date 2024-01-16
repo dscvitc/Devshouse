@@ -54,6 +54,23 @@ export default function Footer2() {
           </a>
         </div>
       </div>
+      <div className="flex flex-col gap-4 justify-start">
+        <div>
+          <p className="text-2xl font-bold">Join us</p>
+        </div>
+        <div className="flex flex-col">
+          <a href="https://github.com/dscvitc/dscvitchennai" className="text-xl">
+            <span className="flex flex-row px-2 gap-4">
+              <IconBrandGithubFilled /> <p>Github</p>
+            </span>
+          </a>
+          <a href="" className="text-xl">
+            <span className="flex flex-row px-2 gap-4">
+              <IconBrandDiscordFilled /> <p>Discord</p>
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
