@@ -21,19 +21,16 @@ function ServerSideRendering() {
         <hr className="border-none dashed-line "></hr>
       </Title>
 
-      <Text
-        className={`${space.className} text-base md:text-xl lg:text-2xl sm:text-2xl md:text-justify mt-10`}
-        mt="xl"
-      >
-        A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
-        from across India the opportunity to
+      <Text className={`${space.className} text-base md:text-xl lg:text-2xl sm:text-2xl md:text-justify mt-10`} mt="xl">
+        A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students from
+        across India the opportunity to
         <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
-        <span className="text-[#0F9D58]">innovative solutions.</span> Join us for a thrilling event, where
-        learning meets excitement and
+        <span className="text-[#0F9D58]">innovative solutions.</span> Join us for a thrilling event, where learning
+        meets excitement and
         <span className="text-[#EA4335]"> amazing prizes</span> await!
       </Text>
     </>
-  )
+  );
 }
 
 export function HeroBullets() {
@@ -53,11 +50,9 @@ export function HeroBullets() {
       <div className="overflow-hidden">
         <div className={`${classes.inner} flex flex-col-reverse md:flex-row  items-center`}>
           <div className={classes.content}>
-
             <ServerSideRendering />
             <Group mt={30}>
-              <Link href={'https://discord.gg/UFfPjTtzh7'} target="_blank">
-
+              <a href={"https://discord.gg/UFfPjTtzh7"} target="_blank">
                 <Button radius="xl" size="md" className={`button-50`}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,17 +67,39 @@ export function HeroBullets() {
                       fill="black"
                     />
                   </svg>{" "}
-                  Join Us
+                  Join Our Community
                 </Button>
-              </Link>
-              <Button radius="xl" size="md" className={`button-50`}>
+              </a>
+              <a href="https://devshouse-1.devfolio.co/" target="_blank">
+                <Button radius="xl" size="md" className={`button-50`}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="26"
+                    viewBox="0 0 34 26"
+                    fill="none"
+                    style={{ marginRight: " 10px" }}
+                  >
+                    <path
+                      d="M36.1799 21.8393C36.1799 31.1993 29.1599 38.8193 20.2799 39.5993C20.2799 39.5993 8.81986 39.8993 5.03986 39.5393C3.59986 39.3593 2.39986 38.4593 1.85986 37.1393C2.39986 37.3793 2.93986 37.5593 3.53986 37.6193C4.79986 37.7393 6.89986 37.7993 9.83986 37.7993C14.1599 37.7993 18.8999 37.6793 18.8999 37.6793H18.9599C23.6999 37.2593 28.0799 35.0993 31.1999 31.5593C33.8999 28.5593 35.6399 24.7793 36.1199 20.8193C36.1799 21.1193 36.1799 21.4793 36.1799 21.8393Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M34.8 17.9994C34.8 27.3594 27.78 34.9794 18.84 35.6994C18.84 35.6994 7.38 35.9994 3.6 35.6394C1.56 35.4594 0.06 33.5394 0 31.3794L0.06 4.37938C0.12 2.21938 1.68 0.299377 3.72 0.119377C7.5 -0.180623 18.96 0.179377 18.96 0.179377C27.84 0.959377 34.8 8.63937 34.8 17.9994Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Apply on Devfolio
+                </Button>
+              </a>
+              {/* <Button radius="xl" size="md" className={`button-50`}>
                 <div
                   className="apply-button"
                   data-hackathon-slug="devshouse-1"
                   data-button-theme="dark-inverted"
                   style={{ height: "44px", minWidth: "50px" }}
                 ></div>
-              </Button>
+              </Button> */}
             </Group>
           </div>
           {

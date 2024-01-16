@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@mantine/core";
 import SponsorDecor from "../../public/Group 43.svg";
+import devfolioIcon from "../../public/devfolioicon.svg";
 
 const space = Space_Grotesk({ weight: "300", subsets: ["latin"] });
 const museo = MuseoModerno({ weight: "700", subsets: ["latin"] });
@@ -44,7 +45,7 @@ export default function Hero2() {
           <span className="text-[#EA4335]"> amazing prizes</span> await!
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:pr-32">
-          <Link href={"https://discord.gg/UFfPjTtzh7"} target="_blank">
+          <a href={"https://discord.gg/UFfPjTtzh7"} target="_blank">
             <Button radius="xl" size="md" className={` w-full button-50`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,15 +62,28 @@ export default function Hero2() {
               </svg>{" "}
               <p className="font-spaceGrotesk text-lg font-bold mx-4">Join Us</p>
             </Button>
-          </Link>
-          <Button radius="xl" size="md" className={`w-full button-50`}>
+          </a>
+          <a href="https://devshouse-1.devfolio.co/" target="_blank">
+            <Button radius="xl" size="md" className={`w-full button-50`}>
+              <Image
+                src={devfolioIcon}
+                width={25}
+                height={25}
+                fill={false}
+                objectFit="contain"
+                alt={"devfolio icon"}
+              ></Image>
+              <p className="font-spaceGrotesk text-lg font-bold mx-4">Apply on Devfolio</p>
+            </Button>
+          </a>
+          {/* <Button radius="xl" size="md" className={`w-full button-50`}>
             <div
               className="apply-button"
               data-hackathon-slug="devshouse-1"
               data-button-theme="dark-inverted"
               style={{ height: "44px", width: "312px" }}
             ></div>
-          </Button>
+          </Button> */}
         </div>
       </div>
       <div className="flex flex-1">

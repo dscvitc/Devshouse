@@ -16,6 +16,7 @@ import wolframLogo from "../../public/sponsors/wolfram.png";
 import esalesLogo from "../../public/sponsors/esales.png";
 import IBLogo from "../../public/sponsors/iblogotransparent.png";
 import devfolioLogo from "../../public/sponsors/devfolio.png";
+import nblogo from "../../public/sponsors/NB-2.0-logo-1.png";
 
 import "../app/globals.css";
 import SponsorCard from "./SponsorCard";
@@ -323,65 +324,55 @@ const Sponsor = () => {
         </div>
         {/* COM PARTNERS SECTION */}
 
-        {/* <div className="flex flex-col items-center justify-center mt-20 w-full">
-            <div className="flex justify-center items-center w-full">
-              <svg
-                className="flex justify-end "
-                height="5"
-                viewBox="0 0 521 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M10.8542 5.78467H0V0.784668H10.8542V5.78467ZM54.2708 5.78467H32.5625V0.784668H54.2708V5.78467ZM97.6875 5.78467H75.9792V0.784668H97.6875V5.78467ZM141.104 5.78467H119.396V0.784668H141.104V5.78467ZM184.521 5.78467H162.813V0.784668H184.521V5.78467ZM227.938 5.78467H206.229V0.784668H227.938V5.78467ZM271.354 5.78467H249.646V0.784668H271.354V5.78467ZM314.771 5.78467H293.062V0.784668H314.771V5.78467ZM358.188 5.78467H336.479V0.784668H358.188V5.78467ZM401.604 5.78467H379.896V0.784668H401.604V5.78467ZM445.021 5.78467H423.313V0.784668H445.021V5.78467ZM488.438 5.78467H466.729V0.784668H488.438V5.78467ZM521 5.78467H510.146V0.784668H521V5.78467Z"
-                  fill="white"
-                />
-              </svg>
-              <span className="text-[#EB81C1] text-[25px] mx-4 leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
-                Community Partners
-              </span>
-              <svg
-                className="flex justify-start "
-                height="5"
-                viewBox="0 0 521 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M10.8542 5.78467H0V0.784668H10.8542V5.78467ZM54.2708 5.78467H32.5625V0.784668H54.2708V5.78467ZM97.6875 5.78467H75.9792V0.784668H97.6875V5.78467ZM141.104 5.78467H119.396V0.784668H141.104V5.78467ZM184.521 5.78467H162.813V0.784668H184.521V5.78467ZM227.938 5.78467H206.229V0.784668H227.938V5.78467ZM271.354 5.78467H249.646V0.784668H271.354V5.78467ZM314.771 5.78467H293.062V0.784668H314.771V5.78467ZM358.188 5.78467H336.479V0.784668H358.188V5.78467ZM401.604 5.78467H379.896V0.784668H401.604V5.78467ZM445.021 5.78467H423.313V0.784668H445.021V5.78467ZM488.438 5.78467H466.729V0.784668H488.438V5.78467ZM521 5.78467H510.146V0.784668H521V5.78467Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
+        <div className="flex flex-col items-center justify-center mt-20 w-full">
+          <div className="flex justify-center items-center w-full">
+            <svg
+              className="flex justify-end "
+              height="5"
+              viewBox="0 0 521 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10.8542 5.78467H0V0.784668H10.8542V5.78467ZM54.2708 5.78467H32.5625V0.784668H54.2708V5.78467ZM97.6875 5.78467H75.9792V0.784668H97.6875V5.78467ZM141.104 5.78467H119.396V0.784668H141.104V5.78467ZM184.521 5.78467H162.813V0.784668H184.521V5.78467ZM227.938 5.78467H206.229V0.784668H227.938V5.78467ZM271.354 5.78467H249.646V0.784668H271.354V5.78467ZM314.771 5.78467H293.062V0.784668H314.771V5.78467ZM358.188 5.78467H336.479V0.784668H358.188V5.78467ZM401.604 5.78467H379.896V0.784668H401.604V5.78467ZM445.021 5.78467H423.313V0.784668H445.021V5.78467ZM488.438 5.78467H466.729V0.784668H488.438V5.78467ZM521 5.78467H510.146V0.784668H521V5.78467Z"
+                fill="white"
+              />
+            </svg>
+            <span className="text-[#EB81C1] text-[25px] mx-4 leading-normal font-bold font-spaceGrotesk  max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+              Media Partner
+            </span>
+            <svg
+              className="flex justify-start "
+              height="5"
+              viewBox="0 0 521 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10.8542 5.78467H0V0.784668H10.8542V5.78467ZM54.2708 5.78467H32.5625V0.784668H54.2708V5.78467ZM97.6875 5.78467H75.9792V0.784668H97.6875V5.78467ZM141.104 5.78467H119.396V0.784668H141.104V5.78467ZM184.521 5.78467H162.813V0.784668H184.521V5.78467ZM227.938 5.78467H206.229V0.784668H227.938V5.78467ZM271.354 5.78467H249.646V0.784668H271.354V5.78467ZM314.771 5.78467H293.062V0.784668H314.771V5.78467ZM358.188 5.78467H336.479V0.784668H358.188V5.78467ZM401.604 5.78467H379.896V0.784668H401.604V5.78467ZM445.021 5.78467H423.313V0.784668H445.021V5.78467ZM488.438 5.78467H466.729V0.784668H488.438V5.78467ZM521 5.78467H510.146V0.784668H521V5.78467Z"
+                fill="white"
+              />
+            </svg>
+          </div>
           <div className="flex gap-60 my-20 max-lg:flex-col max-lg:gap-20">
-            <a href="">
+            <a href="https://noticebard.com/" target="_blank">
               <SponsorCard
-                cardWidth={"261.473px"}
+                cardWidth={"300px"}
                 cardHeight={"124.878px"}
-                img={comPart1}
+                img={nblogo}
                 imgWidth={250}
-                imgAlt={"company1"}
+                imgAlt={"noticebard"}
                 color={"#FCCF4B"}
                 backgroundMt={"-7.5rem"}
                 backgroundMl={"0.2rem"}
               />
             </a>
-            <SponsorCard
-              cardWidth={"261.473px"}
-              cardHeight={"124.878px"}
-              img={comPart2}
-              imgWidth={250}
-              imgAlt={"company2"}
-              color={"#FCCF4B"}
-              backgroundMt={"-7.5rem"}
-              backgroundMl={"0.2rem"}
-            />
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
