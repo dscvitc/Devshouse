@@ -38,7 +38,7 @@ const Card = ({ name, role, img, linkedin }: Props) => {
               alt="linkedin"
               width={60}
               height={60}
-              className="absolute right-0 bottom-0 ml-10"
+              className="absolute -right-5 -bottom-5"
             />
           </Link>
         </div>
