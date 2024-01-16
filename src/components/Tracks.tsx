@@ -52,7 +52,7 @@ const Tracks = () => {
   }, []);
 
   return (
-    <div id="tracks" className=" w-full flex flex-col h-[100vh] pt-12">
+    <div id="tracks" className="w-full flex flex-col h-[100vh] pt-12">
       <div
         style={{
           backgroundImage: `url('/assets/images/blend(${hoverItem}).png')`,
@@ -63,7 +63,7 @@ const Tracks = () => {
         className={`flex flex-col h-full overflow-x-hidden`}
       >
         <div className="flex justify-center items-center">
-          <div className="text-white p-4 text-[3em] max-md:text-2xl font-spaceGrotesk">Tracks</div>
+          <div className="text-white p-4 text-[3em] max-md:text-2xl font-bold font-spaceGrotesk">Tracks</div>
         </div>
         {deptDesc[hoverItem]}
         <div className="flex justify-evenly flex-wrap h-[100%] content-around mb-30">

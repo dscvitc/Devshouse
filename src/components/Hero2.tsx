@@ -24,7 +24,7 @@ export default function Hero2() {
   return (
     <div className="h-full mt-[100px] mb-[20px] w-[100%] mx-auto justify-center items-center flex flex-col-reverse lg:flex-row">
       <div className="py-12 pl-24 pr-40 h-full flex-1 justify-between">
-        <p className={`text-4xl lg:text-7xl mb-4 md:mb-10 ${museo.className}`}>DEVSHOUSE '24</p>
+        <p className={`text-4xl lg:text-7xl mb-4 md:mb-10 ${museo.className}`}>DEVSHOUSE &apos;24</p>
         <hr className="border-none dashed-line "></hr>
         <p className={`${space.className} font-bold text-3xl text-left mt-4 md:mt-10`}>
           A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
