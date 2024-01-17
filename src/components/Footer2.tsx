@@ -15,7 +15,7 @@ import Link from "next/link";
 export default function Footer2() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 p-12 font-spaceGrotesk">
-      <div className="relative col-span-2">
+      <div className="relative md:col-span-2">
         <div className="relative">
           <a href="https://devshouse-1.devfolio.co/" target="_blank">
             <Image
