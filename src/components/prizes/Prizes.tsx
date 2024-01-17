@@ -88,35 +88,36 @@ export default function Prizes() {
     {
       trackName: "Wolfram",
       trackLogo: wolfram,
-      trackText: "Top 6 Teams - One year subscription of Wolfram Alpha Pro worth 375$",
+      trackText:
+        "Top 6 Teams - One year subscription of Wolfram Alpha Pro worth 375$ & 1 Month Trial for Wolfram|One worth $25.00 for all participants",
       color: "#07A158",
     },
-    {
-      trackName: "Wolfram",
-      trackLogo: wolfram,
-      trackText: "1 Month Trial for Wolfram|One worth $25.00 for all participants",
-      color: "#07A158",
-    },
+    // {
+    //   trackName: "Wolfram",
+    //   trackLogo: wolfram,
+    //   trackText: "1 Month Trial for Wolfram|One worth $25.00 for all participants",
+    //   color: "#07A158",
+    // },
     {
       trackName: "Polygon",
       trackLogo: polygon,
-      trackText: "Best hack built on Ethereum: $150",
+      trackText: "Best hack built on Ethereum: $150 & Best hack built on Ethereum + Polygon: $200",
     },
-    {
-      trackName: "Polygon",
-      trackLogo: polygon,
-      trackText: "Best hack built on Ethereum + Polygon: $200",
-    },
-    {
-      trackName: "Interview Buddy",
-      trackLogo: iblogo,
-      trackText: "100% off Voucher for winners and runners-up",
-    },
+    // {
+    //   trackName: "Polygon",
+    //   trackLogo: polygon,
+    //   trackText: "",
+    // },
     {
       trackName: "Interview Buddy",
       trackLogo: iblogo,
-      trackText: "90% off Voucher to participants.",
+      trackText: "100% off Voucher for winners and runners-up & 90% off Voucher to participants.",
     },
+    // {
+    //   trackName: "Interview Buddy",
+    //   trackLogo: iblogo,
+    //   trackText: "",
+    // },
   ];
   return (
     <section id="prizes" className="w-full flex flex-col justify-center items-center overflow-hidden mb-8">
