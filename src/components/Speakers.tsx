@@ -102,7 +102,7 @@ const SpeakerCard = ({ name, position, company,link }: Speaker) => {
 
       <Image src="/byalpha.png" alt='' width={220} height={220} className='absolute left-[1px] top-[1px]' />
 
-      <img src={`${link}`} alt="Cropped Image" style={{ clipPath: 'url(#clipPath)', width: "220px", height: '220px' }} className='object-cover flex justify-center items-center' />
+      <Image src={`${link}`} alt="Cropped Image" style={{ clipPath: 'url(#clipPath)', width: "220px", height: '220px' }} className='object-cover flex justify-center items-center' />
 
       <div className='flex flex-col justify-center items-center pt-10'>
         <h1 className='text-2xl'>{name}</h1>

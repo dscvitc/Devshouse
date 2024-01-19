@@ -33,7 +33,7 @@ export default function Footer2() {
       </div>
       <div className="flex flex-col gap-4 justify-start">
         <div>
-          <p className="text-2xl font-bold">QuickLinks</p>
+          <p className="text-2xl font-bold">Links</p>
         </div>
         <div className="flex flex-col">
           <a className="text-lg" href="#about">

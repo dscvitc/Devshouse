@@ -26,7 +26,7 @@ const Navbar = () => {
     >
       <span className="cursor-pointer md:w-60 md-ml-5 m m-3 w-64 flex items-center">
         <Link href="/">
-          <Image src={logo} alt="gdsc logo" />
+          <Image src={logo} alt="DevsHouse" />
         </Link>
       </span>
 
