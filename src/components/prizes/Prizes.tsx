@@ -1,12 +1,14 @@
 import Divider from "./Divider";
 import MainPrize from "./MainPrizeCard";
 import SpecialPrize from "./SpecialPrizeCardImage";
-
+import Image from "next/image";
 import cybrance from "../../../public/sponsors/cybrance.png";
 import replit from "../../../public/sponsors/replit.png";
 import wolfram from "../../../public/sponsors/wolfram.png";
 import polygon from "../../../public/sponsors/polygon.png";
 import iblogo from "../../../public/sponsors/iblogotransparent.png";
+import bestgirls from "../../../public/images/prizes/best_all_girls_team.svg";
+import bestfresher from "../../../public/images/prizes/best_fresher_team.svg";
 
 export default function Prizes() {
   const PrizeInfo = [
@@ -101,7 +103,8 @@ export default function Prizes() {
     {
       trackName: "Polygon",
       trackLogo: polygon,
-      trackText: "Best hack built on Ethereum: $150 & Best hack built on Ethereum + Polygon: $200",
+      trackText:
+        "Best hack built on Ethereum: $150 & Best hack built on Ethereum + Polygon: $200",
     },
     // {
     //   trackName: "Polygon",
@@ -111,7 +114,8 @@ export default function Prizes() {
     {
       trackName: "Interview Buddy",
       trackLogo: iblogo,
-      trackText: "100% off Voucher for winners and runners-up & 90% off Voucher to participants.",
+      trackText:
+        "100% off Voucher for winners and runners-up & 90% off Voucher to participants.",
     },
     // {
     //   trackName: "Interview Buddy",
@@ -120,7 +124,10 @@ export default function Prizes() {
     // },
   ];
   return (
-    <section id="prizes" className="w-full flex flex-col justify-center items-center overflow-hidden mb-8">
+    <section
+      id="prizes"
+      className="w-full flex flex-col justify-center items-center overflow-hidden mb-8"
+    >
       <h1 className="text-white text-[35px] font-bold font-['Space Grotesk'] mt-6 sm:text-[40px] md:txt[45px] lg:[54px]">
         Prizes
       </h1>
@@ -154,6 +161,26 @@ export default function Prizes() {
           />
         </div>
       </div>
+      <Divider heading="Exclusive Swag Pack" mt="70px" mb="70px" />
+      <div className="flex flex-row justify-evenly itmes-center  ">
+        <div className="w-[35%]">
+          <Image
+            src={bestgirls}
+            width={702}
+            height={445}
+            alt="Girls best team"
+          />
+        </div>
+        <div className="w-[35%]">
+          <Image
+            src={bestfresher}
+            width={702}
+            height={445}
+            alt="Fresher best team"
+          />
+        </div>
+      </div>
+
       {tracks.length > 0 ? (
         <>
           <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
