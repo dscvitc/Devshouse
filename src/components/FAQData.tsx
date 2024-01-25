@@ -15,16 +15,16 @@ const FAQData = [
   },
   {
     key: 3,
-    question: "How do I submit my final product for the hackathon?",
+    question: "Do I need to pay to register for DevsHouse?",
     answer:
-      "The program must be developed locally on your computer, the code must be added to a GitHub repository and you should submit it via its link. Additionally, you need to edit your repository's README file with all the information about your application and its running instructions.",
+      "No, In order to register for DevsHouse you do not need to pay anything.",
     color: "blue",
   },
   {
     key: 4,
-    question: "Do we need to have the entire idea fully working?",
+    question: "Is it necessary for the participants to be from the same university?",
     answer:
-      "It is not necessary to implement the complete idea. To enable the judges to assess the entry, it must, nevertheless, be operational.",
+      "No, there are no restrictions regarding universities. Your team can have members from different universities across the globe as long as you can commute to VIT, Chennai India since it is an offline hack!",
     color: "green",
   },
   {

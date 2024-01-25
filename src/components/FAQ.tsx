@@ -61,13 +61,13 @@ const FAQ = () => {
           id="sponsor-us"
         >
           <div className="flex flex-row justify-center md:justify-start">
-            <h1 className="text-5xl mb-4 md:mb-0 md:pr-6">Let&apos;s Host Together</h1>
-            <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="-translate-y-7 md:translate-y-0" />
+            <h1 className="text-5xl mb-4 w-auto">Let&apos;s Host Together</h1>
+            <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="-translate-y-16 -translate-x-16 md:translate-x-0 md:-translate-y-7 " />
           </div>
           <div
             className={`flex flex-col xl:flex-row gap-12 items-center md:items-start justify-between w-full ${Space400.className}`}
           >
-            <div className="pr-6 text-lg md:text-4xl">
+            <div className="pr-6 text-lg md:text-3xl">
               <p>Elevate your brand, be part of the tech revolution!</p>
               <p>
                 Write to <b>collaborate</b> with us at: sponsorship@devshouse.tech
