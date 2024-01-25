@@ -8,15 +8,19 @@ import comPart1 from "../../public/assets/images/comPart1.png";
 import comPart2 from "../../public/assets/images/comPart2.png";
 import build from "next/dist/build";
 
-import polygonLogo from "../../public/sponsors/polygon.png";
-import replitLogo from "../../public/sponsors/replit.png";
-import skynyxLogo from "../../public/sponsors/skynyx.png";
-import ZSecuritylogo from "../../public/sponsors/ZSecurity.png";
-import wolframLogo from "../../public/sponsors/wolfram.png";
-import esalesLogo from "../../public/sponsors/esales.png";
-import IBLogo from "../../public/sponsors/iblogotransparent.png";
-import devfolioLogo from "../../public/sponsors/devfolio.png";
-import nblogo from "../../public/sponsors/NB-2.0-logo-1.png";
+import polygonLogo from "public/sponsors/polygon.png";
+import replitLogo from "public/sponsors/replit.png";
+import skynyxLogo from "public/sponsors/skynyx.png";
+import ZSecuritylogo from "public/sponsors/ZSecurity.png";
+import wolframLogo from "public/sponsors/wolfram.png";
+import esalesLogo from "public/sponsors/esales.png";
+import IBLogo from "public/sponsors/iblogotransparent.png";
+import devfolioLogo from "public/sponsors/devfolio.png";
+import nblogo from "public/sponsors/NB-2.0-logo-1.png";
+import BeeCeptor from "public/sponsors/beeceptor.png";
+import Echo3d from "public/sponsors/echo3d.png";
+import Cybrance from "public/sponsors/cybrance.png";
+import Verbwire from "public/sponsors/verbwire.png";
 
 import "../app/globals.css";
 import SponsorCard from "./SponsorCard";
@@ -313,6 +317,54 @@ const Sponsor = () => {
                   <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                     <div className="flex flex-row justify-center items-center">
                       <Image src={IBLogo} alt={"IB LOGO"} width={350} />
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            </div>
+            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://beeceptor.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={BeeCeptor} alt={"Beeceptor"} width={250} />
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://echo3d.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={Echo3d} alt={"Echo3D"} width={350} />
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            </div>
+            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://cybrancee.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={Cybrance} alt={"Cybrance"} width={250} />
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://www.verbwire.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={Verbwire} alt={"Verbwire"} width={350} />
                     </div>
                   </div>
                 </a>

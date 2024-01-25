@@ -101,7 +101,7 @@ const boardMembers = [
     linkedIn: "www.linkedin.com/in/naveen-shankar-choudhury-481262238",
   },
   {
-    name: "Shubham Ghosh",
+    name: "Subham Ghosh",
     image: Outreach_Lead,
     role: "Outreach Lead",
     description: "Placeholder",

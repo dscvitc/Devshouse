@@ -76,7 +76,7 @@ const Tracks = () => {
             }}
             className={buttonStyle}
           >
-            <p className=" font-medium font-spaceGrotesk">Blockchain</p>
+            <p className=" font-medium font-spaceGrotesk">Finance and Blockchain</p>
           </div>
           <div
             onMouseEnter={() => {
