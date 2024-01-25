@@ -18,7 +18,11 @@ export default function Home() {
   return (
     <div
       className={`flex flex-col`}
-      style={{ backgroundImage: `url('/images/bgLayer.png')`, backgroundRepeat: "repeat-y", backgroundSize: "contain" }}
+      style={{
+        backgroundImage: `url('/images/bgLayer.png')`,
+        backgroundRepeat: "repeat-y",
+        backgroundSize: "contain",
+      }}
     >
       <Navbar />
       {/* <HeroBullets /> */}
@@ -28,6 +32,7 @@ export default function Home() {
       <About2 />
       <Tracks />
       <Prizes />
+
       <TimelineOnline />
       {/* <Timeline /> */}
       {/*Hide until confirmed*/}
