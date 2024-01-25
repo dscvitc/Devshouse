@@ -162,8 +162,8 @@ export default function Prizes() {
         </div>
       </div>
       <Divider heading="Exclusive Swag Pack" mt="70px" mb="70px" />
-      <div className="flex flex-row justify-evenly itmes-center  ">
-        <div className="w-[35%]">
+      <div className="flex flex-col  sm:flex-row justify-evenly itmes-center  ">
+        <div className="w-[90%] md:w-[35%] m-auto">
           <Image
             src={bestgirls}
             width={702}
@@ -171,7 +171,7 @@ export default function Prizes() {
             alt="Girls best team"
           />
         </div>
-        <div className="w-[35%]">
+        <div className="w-[90%] md:w-[35%] m-auto">
           <Image
             src={bestfresher}
             width={702}
