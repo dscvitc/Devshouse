@@ -89,7 +89,7 @@ export function HeroBullets() {
                       fill="black"
                     />
                   </svg>
-                  Apply on Devfolio
+                  Apply with Devfolio
                 </Button>
               </a>
               {/* <Button radius="xl" size="md" className={`button-50`}>

@@ -21,6 +21,8 @@ import BeeCeptor from "public/sponsors/beeceptor.png";
 import Echo3d from "public/sponsors/echo3d.png";
 import Cybrance from "public/sponsors/cybrance.png";
 import Verbwire from "public/sponsors/verbwire.png";
+import Solana from "public/sponsors/solana.png";
+import Superteam from "public/sponsors/superteam.png";
 
 import "../app/globals.css";
 import SponsorCard from "./SponsorCard";
@@ -86,6 +88,30 @@ const Sponsor = () => {
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center">
                   <Image src={polygonLogo} alt={"POLYGON LOGO"} />
+                </div>
+              </div>
+            </a>
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+          </div>
+        </div>
+        <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
+          <div className="flex flex-row justify-center justify-self-center text-center items-center ">
+            <a href="https://superteam.fun/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center">
+                  <Image src={Superteam} alt={"SuperTeam LOGO"} width={300} height={250} />
+                </div>
+              </div>
+            </a>
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+          </div>
+          <div className="flex flex-row justify-center justify-self-center text-center items-center ">
+            <a href="https://solana.com/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center">
+                  <Image src={Solana} alt={"Solana LOGO"} width={500} height={250} />
                 </div>
               </div>
             </a>
