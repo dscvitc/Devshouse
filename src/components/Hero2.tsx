@@ -73,7 +73,7 @@ export default function Hero2() {
                 objectFit="contain"
                 alt={"devfolio icon"}
               ></Image>
-              <p className="font-spaceGrotesk text-lg font-bold mx-4">Apply on Devfolio</p>
+              <p className="font-spaceGrotesk text-lg font-bold mx-4">Apply with Devfolio</p>
             </Button>
           </a>
           {/* <Button radius="xl" size="md" className={`w-full button-50`}>
