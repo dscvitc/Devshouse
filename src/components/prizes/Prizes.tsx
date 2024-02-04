@@ -9,7 +9,12 @@ import polygon from "../../../public/sponsors/polygon.png";
 import iblogo from "../../../public/sponsors/iblogotransparent.png";
 import bestgirls from "../../../public/images/prizes/best_all_girls_team.svg";
 import bestfresher from "../../../public/images/prizes/best_fresher_team.svg";
-
+import solana from "../../../public/sponsors/solana.png";
+import quillAudits from "../../../public/sponsors/quillaudits.png";
+import beeceptor from "../../../public/sponsors/beeceptor.png";
+import echo3D from "../../../public/sponsors/echo3d.png";
+import verbwire from "../../../public/sponsors/verbwire.png";
+import aops from "../../../public/sponsors/aops.png";
 export default function Prizes() {
   const PrizeInfo = [
     //Gold, silver and bronze images
@@ -76,12 +81,27 @@ export default function Prizes() {
   //   },
   // ];
   const tracks: any[] = [
+
     {
-      trackName: "Cybrance",
-      trackLogo: cybrance,
-      trackText: "1 month free web hosting for all participants.",
+      trackName: "Polygon",
+      trackLogo: polygon,
+      trackText: "Best hack built on Ethereum: $150 & \nEthereum + Polygon: $200",
       color: "#07A158",
     },
+    {
+      trackName: "Solana",
+      trackLogo: solana,
+      trackText: "$100 for best beginners project, $250 for best intermediate project, $500 for the best advanced project",
+      color: "#07A158",
+    },
+    
+{
+    trackName: "QuillAudits",
+    trackLogo: quillAudits,
+    trackText: "Wagsi grants worth $1500, Schwags for top developers using Quillcheck API/Quillai API, Best projects can pitch their projects to our incubator.",
+    color: "#07A158",
+  },
+
     {
       trackName: "Replit",
       trackLogo: replit,
@@ -91,37 +111,50 @@ export default function Prizes() {
       trackName: "Wolfram",
       trackLogo: wolfram,
       trackText:
-        "Top 6 Teams - One year subscription of Wolfram Alpha Pro worth 375$ & 1 Month Trial for Wolfram|One worth $25.00 for all participants",
+        "Top 6 teams receive One Year subscription to Wolfram|One Personal Edition & Wolfram|Alpha Pro each worth $375, 1 Month Trial for Wolfram|One worth $25.00 for all participants ",
       color: "#07A158",
     },
-    // {
-    //   trackName: "Wolfram",
-    //   trackLogo: wolfram,
-    //   trackText: "1 Month Trial for Wolfram|One worth $25.00 for all participants",
-    //   color: "#07A158",
-    // },
     {
-      trackName: "Polygon",
-      trackLogo: polygon,
-      trackText:
-        "Best hack built on Ethereum: $150 & Best hack built on Ethereum + Polygon: $200",
-    },
-    // {
-    //   trackName: "Polygon",
-    //   trackLogo: polygon,
-    //   trackText: "",
-    // },
-    {
-      trackName: "Interview Buddy",
+      trackName: "IB",
       trackLogo: iblogo,
       trackText:
-        "100% off Voucher for winners and runners-up & 90% off Voucher to participants.",
+        "VOUCHERS WORTH - 100% off to winners and runner-up, 90% off to participants",
+      color: "#07A158",
     },
-    // {
-    //   trackName: "Interview Buddy",
-    //   trackLogo: iblogo,
-    //   trackText: "",
-    // },
+    {
+      trackName: "Beeceptor",
+      trackLogo: beeceptor,
+      trackText:
+        "Free 1 year Team Plan for winning team. All participants get $25 credit to subscribe to the Team plan.",
+      color: "#07A158",
+    },
+    {
+      trackName: "echo3D",
+      trackLogo: echo3D,
+      trackText:"1-month Pro tier subscription as a free resource to all participants ($99 value per sign up)",
+      color: "#07A158",
+    },
+    {
+      trackName: "Cybrance",
+      trackLogo: cybrance,
+      trackText: "1 month free web hosting for all participants.",
+      color: "#07A158",
+    },
+
+    {
+      trackName: "Verbwire",
+      trackLogo: verbwire,
+      trackText: "Up to $5,000 in Premium API Credits for Most Innovative Use Of Verbwire API up to 20 teams.One-month free Verbwire Starter Subscription to all participants.",
+      color: "#07A158",
+    },
+    
+    {
+      trackName: "Art of Problem Solving",
+      trackLogo: aops,
+      trackText: "Top team get $25 coupons",
+      color: "#07A158",
+    },
+
   ];
   return (
     <section
