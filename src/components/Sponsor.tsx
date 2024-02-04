@@ -19,7 +19,7 @@ import devfolioLogo from "public/sponsors/devfolio.png";
 import quillauditsLogo from "public/sponsors/quillaudits.png";
 import nblogo from "public/sponsors/NB-2.0-logo-1.png";
 import BeeCeptor from "public/sponsors/beeceptor.png";
-import bergerpng from "public/sponsors/berger_png_resized.png";
+import bergerpng from "public/sponsors/berger.png";
 import Echo3d from "public/sponsors/echo3d.png";
 import aops from "public/sponsors/aops.png";
 import netweb from "public/sponsors/netweb.png";
