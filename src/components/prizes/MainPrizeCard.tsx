@@ -13,7 +13,7 @@ export default function MainPrizeCard({ src, width, height, price, alt }: MainPr
       <Image src={src} alt={`${alt} place`} width={width} height={height} className="shadow" />
       <div className="text-center text-white text-xs font-bold font-['Space Grotesk'] md:text-[24px]  whitespace-nowrap">
         {/* <h1 >INR {price}</h1> */}
-        <h1>{price}</h1>
+        <h1 className="bold text-xl md:text-5xl">{price}</h1>
       </div>
     </div>
   );
