@@ -27,6 +27,7 @@ import choice from "public/sponsors/choice.png";
 import Cybrance from "public/sponsors/cybrance.png";
 import Verbwire from "public/sponsors/verbwire.png";
 import Solana from "public/sponsors/solana.png";
+import Redbull from "public/sponsors/redbull.png";
 import Superteam from "public/sponsors/superteam.png";
 
 import "../app/globals.css";
@@ -39,9 +40,67 @@ const Sponsor = () => {
         Sponsors
       </span>
 
-      {/* RUBY SECTION */}
+      {/* TITAN SECTION */}
 
       <div className="flex flex-col items-center justify-center">
+        <div className="flex justify-center w-full items-center ">
+          <svg
+            className="flex justify-end w-1/2"
+            height="5"
+            viewBox="0 0 633 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M13.1875 5.78467H0V0.784668H13.1875V5.78467ZM65.9375 5.78467H39.5625V0.784668H65.9375V5.78467ZM118.688 5.78467H92.3125V0.784668H118.688V5.78467ZM171.438 5.78467H145.063V0.784668H171.438V5.78467ZM224.188 5.78467H197.813V0.784668H224.188V5.78467ZM276.938 5.78467H250.562V0.784668H276.938V5.78467ZM329.687 5.78467H303.312V0.784668H329.687V5.78467ZM382.437 5.78467H356.062V0.784668H382.437V5.78467ZM435.188 5.78467H408.812V0.784668H435.188V5.78467ZM487.938 5.78467H461.562V0.784668H487.938V5.78467ZM540.688 5.78467H514.313V0.784668H540.688V5.78467ZM593.438 5.78467H567.063V0.784668H593.438V5.78467ZM633 5.78467H619.813V0.784668H633V5.78467Z"
+              fill="white"
+            />
+          </svg>
+          <span className="text-[#257e3b] mx-4 text-[25px] leading-normal font-bold px-1 font-spaceGrotesk max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+            Titan
+          </span>
+          <svg
+            className="flex justify-start w-1/2"
+            height="5"
+            viewBox="0 0 629 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M13.1042 5.78467H0V0.784668H13.1042V5.78467ZM65.5208 5.78467H39.3125V0.784668H65.5208V5.78467ZM117.938 5.78467H91.7292V0.784668H117.938V5.78467ZM170.354 5.78467H144.146V0.784668H170.354V5.78467ZM222.771 5.78467H196.563V0.784668H222.771V5.78467ZM275.188 5.78467H248.979V0.784668H275.188V5.78467ZM327.604 5.78467H301.396V0.784668H327.604V5.78467ZM380.021 5.78467H353.812V0.784668H380.021V5.78467ZM432.438 5.78467H406.229V0.784668H432.438V5.78467ZM484.854 5.78467H458.646V0.784668H484.854V5.78467ZM537.271 5.78467H511.063V0.784668H537.271V5.78467ZM589.688 5.78467H563.479V0.784668H589.688V5.78467ZM629 5.78467H615.896V0.784668H629V5.78467Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+
+        <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
+          <div className="flex flex-row justify-center justify-self-center text-center items-center">
+            <a href="https://www.quillaudits.com/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center ">
+                  <Image 
+                  src={Redbull} 
+                  alt={"REDBULL LOGO"} 
+                  
+                  />
+                </div>
+              </div>
+            </a>
+
+          
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+          </div>
+          </div>
+      </div>
+
+      {/* RUBY SECTION */}
+
+      <div className="flex flex-col items-center justify-center mt-20">
         <div className="flex justify-center w-full items-center ">
           <svg
             className="flex justify-end w-1/2"
