@@ -29,6 +29,11 @@ import Verbwire from "public/sponsors/verbwire.png";
 import Solana from "public/sponsors/solana.png";
 import Redbull from "public/sponsors/redbull.png";
 import Superteam from "public/sponsors/superteam.png";
+import Githb from "public/sponsors/github.png";
+import integra from "public/sponsors/integra.png";
+import sybgen from "public/sponsors/sybgen.png";
+import axure from "public/sponsors/axure.png";
+
 
 import "../app/globals.css";
 import SponsorCard from "./SponsorCard";
@@ -79,7 +84,7 @@ const Sponsor = () => {
 
         <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
           <div className="flex flex-row justify-center justify-self-center text-center items-center">
-            <a href="https://www.quillaudits.com/" target="_blank">
+            <a href="https://www.redbull.com/" target="_blank">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center ">
                   <Image 
@@ -159,6 +164,8 @@ const Sponsor = () => {
             <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
           </div>
         </div>
+
+
         <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <a href="https://superteam.fun/" target="_blank">
@@ -176,6 +183,20 @@ const Sponsor = () => {
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center">
                   <Image src={Solana} alt={"Solana LOGO"} width={500} height={250} />
+                </div>
+              </div>
+            </a>
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+          </div>
+        </div>
+
+        <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
+          <div className="flex flex-row justify-center justify-self-center text-center items-center ">
+            <a href="https://github.com/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center">
+                  <Image src={Githb} alt={"GITHUB LOGO"} width={500} height={250} />
                 </div>
               </div>
             </a>
@@ -378,6 +399,8 @@ const Sponsor = () => {
 
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
+
+
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://wolfram.com/" target="_blank">
                   <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
@@ -390,6 +413,8 @@ const Sponsor = () => {
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
+
+
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://www.esales.in/" target="_blank">
@@ -414,6 +439,8 @@ const Sponsor = () => {
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
+
+            
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://beeceptor.com/" target="_blank">
@@ -438,6 +465,7 @@ const Sponsor = () => {
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
+
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://cybrancee.com/" target="_blank">
@@ -462,6 +490,7 @@ const Sponsor = () => {
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
+
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://artofproblemsolving.com/" target="_blank">
@@ -482,10 +511,10 @@ const Sponsor = () => {
                     </div>
                   </div>
                 </a>
-
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
+
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://netwebindia.com/" target="_blank">
@@ -495,9 +524,9 @@ const Sponsor = () => {
                     </div>
                   </div>
                 </a>
-
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
+
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
                 <a href="https://choiceindia.com/" target="_blank">
                   <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
@@ -506,8 +535,45 @@ const Sponsor = () => {
                     </div>
                   </div>
                 </a>
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            </div>
 
-               
+            
+            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://www.integra.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={integra} alt={"INTEGRA LOGO"} width={250}/>
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            
+              {/* <div className="flex gap-60 max-lg:flex-col max-lg:gap-20"> */}
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://sybgen.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={sybgen} alt={"SYBGEN LOGO"} width={250} />
+                    </div>
+                  </div>
+                </a>
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            </div>
+
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://axure.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={axure} alt={"AXURE LOGO"} width={350} />
+                    </div>
+                  </div>
+                </a>
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
             </div>
@@ -579,7 +645,7 @@ const Sponsor = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
