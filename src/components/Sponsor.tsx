@@ -40,7 +40,7 @@ const Sponsor = () => {
         Sponsors
       </span>
 
-      {/* TITAN SECTION */}
+      {/* TITLE SECTION */}
 
       <div className="flex flex-col items-center justify-center">
         <div className="flex justify-center w-full items-center ">
@@ -59,7 +59,7 @@ const Sponsor = () => {
             />
           </svg>
           <span className="text-[#257e3b] mx-4 text-[25px] leading-normal font-bold px-1 font-spaceGrotesk max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
-            Titan
+            Title
           </span>
           <svg
             className="flex justify-start w-1/2"
