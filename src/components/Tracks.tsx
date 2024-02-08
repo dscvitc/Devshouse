@@ -35,8 +35,8 @@ const Tracks = () => {
       through technology, addressing challenges related to accessibility, representation, and diverse perspectives.
     </div>,
     <div key="6" className={descStyle}>
-      Collaborate on projects that embrace <span className={custEmphasis}> open-source principles,</span> encouraging
-      transparent and collaborative development within the tech community.
+      Collaborate on projects that embrace <span className={custEmphasis}>open innovation,</span> encouraging
+      transparent and collaborative development within the tech community.
     </div>,
   ];
 
