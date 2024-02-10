@@ -39,7 +39,7 @@ export default function Home() {
       {/*Hide until confirmed*/}
       {/* <Speakers /> */}
       <Ourteam />
-      {/* <Sponsor /> */}
+      <Sponsor />
       <FAQ />
       <Contact />
       <Footer2 />
