@@ -26,7 +26,7 @@ export default function Hero2() {
   return (
     <div className="h-full mt-[100px] mb-[20px] w-[100%] mx-auto flex flex-col-reverse items-center xl:flex-row">
       <div className="flex flex-col flex-wrap px-8 xl:px-24 xl:px-none flex-1 self-center gap-20 justify-evenly h-full">
-        <div className="flex flex-row w-full justify-evenly xl:pr-32">
+        <div className="flex flex-row w-full justify-evenly ">
           {/* <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className=" -rotate-180" /> */}
           <p className={`${museo.className} text-4xl text-wrap xl:text-5xl text-center xl:text-justify`}>{"<"}</p>
           <p className={`text-4xl text-wrap lg:text-5xl text-center xl:text-justify ${museo.className}`}>
@@ -36,7 +36,7 @@ export default function Hero2() {
           {/* <Image src={SponsorDecor} alt="Sponsor Heading Decoration" className="rotate-45" /> */}
         </div>
         {/* <hr className="border-none dashed-line pr-32 "></hr> */}
-        <p className={`${space.className} text-white font-bold text-lg md:text-3xl text-justify pr-0 xl:pr-32 `}>
+        <p className={`${space.className} text-white font-bold text-lg md:text-3xl text-justify pr-0  `}>
           A 36-hour <span className="text-[#FBBC04]"> national level technical hackathon </span>that offers students
           from across India the opportunity to
           <span className="text-[#4285F4]"> solve real-world challenges</span> of society and showcase their{" "}
@@ -44,9 +44,9 @@ export default function Hero2() {
           meets excitement and
           <span className="text-[#EA4335]"> amazing prizes</span> await!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:pr-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <a href={"https://discord.gg/UFfPjTtzh7"} target="_blank">
-            <Button radius="xl" size="md" className={` w-full button-50`}>
+            <Button radius="xl" size="md" className={` w-full button-50 min-w-56`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="34"
@@ -64,7 +64,7 @@ export default function Hero2() {
             </Button>
           </a>
           <a href="https://devshouse-1.devfolio.co/" target="_blank">
-            <Button radius="xl" size="md" className={`w-full button-50`}>
+            <Button radius="xl" size="md" className={`w-full button-50 min-w-80`}>
               <Image
                 src={devfolioIcon}
                 width={25}

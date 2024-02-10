@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import timelineonline from "../../public/TIMELINEONLINE.svg";
+import timelineonline from "public/timeline.svg";
 export default function TimelineOnline() {
   return (
     <div id="timeline" className="flex flex-col items-center justify-center w-full my-8">
