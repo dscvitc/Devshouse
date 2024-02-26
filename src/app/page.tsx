@@ -13,6 +13,7 @@ import Navbar from "@/components/NavBar";
 import Sponsor from "@/components/Sponsor";
 import TimelineOnline from "@/components/TimelineOnline";
 import Hero2 from "@/components/Hero2";
+import Community from "@/components/Community";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       {/* <Speakers /> */}
       <Ourteam />
       <Sponsor />
+      <Community />
       <FAQ />
       <Contact />
       <Footer2 />
