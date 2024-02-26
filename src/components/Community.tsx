@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import img1 from "../../public/comm/1.png";
 // import img2 from "../../public/comm/2.jpg";
-import img3 from "../../public/comm/3.svg";
+import img3 from "../../public/comm/3.png";
 import img4 from "../../public/comm/4.png";
 import img5 from "../../public/comm/5.png";
 import img6 from "../../public/comm/6.png";
