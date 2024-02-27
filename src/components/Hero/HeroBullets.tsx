@@ -70,7 +70,7 @@ export function HeroBullets() {
                   Join Our Community
                 </Button>
               </a>
-              <a href="https://devshouse-1.devfolio.co/" target="_blank">
+              {/* <a href="https://devshouse-1.devfolio.co/" target="_blank">
                 <Button radius="xl" size="md" className={`button-50`}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ export function HeroBullets() {
                   </svg>
                   Apply with Devfolio
                 </Button>
-              </a>
+              </a> */}
               {/* <Button radius="xl" size="md" className={`button-50`}>
                 <div
                   className="apply-button"

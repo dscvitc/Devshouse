@@ -44,7 +44,7 @@ export default function Hero2() {
           meets excitement and
           <span className="text-[#EA4335]"> amazing prizes</span> await!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-4 ">
           <a href={"https://discord.gg/UFfPjTtzh7"} target="_blank">
             <Button radius="xl" size="md" className={` w-full button-50 min-w-56`}>
               <svg
@@ -63,7 +63,7 @@ export default function Hero2() {
               <p className="font-spaceGrotesk text-lg font-bold mx-4">Join Us</p>
             </Button>
           </a>
-          <a href="https://devshouse-1.devfolio.co/" target="_blank">
+          {/* <a href="https://devshouse-1.devfolio.co/" target="_blank">
             <Button radius="xl" size="md" className={`w-full button-50 min-w-80`}>
               <Image
                 src={devfolioIcon}
@@ -75,7 +75,7 @@ export default function Hero2() {
               ></Image>
               <p className="font-spaceGrotesk text-lg font-bold mx-4">Apply with Devfolio</p>
             </Button>
-          </a>
+          </a> */}
           {/* <Button radius="xl" size="md" className={`w-full button-50`}>
             <div
               className="apply-button"
