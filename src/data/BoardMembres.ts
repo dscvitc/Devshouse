@@ -27,6 +27,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "https://github.com/zahransajid",
     linkedIn: "",
+    type: "faculty",
   },
   {
     name: "Aditi Jha",
@@ -35,6 +36,7 @@ const boardMembers = [
     description: "It's not what happens to you, but how you react to it that matters",
     github: "https://github.com/AchintyaSingh0220",
     linkedIn: "https://www.linkedin.com/in/aditi-jha-914a9b214/",
+    type: "organizer",
   },
   {
     name: "Mihika Dhakray",
@@ -43,6 +45,7 @@ const boardMembers = [
     description: "Making problem solving fun",
     github: "https://github.com/castlercodes",
     linkedIn: "https://www.linkedin.com/in/mihikadhakray",
+    type: "technical",
   },
   {
     name: "Anurag Tamhankar",
@@ -51,6 +54,7 @@ const boardMembers = [
     description: "Doom Scrolling reels is my fav hobby",
     github: "https://github.com/codexx07",
     linkedIn: "https://www.linkedin.com/in/anurag-tamhankar-75a471220/",
+    type: "organizer",
   },
   {
     name: "Syed Omar Albeez",
@@ -59,6 +63,7 @@ const boardMembers = [
     description: "One track mind, one track heart",
     github: "https://github.com/amarafray",
     linkedIn: "https://www.linkedin.com/in/syed-omar-albeez/",
+    type: "organizer",
   },
   {
     name: "Jahanvi Chaurasia",
@@ -67,6 +72,7 @@ const boardMembers = [
     description: "One who juggles with deadlines and tasks like a pro",
     github: "https://github.com/syedomar1",
     linkedIn: "https://www.linkedin.com/in/janhavi-chaurasia-ab9169278",
+    type: "co-organizer",
   },
   {
     name: "Emmanuel Allan",
@@ -75,6 +81,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "",
     linkedIn: "https://www.linkedin.com/in/emmanuel-allan/",
+    type: "technical",
   },
   {
     name: "Vaibhav T S",
@@ -83,6 +90,7 @@ const boardMembers = [
     description: "Turning caffeine and curiosity into coding masterpieces",
     github: "https://github.com/karanwxliaa",
     linkedIn: "https://www.linkedin.com/in/vaibhav-tekkalur/",
+    type: "technical",
   },
   {
     name: "Sparsh Chakraborty",
@@ -91,6 +99,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "https://github.com/Kriticle",
     linkedIn: "https://www.linkedin.com/in/sparsh-chakraborty/",
+    type: "co-organizer",
   },
   {
     name: "Naveen Choudhury",
@@ -99,6 +108,7 @@ const boardMembers = [
     description: "You do not rise to the level of your goals. You fall to the level of your systems",
     github: "https://github.com/void-anurag",
     linkedIn: "www.linkedin.com/in/naveen-shankar-choudhury-481262238",
+    type: "co-organizer",
   },
   {
     name: "Subham Ghosh",
@@ -107,6 +117,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "https://github.com/vaibhavTekk",
     linkedIn: "https://www.linkedin.com/in/subhamgcon/",
+    type: "organizer",
   },
   {
     name: "Zahran Sajid",
@@ -115,6 +126,7 @@ const boardMembers = [
     description: "Versatile creator with a flair for innovation",
     github: "https://github.com/EmmanuelAllanMJ",
     linkedIn: "https://www.linkedin.com/in/zahran-sajid/",
+    type: "co-organizer",
   },
   {
     name: "Cynthia Konar",
@@ -123,6 +135,7 @@ const boardMembers = [
     description: "Fly High",
     github: "https://github.com/naveenchoudhury",
     linkedIn: "https://www.linkedin.com/in/cynthia-konar-649b5721b/",
+    type: "co-organizer",
   },
   {
     name: "Jeevan Alexan",
@@ -131,6 +144,7 @@ const boardMembers = [
     description: "Mastermind of app magic",
     github: "https://github.com/cynthiakonar",
     linkedIn: "https://www.linkedin.com/in/jeevan-alexen-kavalam-83098a215",
+    type: "co-organizer",
   },
   {
     name: "Ameiy Acharya",
@@ -139,6 +153,7 @@ const boardMembers = [
     description: "Full of coffee, code and chaos",
     github: "https://github.com/Swastika-shukla",
     linkedIn: "https://www.linkedin.com/in/ameiy-acharya-3a3b7721b/",
+    type: "co-organizer",
   },
   {
     name: "Kriti Agarwal",
@@ -147,6 +162,7 @@ const boardMembers = [
     description: "Upcoming techie with keen interest in Blockchain and Data Science",
     github: "https://github.com/AmeiyAcharya",
     linkedIn: "https://www.linkedin.com/in/kriti-agarwal-1369b7249/",
+    type: "co-organizer",
   },
   {
     name: "Amritansh Sharma",
@@ -155,6 +171,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "",
     linkedIn: "https://www.linkedin.com/in/drowsy-coder/",
+    type: "organizer",
   },
   {
     name: "Shaan Mukherjee",
@@ -163,6 +180,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "",
     linkedIn: "https://www.linkedin.com/in/shaan-mukherjee",
+    type: "co-organizer",
   },
   {
     name: "L.G.Surith",
@@ -171,6 +189,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "",
     linkedIn: "https://www.linkedin.com/in/surithlg/",
+    type: "co-organizer",
   },
   {
     name: "Shourya Pratap Singh",
@@ -179,6 +198,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "",
     linkedIn: "Linkedin.com/in/amspsingh04",
+    type: "organizer",
   },
 ];
 
