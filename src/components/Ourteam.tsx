@@ -87,7 +87,7 @@ const Ourteam = () => {
   return (
     <div id="team" className="w-full flex flex-col items-center justify-center h-auto bg-printedGraphic">
       <h1 className="text-white text-center text-5xl font-bold p-10">Organizers</h1>
-      <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 md:grid-cols-3 w-[80%] gap-10 p-10 justify-items-center ">
+      <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 w-full md:grid-cols-3 lg:w-[80%] gap-10 p-10 justify-items-center ">
         {boardMembers
           .filter(e => e.type === 'organizer')
           .map(e => (
@@ -95,7 +95,7 @@ const Ourteam = () => {
           ))}
       </div>
       <h1 className="text-white text-center text-5xl font-bold p-10">Technical Team</h1>
-      <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 md:grid-cols-3 w-[80%] gap-10 p-10 justify-items-center ">
+      <div className="overflow-x-auto flex no-scrollbar w-full md:grid grid-cols-1 md:grid-cols-3 lg:w-[80%] gap-10 p-10 justify-items-center ">
         {boardMembers
           .filter(e => e.type === 'technical')
           .map(e => (
@@ -103,7 +103,7 @@ const Ourteam = () => {
           ))}
       </div>
       <h1 className="text-white text-center text-5xl font-bold p-10">Co-organizers</h1>
-      <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 md:grid-cols-5 w-[71%] gap-10 p-10 justify-items-center ">
+      <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 w-full md:grid-cols-4 lg:grid-cols-5 lg:w-[71%] gap-14 p-10 justify-items-center ">
         {boardMembers
           .filter(e => e.type === 'co-organizer')
           .map(e => (
