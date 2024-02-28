@@ -102,7 +102,7 @@ const Ourteam = () => {
             <Card name={e.name} role={e.role} img={e?.image} key={e.name} linkedin={e?.linkedIn} />
           ))}
       </div>
-      <h1 className="text-white text-center text-5xl font-bold p-10">Co-rganizers</h1>
+      <h1 className="text-white text-center text-5xl font-bold p-10">Co-organizers</h1>
       <div className="overflow-x-auto flex no-scrollbar md:grid grid-cols-1 md:grid-cols-5 w-[71%] gap-10 p-10 justify-items-center ">
         {boardMembers
           .filter(e => e.type === 'co-organizer')
