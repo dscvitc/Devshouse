@@ -12,6 +12,7 @@ import MarqueeLogo from "@/components/MarqueeLogo";
 import Navbar from "@/components/NavBar";
 import Sponsor from "@/components/Sponsor";
 import TimelineOnline from "@/components/TimelineOnline";
+import Timeline from "@/components/Timeline";
 import Hero2 from "@/components/Hero2";
 import Community from "@/components/Community";
 
@@ -34,8 +35,8 @@ export default function Home() {
       <Tracks />
       <Prizes />
 
-      <TimelineOnline />
-      {/* <Timeline /> */}
+      {/* <TimelineOnline /> */}
+      <Timeline />
       {/*Hide until confirmed*/}
       {/* <Speakers /> */}
       <Ourteam />
