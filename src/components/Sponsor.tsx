@@ -17,14 +17,12 @@ import esalesLogo from "public/sponsors/esales.png";
 import IBLogo from "public/sponsors/iblogotransparent.png";
 import devfolioLogo from "public/sponsors/devfolio.png";
 import quillauditsLogo from "public/sponsors/quillaudits.png";
-import nblogo from "public/sponsors/NB-2.0-logo-1.png";
 import BeeCeptor from "public/sponsors/beeceptor.png";
 import bergerpng from "public/sponsors/berger.png";
 import Echo3d from "public/sponsors/echo3d.png";
 import aops from "public/sponsors/aops.png";
 import netweb from "public/sponsors/netweb.png";
 import choice from "public/sponsors/choice.png";
-import Cybrance from "public/sponsors/cybrance.png";
 import Verbwire from "public/sponsors/verbwire.png";
 import Solana from "public/sponsors/solana.png";
 import Redbull from "public/sponsors/redbull.png";
@@ -467,15 +465,14 @@ const Sponsor = () => {
             </div>
 
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
-              <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                <a href="https://cybrancee.com/" target="_blank">
+            <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://axure.com/" target="_blank">
                   <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                     <div className="flex flex-row justify-center items-center">
-                      <Image src={Cybrance} alt={"Cybrance"} width={250} />
+                      <Image src={axure} alt={"AXURE LOGO"} width={350} />
                     </div>
                   </div>
                 </a>
-
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
@@ -566,16 +563,7 @@ const Sponsor = () => {
               </div>
             </div>
 
-              <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                <a href="https://axure.com/" target="_blank">
-                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                    <div className="flex flex-row justify-center items-center">
-                      <Image src={axure} alt={"AXURE LOGO"} width={350} />
-                    </div>
-                  </div>
-                </a>
-                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -615,34 +603,7 @@ const Sponsor = () => {
               />
             </svg>
           </div>
-          <div className="flex gap-60 my-20 max-lg:flex-col max-lg:gap-20">
-            <a href="https://noticebard.com/" target="_blank">
-              <SponsorCard
-                cardWidth={"300px"}
-                cardHeight={"124.878px"}
-                img={nblogo}
-                imgWidth={250}
-                imgAlt={"noticebard"}
-                color={"#FCCF4B"}
-                backgroundMt={"-7.5rem"}
-                backgroundMl={"0.2rem"}
-              />
-            </a>
-            {/* OTHER SPONSORS */}
-            {/* COPY PASTE BELOW CODE */}
-            {/* <a href="https://noticebard.com/" target="_blank">
-              <SponsorCard
-                cardWidth={"300px"}
-                cardHeight={"124.878px"}
-                img={nblogo}
-                imgWidth={250}
-                imgAlt={"noticebard"}
-                color={"#FCCF4B"}
-                backgroundMt={"-7.5rem"}
-                backgroundMl={"0.2rem"}
-              />
-            </a> */}
-          </div>
+
         </div>
       </div>
     
