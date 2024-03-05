@@ -25,14 +25,14 @@ const Timeline = () => {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
-    <section id="timeline" className="relative sm:mb-[15rem] text-white pt-12">
+    <section id="timeline" className="relative sm:mb-[15rem] text-white pt-12 lg:mx-64">
       <h1 className={`text-4xl lg:text-6xl font-bold text-center ${space_grotesk.className}`}>
         Timeline
       </h1>
       <EmblaCarousel slides={[
-        "/timeline/timeline1.png",
-        "/timeline/timeline2.png",
-        "/timeline/timeline3.png",
+        "/timeline/full_timeline.png",
+        // "/timeline/timeline2.png",
+        // "/timeline/timeline3.png",
       ]} options={OPTIONS} />
 
     </section>

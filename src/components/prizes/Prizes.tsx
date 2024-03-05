@@ -134,12 +134,6 @@ export default function Prizes() {
       trackText:"1-month Pro tier subscription as a free resource to all participants ($99 value per sign up)",
       color: "#07A158",
     },
-    {
-      trackName: "Cybrance",
-      trackLogo: cybrance,
-      trackText: "1 month free web hosting for all participants.",
-      color: "#07A158",
-    },
 
     {
       trackName: "Verbwire",
