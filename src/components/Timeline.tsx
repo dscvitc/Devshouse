@@ -25,7 +25,7 @@ const Timeline = () => {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
-    <section id="timeline" className="lg:h-screen relative sm:mb-[15rem] text-white pt-12">
+    <section id="timeline" className="relative sm:mb-[15rem] text-white pt-12">
       <h1 className={`text-4xl lg:text-6xl font-bold text-center ${space_grotesk.className}`}>
         Timeline
       </h1>

@@ -99,6 +99,15 @@ export default function Footer2() {
           </Link>
         </div>
       </div>
+      <div className="flex flex-col gap-4 justify-center text-center col-span-4">
+        <div>
+          <p className="text-xl font-bold">Copyrights</p>
+        </div>
+        <div className="flex flex-col">
+          <p className="text-lg">© 2024 {" "}
+          <Link className="underline" href={'https://gdscvitc.eu.org/'}>GDSC VIT Chennai</Link>. All rights reserved.</p>
+        </div>
+      </div>
     </div>
   );
 }
