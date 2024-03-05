@@ -2,8 +2,11 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { Space_Grotesk } from "next/font/google";
-import { gsap } from "gsap";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import Image from "next/image";
+import { Draggable } from "gsap/Draggable";
+
 
 const space_grotesk = Space_Grotesk({
   weight: ["400", "700"],
@@ -14,6 +17,7 @@ const Timeline = () => {
   const [part, setPart] = useState(1);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const imageRef = useRef<HTMLImageElement | null>(null);
+  gsap.registerPlugin(Draggable)
 
   const calculateMovementAmount = () => {
     if (imageRef.current) {
@@ -23,11 +27,13 @@ const Timeline = () => {
     return 0;
   };
 
+
   const handleLeftClick = () => {
-    if (part > 1) {
+    if (part > 0) {
       setPart((prevPart) => prevPart - 1);
+      const movementAmount = calculateMovementAmount();
       gsap.to(containerRef.current, {
-        x: `+=${calculateMovementAmount()}`,
+        x: `+=${movementAmount}`,
         duration: 1,
       });
     }
@@ -43,16 +49,19 @@ const Timeline = () => {
     }
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      gsap.set(containerRef.current, { x: `-${calculateMovementAmount() * (part - 1)}px` });
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [part]);
+  useGSAP(() => {
+    Draggable.create(containerRef.current, {
+      type: "x",
+      onDragEnd: function() {
+        const direction = this.deltaX < 0 ? "left" : "right";
+        if (direction === "left") {
+          handleRightClick();
+        } else if (direction === "right") {
+          handleLeftClick();
+        }
+      },
+    });
+  }, []);
 
   const getTextForPart = (part: number) => {
     switch (part) {
@@ -66,7 +75,7 @@ const Timeline = () => {
   };
 
   return (
-    <section id="timeline" className="md:h-[60vh] lg:h-screen relative text-white mb-20 pt-12">
+    <section id="timeline" className="md:h-[60vh] lg:h-screen relative sm:mb-[15rem] text-white pt-12">
       <h1 className={`${space_grotesk.className} text-center font-bold text-5xl mb-5`}>Timeline</h1>
       <div className="flex justify-center mt-16">
         <div className="flex flex-col items-center">
@@ -76,21 +85,21 @@ const Timeline = () => {
           <div className="bg-black border-[#fff] border-2 -mt-[2rem] ml-3 rounded-xl h-[2.5rem] w-full"></div>
         </div>
       </div>
-      <button onClick={handleLeftClick} className="absolute left-5 mt-[38%] sm:mt-[20%]">
+      <button onClick={handleLeftClick} className="absolute hidden sm:block left-5 mt-[38%] sm:mt-[20%]">
         <Image src="/assets/images/arrow2.svg" alt="day1" className="w-[2rem] sm:w-[7.2rem]" width={500} height={500} />
       </button>
-      <button onClick={handleRightClick} className="absolute right-5 mt-[37%] sm:mt-[19%]">
+      <button onClick={handleRightClick} className="absolute hidden sm:block right-5 mt-[37%] sm:mt-[19%]">
         <Image src="/assets/images/arrow1.svg" alt="day2" className="w-[2rem] sm:w-[6.8rem]" width={500} height={500} />
       </button>
-      <div className="relative overflow-hidden  mx-14 sm:mx-36">
-        <div ref={containerRef} className="flex overflow-hidden  mt-20 w-[300vw]">
+      <div className="overflow-hidden sm:mx-36">
+        <div ref={containerRef} className="flex mt-[4vw] w-[500vw] sm:w-[300vw]">
           <Image
             ref={imageRef}
             src="/assets/images/timeline.svg"
             alt="timeline"
-            className="w-[260vw] sm:w-[160vw] object-cover object-left"
-            width={500}
-            height={500}
+            className="w-[600rem] sm:w-[200rem]"
+            width={0}
+            height={0}
           />
         </div>
       </div>
