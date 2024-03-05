@@ -32,9 +32,9 @@
 .embla__controls {
   display: grid;
   grid-template-columns: auto 1fr;
-  justify-content: space-between;
-  gap: 1.2rem;
-  margin-top: 1.8rem;
+  /* justify-content: space-between; */
+  /* gap: 1.2rem; */
+  /* margin-top: 1.8rem; */
 }
 .embla__buttons {
   display: grid;
