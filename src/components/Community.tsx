@@ -57,7 +57,7 @@ export default function Community() {
         <Image src={img9} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img10} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img11} alt={"1"} height={200} width={300} className="mx-12"></Image>
-        <Image src={img12} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        {/* <Image src={img12} alt={"1"} height={200} width={300} className="mx-12"></Image> */}
         <Image src={img13} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img14} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img15} alt={"1"} height={200} width={300} className="mx-12"></Image>
@@ -77,7 +77,7 @@ export default function Community() {
         <Image src={img26} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img27} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img28} alt={"1"} height={200} width={300} className="mx-12"></Image>
-        <Image src={img29} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        {/* <Image src={img29} alt={"1"} height={200} width={300} className="mx-12"></Image> */}
         <Image src={img30} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img31} alt={"1"} height={200} width={300} className="mx-12"></Image>
       </Marquee>
