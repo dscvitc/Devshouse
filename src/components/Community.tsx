@@ -27,8 +27,14 @@ import img20 from "../../public/comm/20.png";
 import img21 from "../../public/comm/21.png";
 import img22 from "../../public/comm/22.png";
 import img23 from "../../public/comm/23.png";
-// import img24 from "../../public/comm/24.jpg";
+import img24 from "../../public/comm/24.jpg";
 import img25 from "../../public/comm/25.png";
+import img26 from "../../public/comm/26.png";
+import img27 from "../../public/comm/27.png";
+import img28 from "../../public/comm/28.png";
+import img29 from "../../public/comm/29.png";
+import img30 from "../../public/comm/30.png";
+import img31 from "../../public/comm/31.png";
 
 import { Space_Grotesk } from "next/font/google";
 const Space = Space_Grotesk({ weight: "700", subsets: ["latin"] });
@@ -51,13 +57,14 @@ export default function Community() {
         <Image src={img9} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img10} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img11} alt={"1"} height={200} width={300} className="mx-12"></Image>
-        <Image src={img12} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        {/* <Image src={img12} alt={"1"} height={200} width={300} className="mx-12"></Image> */}
         <Image src={img13} alt={"1"} height={200} width={300} className="mx-12"></Image>
-      </Marquee>
-      <Marquee direction="right">
         <Image src={img14} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img15} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img16} alt={"1"} height={200} width={300} className="mx-12"></Image>
+
+      </Marquee>
+      <Marquee direction="right">
         <Image src={img17} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img18} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img19} alt={"1"} height={200} width={300} className="mx-12"></Image>
@@ -65,8 +72,14 @@ export default function Community() {
         <Image src={img21} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img22} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img23} alt={"1"} height={200} width={300} className="mx-12"></Image>
-        {/* <Image src={img24} alt={"1"} height={200} width={300} className="mx-12"></Image> */}
+        <Image src={img24} alt={"1"} height={200} width={300} className="mx-12"></Image>
         <Image src={img25} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img26} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img27} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img28} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        {/* <Image src={img29} alt={"1"} height={200} width={300} className="mx-12"></Image> */}
+        <Image src={img30} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img31} alt={"1"} height={200} width={300} className="mx-12"></Image>
       </Marquee>
     </div>
   );
